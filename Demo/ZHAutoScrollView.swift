@@ -7,8 +7,6 @@
 
 import UIKit
 
-// http://stackoverflow.com/questions/4585718/disable-uiscrollview-scrolling-when-uitextfield-becomes-first-responder/5673026#5673026
-
 class ZHAutoScrollView: UIScrollView {
     
     private class ZHContentView: UIView {
@@ -46,16 +44,22 @@ class ZHAutoScrollView: UIScrollView {
     // By default, contentView has same size as ScrollView, to expand the contentSize, let subviews' constraints to determin all four edges
     var contentView: UIView!
 
+    // These two values are used to backup original states
     var originalContentInset: UIEdgeInsets!
     var originalContentOffset: CGPoint!
+    
+    // Keep values from UIKeyboardNotification
     var keyboardFrame: CGRect!
     var keyboardAnimationDuration: NSTimeInterval!
     
+    // TextFields on subtrees for scrollView
     var textFields: [UITextField] {
         get {
             return (contentView as ZHContentView).textFields
         }
     }
+    
+    // Current editing textField
     var activeTextField: UITextField?
     
     override convenience init() {
@@ -76,14 +80,14 @@ class ZHAutoScrollView: UIScrollView {
     // To Avoid undesired scroll behavior of default UIScrollView, call myScrollRectToVisible::
     // Reference: http://stackoverflow.com/a/12640831/3164091
     override func scrollRectToVisible(rect: CGRect, animated: Bool) {
-        if CGRectEqualToRect(rect, expectedScrollRect) {
+        if CGRectEqualToRect(rect, _expectedScrollRect) {
             super.scrollRectToVisible(rect, animated: animated)
         }
     }
     
-    var expectedScrollRect: CGRect!
+    var _expectedScrollRect: CGRect!
     func myScrollRectToVisible(rect: CGRect, animated: Bool) {
-        expectedScrollRect = rect
+        _expectedScrollRect = rect
         self.scrollRectToVisible(rect, animated: animated)
     }
     
@@ -114,7 +118,7 @@ class ZHAutoScrollView: UIScrollView {
     }
 }
 
-// MARK: TapGesture
+// MARK: TapGesture - Tap to dismiss
 extension ZHAutoScrollView {
     private func setupGestures() {
         self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "selfIsTapped:"))
@@ -148,6 +152,8 @@ extension ZHAutoScrollView {
 // MARK: Keyboard Notification
 extension ZHAutoScrollView {
     private func registerNotifications() {
+        // Reason for only registering UIKeyboardWillChangeFrameNotification
+        // Since UIKeyboardWillChangeFrameNotification will be posted before willShow and willBeHidden, to avoid duplicated animations, detecting keyboard behaviors only from this notification
         NSNotificationCenter.defaultCenter().addObserver(
             self,
             selector: "keyboardWillChange:",
@@ -220,8 +226,7 @@ extension ZHAutoScrollView {
         targetFrame.origin.y -= offset
         targetFrame.size.height += offset * 2
         
-        // Besure to update
-        self.expectedScrollRect = targetFrame
+        // Don't call default scrollRectToVisible
         self.myScrollRectToVisible(targetFrame, animated: true)
     }
     

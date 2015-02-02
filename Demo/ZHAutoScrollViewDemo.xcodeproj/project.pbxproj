@@ -62,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				0297F3641A7EC3FA00CC31CF /* ZHAutoScrollViewDemo */,
+				0297F3651A7EC3FA00CC31CF /* Supporting Files */,
 				0297F37A1A7EC3FA00CC31CF /* ZHAutoScrollViewDemoTests */,
 				0297F3631A7EC3FA00CC31CF /* Products */,
 			);
@@ -85,7 +86,6 @@
 				0297F36B1A7EC3FA00CC31CF /* Main.storyboard */,
 				0297F36E1A7EC3FA00CC31CF /* Images.xcassets */,
 				0297F3701A7EC3FA00CC31CF /* LaunchScreen.xib */,
-				0297F3651A7EC3FA00CC31CF /* Supporting Files */,
 			);
 			path = ZHAutoScrollViewDemo;
 			sourceTree = "<group>";
@@ -96,6 +96,7 @@
 				0297F3661A7EC3FA00CC31CF /* Info.plist */,
 			);
 			name = "Supporting Files";
+			path = ZHAutoScrollViewDemo;
 			sourceTree = "<group>";
 		};
 		0297F37A1A7EC3FA00CC31CF /* ZHAutoScrollViewDemoTests */ = {
