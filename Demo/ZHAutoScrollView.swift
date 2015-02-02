@@ -111,6 +111,7 @@ extension ZHAutoScrollView {
 extension ZHAutoScrollView {
     func _textFiledEditingDidBegin(sender: AnyObject) {
         activeTextField = sender as? UITextField
+        if self.keyboardFrame != nil { makeActiveTextFieldVisible(self.keyboardFrame) }
     }
     
     func _textFiledEditingChanged(sender: AnyObject) {
@@ -174,12 +175,12 @@ extension ZHAutoScrollView {
         if activeTextField == nil { return }
         // flipLandscapeFrameForIOS7 only changes CGRect for landscape on iOS7
         keyboardRect = flipLandscapeFrameForIOS7(keyboardRect)
-        var keyboardHeight: CGFloat = keyboardRect.size.height
+//        var keyboardHeight: CGFloat = keyboardRect.size.height
         
-        // VisibleWindowFrame
-        var visibleWindowFrame = UIScreen.mainScreen().bounds
-        visibleWindowFrame = flipLandscapeFrameForIOS7(visibleWindowFrame)
-        visibleWindowFrame.size.height -= keyboardHeight
+//        // VisibleWindowFrame
+//        var visibleWindowFrame = UIScreen.mainScreen().bounds
+//        visibleWindowFrame = flipLandscapeFrameForIOS7(visibleWindowFrame)
+//        visibleWindowFrame.size.height -= keyboardHeight
         
         // VisibleScrollViewFrame
         var visibleScrollFrame = self.convertRect(self.bounds, toView: nil)
@@ -197,25 +198,34 @@ extension ZHAutoScrollView {
                 }, completion: nil)
         }
         
-        // Convert active textField's origin to main window
-        var convertedFrame = flipLandscapeFrameForIOS7(self.activeTextField!.convertRect(self.activeTextField!.bounds, toView: nil))
-        
-        // Enlarge the convertedFrame, give top and bottom 10 points padding
+//        // Convert active textField's origin to main window
+//        var convertedFrame = flipLandscapeFrameForIOS7(self.activeTextField!.convertRect(self.activeTextField!.bounds, toView: nil))
+//        
+//        // Enlarge the convertedFrame, give top and bottom 10 points padding
         let offset: CGFloat = 10
-        convertedFrame.origin.y -= offset
-        convertedFrame.size.height += offset * 2
+//        convertedFrame.origin.y -= offset
+//        convertedFrame.size.height += offset * 2
         
-        // If both main window and scrollView don't contain active text field, scroll it
-        if (!CGRectContainsRect(visibleWindowFrame, convertedFrame) && !CGRectContainsRect(visibleScrollFrame, convertedFrame)) {
-            
-            var targetFrame = flipLandscapeFrameForIOS7(activeTextField!.convertRect(activeTextField!.bounds, toView: self))
-            
-            // Add top & bottom paddings for target frame
-            targetFrame.origin.y -= offset
-            targetFrame.size.height += offset * 2
-            
-            self.scrollRectToVisible(targetFrame, animated: true)
-        }
+//        // If both main window and scrollView don't contain active text field, scroll it
+//        if (!CGRectContainsRect(visibleWindowFrame, convertedFrame) && !CGRectContainsRect(visibleScrollFrame, convertedFrame)) {
+        
+//            var targetFrame = flipLandscapeFrameForIOS7(activeTextField!.convertRect(activeTextField!.bounds, toView: self))
+//            
+//            // Add top & bottom paddings for target frame
+//            targetFrame.origin.y -= offset
+//            targetFrame.size.height += offset * 2
+//            
+//            self.scrollRectToVisible(targetFrame, animated: true)
+//        }
+        
+        
+        var targetFrame = flipLandscapeFrameForIOS7(activeTextField!.convertRect(activeTextField!.bounds, toView: self))
+        
+        // Add top & bottom paddings for target frame
+        targetFrame.origin.y -= offset
+        targetFrame.size.height += offset * 2
+        
+        self.scrollRectToVisible(targetFrame, animated: true)
     }
     
     // Helper functions

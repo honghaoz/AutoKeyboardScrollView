@@ -30,22 +30,73 @@ class ViewController: UIViewController {
         self.view.addConstraints(hConstraints)
         self.view.addConstraints(vConstraints)
         
+        // Add textFields
         let textField = UITextField()
         textField.setTranslatesAutoresizingMaskIntoConstraints(false)
         textField.placeholder = "Type here..."
         textField.textAlignment = NSTextAlignment.Center
-        
+        textField.backgroundColor = UIColor.whiteColor()
         scrollView.contentView.addSubview(textField)
-        textField.addConstraint(NSLayoutConstraint(item: textField, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: textField, attribute: NSLayoutAttribute.Width, multiplier: 0, constant: 200))
-        textField.addConstraint(NSLayoutConstraint(item: textField, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: textField, attribute: NSLayoutAttribute.Height, multiplier: 0, constant: 40))
+        viewDictionary["textField"] = textField
+        addWidthCenterXConstraintsForView(textField, width: 200)
         
-        scrollView.contentView.addConstraint(NSLayoutConstraint(item: textField, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: scrollView.contentView, attribute: NSLayoutAttribute.CenterX, multiplier: 1.0, constant: 0.0))
-        scrollView.contentView.addConstraint(NSLayoutConstraint(item: textField, attribute: NSLayoutAttribute.CenterY, relatedBy: NSLayoutRelation.Equal, toItem: scrollView.contentView, attribute: NSLayoutAttribute.CenterY, multiplier: 1.0, constant: 0.0))
+        let textField2 = UITextField()
+        textField2.setTranslatesAutoresizingMaskIntoConstraints(false)
+        textField2.placeholder = "Type here..."
+        textField2.textAlignment = NSTextAlignment.Center
+        textField2.backgroundColor = UIColor.whiteColor()
+        scrollView.contentView.addSubview(textField2)
+        viewDictionary["textField2"] = textField2
+        addWidthCenterXConstraintsForView(textField2, width: 200)
+        
+        let textField3 = UITextField()
+        textField3.setTranslatesAutoresizingMaskIntoConstraints(false)
+        textField3.placeholder = "Type here..."
+        textField3.textAlignment = NSTextAlignment.Center
+        textField3.backgroundColor = UIColor.whiteColor()
+        scrollView.contentView.addSubview(textField3)
+        viewDictionary["textField3"] = textField3
+        addWidthCenterXConstraintsForView(textField3, width: 200)
+        
+        let textField4 = UITextField()
+        textField4.setTranslatesAutoresizingMaskIntoConstraints(false)
+        textField4.placeholder = "Type here..."
+        textField4.textAlignment = NSTextAlignment.Center
+        textField4.backgroundColor = UIColor.whiteColor()
+        scrollView.contentView.addSubview(textField4)
+        viewDictionary["textField4"] = textField4
+        addWidthCenterXConstraintsForView(textField4, width: 200)
+        
+        let textField5 = UITextField()
+        textField5.setTranslatesAutoresizingMaskIntoConstraints(false)
+        textField5.placeholder = "Type here..."
+        textField5.textAlignment = NSTextAlignment.Center
+        textField5.backgroundColor = UIColor.whiteColor()
+        scrollView.contentView.addSubview(textField5)
+        viewDictionary["textField5"] = textField5
+        addWidthCenterXConstraintsForView(textField5, width: 200)
+        
+        let textField6 = UITextField()
+        textField6.setTranslatesAutoresizingMaskIntoConstraints(false)
+        textField6.placeholder = "Type here..."
+        textField6.textAlignment = NSTextAlignment.Center
+        textField6.backgroundColor = UIColor.whiteColor()
+        scrollView.contentView.addSubview(textField6)
+        viewDictionary["textField6"] = textField6
+        addWidthCenterXConstraintsForView(textField6, width: 200)
+        
+        vConstraints = NSLayoutConstraint.constraintsWithVisualFormat("V:|-(100)-[textField(30)]-(20)-[textField2(30)]-(20)-[textField3(30)]-(20)-[textField4(30)]-(20)-[textField5(30)]-(20)-[textField6(30)]", options: NSLayoutFormatOptions(0), metrics: nil, views: viewDictionary)
+        scrollView.contentView.addConstraints(vConstraints)
         
         scrollView.userInteractionEnabled = true
         scrollView.bounces = true
         scrollView.scrollEnabled = true
         scrollView.contentInset = UIEdgeInsetsMake(50, 0, 50, 0)
+    }
+    
+    func addWidthCenterXConstraintsForView(view: UIView, width: CGFloat) {
+        view.addConstraint(NSLayoutConstraint(item: view, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Width, multiplier: 0, constant: width))
+        view.superview!.addConstraint(NSLayoutConstraint(item: view, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: view.superview!, attribute: NSLayoutAttribute.CenterX, multiplier: 1, constant: 0))
     }
 }
 
