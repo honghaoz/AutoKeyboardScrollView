@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         scrollView.backgroundColor = UIColor.brownColor()
         viewDictionary["scrollView"] = scrollView
         var hConstraints = NSLayoutConstraint.constraintsWithVisualFormat("H:|[scrollView]|", options: NSLayoutFormatOptions(0), metrics: nil, views: viewDictionary)
-        var vConstraints = NSLayoutConstraint.constraintsWithVisualFormat("V:|-(40)-[scrollView]-(100)-|", options: NSLayoutFormatOptions(0), metrics: nil, views: viewDictionary)
+        var vConstraints = NSLayoutConstraint.constraintsWithVisualFormat("V:|-(40)-[scrollView]-(200)-|", options: NSLayoutFormatOptions(0), metrics: nil, views: viewDictionary)
         self.view.addConstraints(hConstraints)
         self.view.addConstraints(vConstraints)
         
@@ -85,13 +85,13 @@ class ViewController: UIViewController {
         viewDictionary["textField6"] = textField6
         addWidthCenterXConstraintsForView(textField6, width: 200)
         
-        vConstraints = NSLayoutConstraint.constraintsWithVisualFormat("V:|-(100)-[textField(30)]-(20)-[textField2(30)]-(20)-[textField3(30)]-(20)-[textField4(30)]-(20)-[textField5(30)]-(20)-[textField6(30)]", options: NSLayoutFormatOptions(0), metrics: nil, views: viewDictionary)
+        vConstraints = NSLayoutConstraint.constraintsWithVisualFormat("V:|-(50)-[textField(30)]-(20)-[textField2(30)]-(20)-[textField3(30)]-(20)-[textField4(30)]-(20)-[textField5(30)]-(20)-[textField6(30)]-(150)-|", options: NSLayoutFormatOptions(0), metrics: nil, views: viewDictionary)
         scrollView.contentView.addConstraints(vConstraints)
         
         scrollView.userInteractionEnabled = true
         scrollView.bounces = true
         scrollView.scrollEnabled = true
-        scrollView.contentInset = UIEdgeInsetsMake(50, 0, 50, 0)
+        scrollView.contentInset = UIEdgeInsetsMake(150, 0, 150, 0)
     }
     
     func addWidthCenterXConstraintsForView(view: UIView, width: CGFloat) {
