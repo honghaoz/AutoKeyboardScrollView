@@ -16,16 +16,19 @@ class ZHAutoScrollView: UIScrollView {
         override func addSubview(view: UIView) {
             super.addSubview(view)
             if let textField: UITextField = (view as? UITextField) {
-                textFields.append(textField)
-                setupActionsForTextField(textField)
+                addTextField(textField)
             }
             // Add textFields for subViews
             for subView in view.subviews {
                 if let textField: UITextField = (subView as? UITextField) {
-                    textFields.append(textField)
-                    setupActionsForTextField(textField)
+                    addTextField(textField)
                 }
             }
+        }
+
+        func addTextField(textField: UITextField) {
+            textFields.append(textField)
+            setupActionsForTextField(textField)
         }
         
         func setupActionsForTextField(textField: UITextField) {
@@ -69,7 +72,7 @@ class ZHAutoScrollView: UIScrollView {
     
     // Manually add textField to scrollView
     func addTextField(textField: UITextField) {
-        (contentView as ZHContentView).textFields.append(textField)
+        (contentView as ZHContentView).addTextField(textField)
     }
     
     // Current editing textField
@@ -93,6 +96,10 @@ class ZHAutoScrollView: UIScrollView {
     // To Avoid undesired scroll behavior of default UIScrollView, call myScrollRectToVisible::
     // Reference: http://stackoverflow.com/a/12640831/3164091
     override func scrollRectToVisible(rect: CGRect, animated: Bool) {
+        if _expectedScrollRect == nil {
+            super.scrollRectToVisible(rect, animated: animated)
+            return
+        }
         if CGRectEqualToRect(rect, _expectedScrollRect) {
             super.scrollRectToVisible(rect, animated: animated)
         }

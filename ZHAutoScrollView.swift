@@ -9,16 +9,26 @@ import UIKit
 
 class ZHAutoScrollView: UIScrollView {
     
-    // ZHContentScroll is a private class for ZHAutoScrollView
-    private class ZHContentScrollView: UIScrollView {
+    private class ZHContentView: UIView {
         var textFields = [UITextField]()
         
+        // addSubView will check whether there's textField on this view, be sure to add textField before adding its container View
         override func addSubview(view: UIView) {
             super.addSubview(view)
             if let textField: UITextField = (view as? UITextField) {
-                textFields.append(textField)
-                setupActionsForTextField(textField)
+                addTextField(textField)
             }
+            // Add textFields for subViews
+            for subView in view.subviews {
+                if let textField: UITextField = (subView as? UITextField) {
+                    addTextField(textField)
+                }
+            }
+        }
+
+        func addTextField(textField: UITextField) {
+            textFields.append(textField)
+            setupActionsForTextField(textField)
         }
         
         func setupActionsForTextField(textField: UITextField) {
@@ -34,25 +44,38 @@ class ZHAutoScrollView: UIScrollView {
                 textField.addTarget(self.superview!, action: "_textFiledEditingDidEnd:", forControlEvents: UIControlEvents.EditingDidEnd)
             }
             
-//            if textField.actionsForTarget(self.superview!, forControlEvent: UIControlEvents.EditingDidEndOnExit) == nil {
-//                textField.addTarget(self.superview!, action: "_textFiledEditingDidEndOnExit:", forControlEvents: UIControlEvents.EditingDidEndOnExit)
-//            }
+            if textField.actionsForTarget(self.superview!, forControlEvent: UIControlEvents.EditingDidEndOnExit) == nil {
+                textField.addTarget(self.superview!, action: "_textFiledEditingDidEndOnExit:", forControlEvents: UIControlEvents.EditingDidEndOnExit)
+            }
         }
     }
     
     // All subViews should be added on contentView
+    // ContentView's size determines contentSize of ScrollView
+    // By default, contentView has same size as ScrollView, to expand the contentSize, let subviews' constraints to determin all four edges
     var contentView: UIView!
 
+    // These two values are used to backup original states
     var originalContentInset: UIEdgeInsets!
     var originalContentOffset: CGPoint!
+    
+    // Keep values from UIKeyboardNotification
     var keyboardFrame: CGRect!
     var keyboardAnimationDuration: NSTimeInterval!
     
+    // TextFields on subtrees for scrollView
     var textFields: [UITextField] {
         get {
-            return (contentView as ZHContentScrollView).textFields
+            return (contentView as ZHContentView).textFields
         }
     }
+    
+    // Manually add textField to scrollView
+    func addTextField(textField: UITextField) {
+        (contentView as ZHContentView).addTextField(textField)
+    }
+    
+    // Current editing textField
     var activeTextField: UITextField?
     
     override convenience init() {
@@ -69,6 +92,26 @@ class ZHAutoScrollView: UIScrollView {
         setup()
     }
     
+    // MARK: Disable undesired scroll behavior of default UIScrollView
+    // To Avoid undesired scroll behavior of default UIScrollView, call myScrollRectToVisible::
+    // Reference: http://stackoverflow.com/a/12640831/3164091
+    override func scrollRectToVisible(rect: CGRect, animated: Bool) {
+        if _expectedScrollRect == nil {
+            super.scrollRectToVisible(rect, animated: animated)
+            return
+        }
+        if CGRectEqualToRect(rect, _expectedScrollRect) {
+            super.scrollRectToVisible(rect, animated: animated)
+        }
+    }
+    
+    var _expectedScrollRect: CGRect!
+    func myScrollRectToVisible(rect: CGRect, animated: Bool) {
+        _expectedScrollRect = rect
+        self.scrollRectToVisible(rect, animated: animated)
+    }
+    
+    // MARK: Setups
     private func setup() {
         setupContentView()
         setupGestures()
@@ -76,9 +119,8 @@ class ZHAutoScrollView: UIScrollView {
     }
      
     private func setupContentView() {
-        contentView = ZHContentScrollView()
+        contentView = ZHContentView()
         contentView.setTranslatesAutoresizingMaskIntoConstraints(false)
-        (contentView as UIScrollView).delaysContentTouches = false
         self.addSubview(contentView)
         
         let top = NSLayoutConstraint(item: contentView, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0.0)
@@ -96,7 +138,7 @@ class ZHAutoScrollView: UIScrollView {
     }
 }
 
-// MARK: TapGesture
+// MARK: TapGesture - Tap to dismiss
 extension ZHAutoScrollView {
     private func setupGestures() {
         self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "selfIsTapped:"))
@@ -111,6 +153,7 @@ extension ZHAutoScrollView {
 extension ZHAutoScrollView {
     func _textFiledEditingDidBegin(sender: AnyObject) {
         activeTextField = sender as? UITextField
+        if self.keyboardFrame != nil { makeActiveTextFieldVisible(self.keyboardFrame) }
     }
     
     func _textFiledEditingChanged(sender: AnyObject) {
@@ -121,14 +164,16 @@ extension ZHAutoScrollView {
         //
     }
     
-//    func _textFiledEditingDidEndOnExit(sender: AnyObject) {
-//        println("_textFiledEditingDidEndOnExit")
-//    }
+    func _textFiledEditingDidEndOnExit(sender: AnyObject) {
+        //
+    }
 }
 
 // MARK: Keyboard Notification
 extension ZHAutoScrollView {
     private func registerNotifications() {
+        // Reason for only registering UIKeyboardWillChangeFrameNotification
+        // Since UIKeyboardWillChangeFrameNotification will be posted before willShow and willBeHidden, to avoid duplicated animations, detecting keyboard behaviors only from this notification
         NSNotificationCenter.defaultCenter().addObserver(
             self,
             selector: "keyboardWillChange:",
@@ -137,15 +182,17 @@ extension ZHAutoScrollView {
     }
     
     func keyboardWillChange(notification: NSNotification) {
+        // Init keyboardAnimationDuration
+        self.keyboardAnimationDuration = keyboardDismissingDuration(notification)
+        
         if isKeyboardWillShow(notification) {
             // Preserved original contentInset and contentOffset
             self.originalContentInset = self.contentInset
             self.originalContentOffset = self.contentOffset
             
             let endFrame = keyboardEndFrame(notification)
-            // Init keyboardAnimationDuration and keyboardFrame
+            // Init keyboardFrame
             self.keyboardFrame = endFrame
-            self.keyboardAnimationDuration = keyboardDismissingDuration(notification)
             
             makeActiveTextFieldVisible(endFrame)
         } else if isKeyboardWillHide(notification) {
@@ -174,12 +221,6 @@ extension ZHAutoScrollView {
         if activeTextField == nil { return }
         // flipLandscapeFrameForIOS7 only changes CGRect for landscape on iOS7
         keyboardRect = flipLandscapeFrameForIOS7(keyboardRect)
-        var keyboardHeight: CGFloat = keyboardRect.size.height
-        
-        // VisibleWindowFrame
-        var visibleWindowFrame = UIScreen.mainScreen().bounds
-        visibleWindowFrame = flipLandscapeFrameForIOS7(visibleWindowFrame)
-        visibleWindowFrame.size.height -= keyboardHeight
         
         // VisibleScrollViewFrame
         var visibleScrollFrame = self.convertRect(self.bounds, toView: nil)
@@ -197,25 +238,16 @@ extension ZHAutoScrollView {
                 }, completion: nil)
         }
         
-        // Convert active textField's origin to main window
-        var convertedFrame = flipLandscapeFrameForIOS7(self.activeTextField!.convertRect(self.activeTextField!.bounds, toView: nil))
-        
-        // Enlarge the convertedFrame, give top and bottom 10 points padding
+        // Enlarge the targetFrame, give top and bottom 10 points margin
         let offset: CGFloat = 10
-        convertedFrame.origin.y -= offset
-        convertedFrame.size.height += offset * 2
+        var targetFrame = flipLandscapeFrameForIOS7(activeTextField!.convertRect(activeTextField!.bounds, toView: self))
         
-        // If both main window and scrollView don't contain active text field, scroll it
-        if (!CGRectContainsRect(visibleWindowFrame, convertedFrame) && !CGRectContainsRect(visibleScrollFrame, convertedFrame)) {
-            
-            var targetFrame = flipLandscapeFrameForIOS7(activeTextField!.convertRect(activeTextField!.bounds, toView: self))
-            
-            // Add top & bottom paddings for target frame
-            targetFrame.origin.y -= offset
-            targetFrame.size.height += offset * 2
-            
-            self.scrollRectToVisible(targetFrame, animated: true)
-        }
+        // Add top & bottom margins for target frame
+        targetFrame.origin.y -= offset
+        targetFrame.size.height += offset * 2
+        
+        // Don't call default scrollRectToVisible
+        self.myScrollRectToVisible(targetFrame, animated: true)
     }
     
     // Helper functions
