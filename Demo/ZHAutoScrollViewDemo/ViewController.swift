@@ -91,7 +91,6 @@ class ViewController: UIViewController {
         scrollView.userInteractionEnabled = true
         scrollView.bounces = true
         scrollView.scrollEnabled = true
-        scrollView.contentInset = UIEdgeInsetsMake(150, 0, 150, 0)
     }
     
     func addWidthCenterXConstraintsForView(view: UIView, width: CGFloat) {

@@ -7,10 +7,11 @@
 
 import UIKit
 
+// http://stackoverflow.com/questions/4585718/disable-uiscrollview-scrolling-when-uitextfield-becomes-first-responder/5673026#5673026
+
 class ZHAutoScrollView: UIScrollView {
     
-    // ZHContentScroll is a private class for ZHAutoScrollView
-    private class ZHContentScrollView: UIScrollView {
+    private class ZHContentView: UIView {
         var textFields = [UITextField]()
         
         override func addSubview(view: UIView) {
@@ -41,6 +42,8 @@ class ZHAutoScrollView: UIScrollView {
     }
     
     // All subViews should be added on contentView
+    // ContentView's size determines contentSize of ScrollView
+    // By default, contentView has same size as ScrollView, to expand the contentSize, let subviews' constraints to determin all four edges
     var contentView: UIView!
 
     var originalContentInset: UIEdgeInsets!
@@ -50,7 +53,7 @@ class ZHAutoScrollView: UIScrollView {
     
     var textFields: [UITextField] {
         get {
-            return (contentView as ZHContentScrollView).textFields
+            return (contentView as ZHContentView).textFields
         }
     }
     var activeTextField: UITextField?
@@ -69,6 +72,22 @@ class ZHAutoScrollView: UIScrollView {
         setup()
     }
     
+    // MARK: Disable undesired scroll behavior of default UIScrollView
+    // To Avoid undesired scroll behavior of default UIScrollView, call myScrollRectToVisible::
+    // Reference: http://stackoverflow.com/a/12640831/3164091
+    override func scrollRectToVisible(rect: CGRect, animated: Bool) {
+        if CGRectEqualToRect(rect, expectedScrollRect) {
+            super.scrollRectToVisible(rect, animated: animated)
+        }
+    }
+    
+    var expectedScrollRect: CGRect!
+    func myScrollRectToVisible(rect: CGRect, animated: Bool) {
+        expectedScrollRect = rect
+        self.scrollRectToVisible(rect, animated: animated)
+    }
+    
+    // MARK: Setups
     private func setup() {
         setupContentView()
         setupGestures()
@@ -76,14 +95,8 @@ class ZHAutoScrollView: UIScrollView {
     }
      
     private func setupContentView() {
-        var _contentView = ZHContentScrollView()
-        _contentView.backgroundColor = UIColor.yellowColor()
-        _contentView.setTranslatesAutoresizingMaskIntoConstraints(false)
-        _contentView.delaysContentTouches = false
-        _contentView.scrollEnabled = false
-        _contentView.bounces = false
-        
-        contentView = _contentView
+        contentView = ZHContentView()
+        contentView.setTranslatesAutoresizingMaskIntoConstraints(false)
         self.addSubview(contentView)
         
         let top = NSLayoutConstraint(item: contentView, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0.0)
@@ -207,7 +220,9 @@ extension ZHAutoScrollView {
         targetFrame.origin.y -= offset
         targetFrame.size.height += offset * 2
         
-        self.scrollRectToVisible(targetFrame, animated: true)
+        // Besure to update
+        self.expectedScrollRect = targetFrame
+        self.myScrollRectToVisible(targetFrame, animated: true)
     }
     
     // Helper functions
