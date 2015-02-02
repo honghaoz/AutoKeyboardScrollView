@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         scrollView.backgroundColor = UIColor.brownColor()
         viewDictionary["scrollView"] = scrollView
         var hConstraints = NSLayoutConstraint.constraintsWithVisualFormat("H:|[scrollView]|", options: NSLayoutFormatOptions(0), metrics: nil, views: viewDictionary)
-        var vConstraints = NSLayoutConstraint.constraintsWithVisualFormat("V:|-(40)-[scrollView]-(200)-|", options: NSLayoutFormatOptions(0), metrics: nil, views: viewDictionary)
+        var vConstraints = NSLayoutConstraint.constraintsWithVisualFormat("V:|-(50)-[scrollView]-(50)-|", options: NSLayoutFormatOptions(0), metrics: nil, views: viewDictionary)
         self.view.addConstraints(hConstraints)
         self.view.addConstraints(vConstraints)
         
@@ -85,7 +85,26 @@ class ViewController: UIViewController {
         viewDictionary["textField6"] = textField6
         addWidthCenterXConstraintsForView(textField6, width: 200)
         
-        vConstraints = NSLayoutConstraint.constraintsWithVisualFormat("V:|-(50)-[textField(30)]-(20)-[textField2(30)]-(20)-[textField3(30)]-(20)-[textField4(30)]-(20)-[textField5(30)]-(20)-[textField6(30)]-(150)-|", options: NSLayoutFormatOptions(0), metrics: nil, views: viewDictionary)
+        // Text field on a containerView
+        let containerView: UIView = UIView()
+        containerView.backgroundColor = UIColor(white: 1.0, alpha: 0.4)
+        containerView.setTranslatesAutoresizingMaskIntoConstraints(false)
+        
+        let textField7 = UITextField()
+        textField7.setTranslatesAutoresizingMaskIntoConstraints(false)
+        textField7.placeholder = "Type here..."
+        textField7.textAlignment = NSTextAlignment.Center
+        textField7.backgroundColor = UIColor.whiteColor()
+        containerView.addSubview(textField7)
+        viewDictionary["textField7"] = textField7
+        containerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-[textField7]-|", options: NSLayoutFormatOptions(0), metrics: nil, views: viewDictionary))
+        containerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-[textField7]-|", options: NSLayoutFormatOptions(0), metrics: nil, views: viewDictionary))
+        
+        scrollView.contentView.addSubview(containerView)
+        viewDictionary["containerView"] = containerView
+        addWidthCenterXConstraintsForView(containerView, width: 280)
+        
+        vConstraints = NSLayoutConstraint.constraintsWithVisualFormat("V:|-(50)-[textField(30)]-(20)-[textField2(30)]-(20)-[textField3(30)]-(20)-[textField4(30)]-(20)-[textField5(30)]-(20)-[textField6(30)]-(20)-[containerView(50)]-(150)-|", options: NSLayoutFormatOptions(0), metrics: nil, views: viewDictionary)
         scrollView.contentView.addConstraints(vConstraints)
         
         scrollView.userInteractionEnabled = true

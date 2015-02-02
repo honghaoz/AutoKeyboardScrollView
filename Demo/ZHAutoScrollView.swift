@@ -12,11 +12,19 @@ class ZHAutoScrollView: UIScrollView {
     private class ZHContentView: UIView {
         var textFields = [UITextField]()
         
+        // addSubView will check whether there's textField on this view, be sure to add textField before adding its container View
         override func addSubview(view: UIView) {
             super.addSubview(view)
             if let textField: UITextField = (view as? UITextField) {
                 textFields.append(textField)
                 setupActionsForTextField(textField)
+            }
+            // Add textFields for subViews
+            for subView in view.subviews {
+                if let textField: UITextField = (subView as? UITextField) {
+                    textFields.append(textField)
+                    setupActionsForTextField(textField)
+                }
             }
         }
         
@@ -57,6 +65,11 @@ class ZHAutoScrollView: UIScrollView {
         get {
             return (contentView as ZHContentView).textFields
         }
+    }
+    
+    // Manually add textField to scrollView
+    func addTextField(textField: UITextField) {
+        (contentView as ZHContentView).textFields.append(textField)
     }
     
     // Current editing textField
