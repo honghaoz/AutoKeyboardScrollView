@@ -70,9 +70,13 @@ class ZHAutoScrollView: UIScrollView {
         }
     }
     
-    // Manually add textField to scrollView
-    func addTextField(textField: UITextField) {
-        (contentView as ZHContentView).addTextField(textField)
+    /**
+    Manually add textField to scrollView and let scrollView handle it
+    
+    :param: textField textField on subView tree of receiver
+    */
+    func handleTextField(textField: UITextField) {
+        (self.contentView as ZHContentView).addTextField(textField)
     }
     
     // Current editing textField
