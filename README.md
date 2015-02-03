@@ -8,7 +8,9 @@ It's kind of annoying to handle scrolling on UIScrollView and it's trivial to wr
 
 To keep your code DRY and make your life with iOS development easier.
 
-# What it looks like?
+# Preview
+
+![demo](https://raw.githubusercontent.com/honghaoz/ZHAutoScrollView/master/Demo/demo.gif)
 
 # Usage
 
