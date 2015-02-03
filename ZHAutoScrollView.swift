@@ -25,7 +25,7 @@ class ZHAutoScrollView: UIScrollView {
                 }
             }
         }
-
+        
         func addTextField(textField: UITextField) {
             textFields.append(textField)
             setupActionsForTextField(textField)
@@ -54,7 +54,7 @@ class ZHAutoScrollView: UIScrollView {
     // ContentView's size determines contentSize of ScrollView
     // By default, contentView has same size as ScrollView, to expand the contentSize, let subviews' constraints to determin all four edges
     var contentView: UIView!
-
+    
     // These two values are used to backup original states
     var originalContentInset: UIEdgeInsets!
     var originalContentOffset: CGPoint!
@@ -117,7 +117,7 @@ class ZHAutoScrollView: UIScrollView {
         setupGestures()
         registerNotifications()
     }
-     
+    
     private func setupContentView() {
         contentView = ZHContentView()
         contentView.setTranslatesAutoresizingMaskIntoConstraints(false)
@@ -141,7 +141,9 @@ class ZHAutoScrollView: UIScrollView {
 // MARK: TapGesture - Tap to dismiss
 extension ZHAutoScrollView {
     private func setupGestures() {
-        self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "selfIsTapped:"))
+        let tapGesture = UITapGestureRecognizer(target: self, action: "selfIsTapped:")
+        tapGesture.cancelsTouchesInView = false
+        self.addGestureRecognizer(tapGesture)
     }
     
     func selfIsTapped(gesture: UITapGestureRecognizer) {
@@ -153,11 +155,15 @@ extension ZHAutoScrollView {
 extension ZHAutoScrollView {
     func _textFiledEditingDidBegin(sender: AnyObject) {
         activeTextField = sender as? UITextField
-        if self.keyboardFrame != nil { makeActiveTextFieldVisible(self.keyboardFrame) }
+        if self.keyboardFrame != nil {
+            makeActiveTextFieldVisible(self.keyboardFrame)
+        }
     }
     
     func _textFiledEditingChanged(sender: AnyObject) {
-        makeActiveTextFieldVisible(self.keyboardFrame)
+        if self.keyboardFrame != nil {
+            makeActiveTextFieldVisible(self.keyboardFrame)
+        }
     }
     
     func _textFiledEditingDidEnd(sender: AnyObject) {
@@ -200,8 +206,8 @@ extension ZHAutoScrollView {
             UIView.animateWithDuration(keyboardDismissingDuration(notification), animations: { () -> Void in
                 self.contentInset = self.originalContentInset
                 self.contentOffset = self.originalContentOffset
-            }, completion: { (completed) -> Void in
-                self.keyboardFrame = nil
+                }, completion: { (completed) -> Void in
+                    self.keyboardFrame = nil
             })
         } else {
             // This will be called when keyboard size is changed when it's still displaying
@@ -234,7 +240,7 @@ extension ZHAutoScrollView {
             
             // Animated change self.contentInset
             UIView.animateWithDuration(self.keyboardAnimationDuration, animations: { () -> Void in
-                    self.contentInset = UIEdgeInsetsMake(0.0, 0.0, cutHeight, 0.0)
+                self.contentInset = UIEdgeInsetsMake(0.0, 0.0, cutHeight, 0.0)
                 }, completion: nil)
         }
         
@@ -303,5 +309,3 @@ extension ZHAutoScrollView {
         }
     }
 }
-
-

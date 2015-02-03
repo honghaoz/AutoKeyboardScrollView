@@ -155,11 +155,15 @@ extension ZHAutoScrollView {
 extension ZHAutoScrollView {
     func _textFiledEditingDidBegin(sender: AnyObject) {
         activeTextField = sender as? UITextField
-        if self.keyboardFrame != nil { makeActiveTextFieldVisible(self.keyboardFrame) }
+        if self.keyboardFrame != nil {
+            makeActiveTextFieldVisible(self.keyboardFrame)
+        }
     }
     
     func _textFiledEditingChanged(sender: AnyObject) {
-        makeActiveTextFieldVisible(self.keyboardFrame)
+        if self.keyboardFrame != nil {
+            makeActiveTextFieldVisible(self.keyboardFrame)
+        }
     }
     
     func _textFiledEditingDidEnd(sender: AnyObject) {
