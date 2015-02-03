@@ -1,5 +1,12 @@
 # ZHAutoScrollView
-ZHAutoScrollView is a smart UIScrollView which can handle keyboard covering UITextField issues.
+ZHAutoScrollView is a smart UIScrollView which can:
+  - Auto scroll to show active textField
+  - Dismiss keyboard by tapping empty space or tapping "Return"
+  - Support `contentView` and make your life with Auto Layout easier
+
+# Preview
+
+![demo](https://raw.githubusercontent.com/honghaoz/ZHAutoScrollView/master/Demo/demo.gif)
 
 # Why?
 Form views are very common when developing iOS projects. When keyboard is showing up, the big keyboard is covering great areas, which will hide the active textField. 
@@ -7,10 +14,6 @@ Form views are very common when developing iOS projects. When keyboard is showin
 It's kind of annoying to handle scrolling on UIScrollView and it's trivial to write keyboard notification and textField target action code again. 
 
 To keep your code DRY and make your life with iOS development easier.
-
-# Preview
-
-![demo](https://raw.githubusercontent.com/honghaoz/ZHAutoScrollView/master/Demo/demo.gif)
 
 # Usage
 
