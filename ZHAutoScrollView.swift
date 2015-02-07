@@ -158,6 +158,10 @@ class ZHAutoScrollView: UIScrollView {
         height.priority = 10
         self.addConstraints([top, left, bottom, right, width, height])
     }
+    
+    deinit {
+        unregisterNotifications()
+    }
 }
 
 // MARK: TapGesture - Tap to dismiss
@@ -207,6 +211,10 @@ extension ZHAutoScrollView {
             selector: "keyboardWillChange:",
             name: UIKeyboardWillChangeFrameNotification,
             object: nil)
+    }
+    
+    private func unregisterNotifications() {
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillChangeFrameNotification, object: nil)
     }
     
     func keyboardWillChange(notification: NSNotification) {
