@@ -9,6 +9,33 @@ import UIKit
 
 class ZHAutoScrollView: UIScrollView {
     
+    // MARK: Public APIs
+    
+    /**
+    Manually add textField to scrollView and let scrollView handle it
+    
+    :param: textField textField in subView tree of receiver
+    */
+    func handleTextField(textField: UITextField) {
+        (self.contentView as ZHContentView).addTextField(textField)
+    }
+    
+    /**
+    Manually add a bunch of textFields to scrollView and let scrollView handle them
+    This is a convenience method
+    
+    :param: textFields Array of textFields in subView tree of receiver
+    */
+    func handleTextFields(textFields: [UITextField]) {
+        for field in textFields {
+            handleTextField(field)
+        }
+    }
+    
+    /// Top and Bottom margin for textFiled, this will give an empty spacing between active textField and keyboard
+    var topBottomMarginForTextField: CGFloat = 20
+    
+    // MARK: Private
     private class ZHContentView: UIView {
         var textFields = [UITextField]()
         
@@ -56,39 +83,22 @@ class ZHAutoScrollView: UIScrollView {
     var contentView: UIView!
     
     // These two values are used to backup original states
-    var originalContentInset: UIEdgeInsets!
-    var originalContentOffset: CGPoint!
+    private var originalContentInset: UIEdgeInsets!
+    private var originalContentOffset: CGPoint!
     
     // Keep values from UIKeyboardNotification
-    var keyboardFrame: CGRect!
-    var keyboardAnimationDuration: NSTimeInterval!
+    private var keyboardFrame: CGRect!
+    private var keyboardAnimationDuration: NSTimeInterval!
     
     // TextFields on subtrees for scrollView
-    var textFields: [UITextField] {
+    private var textFields: [UITextField] {
         get {
             return (contentView as ZHContentView).textFields
         }
     }
     
-    /**
-    Manually add textField to scrollView and let scrollView handle it
-    
-    :param: textField textField on subView tree of receiver
-    */
-    func handleTextField(textField: UITextField) {
-        (self.contentView as ZHContentView).addTextField(textField)
-    }
-    
-    func handleTextFields(textFields: [UITextField]) {
-        for field in textFields {
-            handleTextField(field)
-        }
-    }
-    
-    var topBottomMarginForTextField: CGFloat = 20
-    
     // Current editing textField
-    var activeTextField: UITextField?
+    private var activeTextField: UITextField?
     
     override convenience init() {
         self.init(frame: CGRectZero)
@@ -117,8 +127,8 @@ class ZHAutoScrollView: UIScrollView {
         }
     }
     
-    var _expectedScrollRect: CGRect!
-    func myScrollRectToVisible(rect: CGRect, animated: Bool) {
+    private var _expectedScrollRect: CGRect!
+    private func myScrollRectToVisible(rect: CGRect, animated: Bool) {
         _expectedScrollRect = rect
         self.scrollRectToVisible(rect, animated: animated)
     }
@@ -235,7 +245,7 @@ extension ZHAutoScrollView {
     
     :param: keyboardRect Current keyboard frame
     */
-    func makeActiveTextFieldVisible(var keyboardRect: CGRect) {
+    private func makeActiveTextFieldVisible(var keyboardRect: CGRect) {
         if activeTextField == nil { return }
         // flipLandscapeFrameForIOS7 only changes CGRect for landscape on iOS7
         keyboardRect = flipLandscapeFrameForIOS7(keyboardRect)
@@ -268,38 +278,38 @@ extension ZHAutoScrollView {
     }
     
     // Helper functions
-    func screenHeight() -> CGFloat {
+    private func screenHeight() -> CGFloat {
         return UIScreen.mainScreen().bounds.height
     }
     
-    func keyboardBeginFrame(notification: NSNotification) -> CGRect {
+    private func keyboardBeginFrame(notification: NSNotification) -> CGRect {
         let beginFrame = (notification.userInfo![UIKeyboardFrameBeginUserInfoKey] as AnyObject? as? NSValue)?.CGRectValue()
         return beginFrame as CGRect!
     }
     
-    func keyboardEndFrame(notification: NSNotification) -> CGRect {
+    private func keyboardEndFrame(notification: NSNotification) -> CGRect {
         let endFrame = (notification.userInfo![UIKeyboardFrameEndUserInfoKey] as AnyObject? as? NSValue)?.CGRectValue()
         return endFrame as CGRect!
     }
     
-    func isKeyboardWillShow(notification: NSNotification) -> Bool {
+    private func isKeyboardWillShow(notification: NSNotification) -> Bool {
         let beginFrame = keyboardBeginFrame(notification)
         return (abs(beginFrame.origin.y - screenHeight()) < 0.1)
     }
     
-    func isKeyboardWillHide(notification: NSNotification) -> Bool {
+    private func isKeyboardWillHide(notification: NSNotification) -> Bool {
         let endFrame = keyboardEndFrame(notification)
         return (abs(endFrame.origin.y - screenHeight()) < 0.1)
     }
     
-    func keyboardDismissingDuration(notification: NSNotification) -> NSTimeInterval {
+    private func keyboardDismissingDuration(notification: NSNotification) -> NSTimeInterval {
         return (notification.userInfo![UIKeyboardAnimationDurationUserInfoKey] as AnyObject? as? NSNumber)?.doubleValue as NSTimeInterval!
     }
     
-    func isIOS7() -> Bool { return !isIOS8() }
-    func isIOS8() -> Bool { return floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_7_1 }
+    private func isIOS7() -> Bool { return !isIOS8() }
+    private func isIOS8() -> Bool { return floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_7_1 }
     
-    func isLandscapeMode() -> Bool {
+    private func isLandscapeMode() -> Bool {
         return UIInterfaceOrientationIsLandscape(UIApplication.sharedApplication().statusBarOrientation)
     }
     
@@ -311,7 +321,7 @@ extension ZHAutoScrollView {
     
     :returns: Flipped CGRect
     */
-    func flipLandscapeFrameForIOS7(frame: CGRect) -> CGRect {
+    private func flipLandscapeFrameForIOS7(frame: CGRect) -> CGRect {
         if !(isIOS7() && isLandscapeMode()) {
             return frame
         } else {
