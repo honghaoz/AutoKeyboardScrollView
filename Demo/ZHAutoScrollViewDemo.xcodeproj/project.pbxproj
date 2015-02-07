@@ -13,7 +13,7 @@
 		0297F36F1A7EC3FA00CC31CF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0297F36E1A7EC3FA00CC31CF /* Images.xcassets */; };
 		0297F3721A7EC3FA00CC31CF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0297F3701A7EC3FA00CC31CF /* LaunchScreen.xib */; };
 		0297F37E1A7EC3FA00CC31CF /* ZHAutoScrollViewDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0297F37D1A7EC3FA00CC31CF /* ZHAutoScrollViewDemoTests.swift */; };
-		0297F3891A7EC44800CC31CF /* ZHAutoScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0297F3881A7EC44800CC31CF /* ZHAutoScrollView.swift */; };
+		02BB545C1A85CF2500B196A2 /* ZHAutoScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB545B1A85CF2500B196A2 /* ZHAutoScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,7 @@
 		0297F3771A7EC3FA00CC31CF /* ZHAutoScrollViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZHAutoScrollViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0297F37C1A7EC3FA00CC31CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0297F37D1A7EC3FA00CC31CF /* ZHAutoScrollViewDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHAutoScrollViewDemoTests.swift; sourceTree = "<group>"; };
-		0297F3881A7EC44800CC31CF /* ZHAutoScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZHAutoScrollView.swift; path = ../ZHAutoScrollView.swift; sourceTree = "<group>"; };
+		02BB545B1A85CF2500B196A2 /* ZHAutoScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHAutoScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +80,7 @@
 		0297F3641A7EC3FA00CC31CF /* ZHAutoScrollViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				0297F3881A7EC44800CC31CF /* ZHAutoScrollView.swift */,
+				02BB545B1A85CF2500B196A2 /* ZHAutoScrollView.swift */,
 				0297F3671A7EC3FA00CC31CF /* AppDelegate.swift */,
 				0297F3691A7EC3FA00CC31CF /* ViewController.swift */,
 				0297F36B1A7EC3FA00CC31CF /* Main.storyboard */,
@@ -218,7 +218,7 @@
 			files = (
 				0297F36A1A7EC3FA00CC31CF /* ViewController.swift in Sources */,
 				0297F3681A7EC3FA00CC31CF /* AppDelegate.swift in Sources */,
-				0297F3891A7EC44800CC31CF /* ZHAutoScrollView.swift in Sources */,
+				02BB545C1A85CF2500B196A2 /* ZHAutoScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
