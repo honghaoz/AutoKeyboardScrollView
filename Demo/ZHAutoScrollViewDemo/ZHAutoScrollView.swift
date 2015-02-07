@@ -85,7 +85,7 @@ class ZHAutoScrollView: UIScrollView {
         }
     }
     
-    var topBottomMargin: CGFloat = 20
+    var topBottomMarginForTextField: CGFloat = 20
     
     // Current editing textField
     var activeTextField: UITextField?
@@ -260,8 +260,8 @@ extension ZHAutoScrollView {
         var targetFrame = flipLandscapeFrameForIOS7(activeTextField!.convertRect(activeTextField!.bounds, toView: self))
         
         // Add top & bottom margins for target frame
-        targetFrame.origin.y -= topBottomMargin
-        targetFrame.size.height += topBottomMargin * 2
+        targetFrame.origin.y -= topBottomMarginForTextField
+        targetFrame.size.height += topBottomMarginForTextField * 2
         
         // Don't call default scrollRectToVisible
         self.myScrollRectToVisible(targetFrame, animated: true)
