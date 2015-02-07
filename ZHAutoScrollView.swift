@@ -35,6 +35,40 @@ class ZHAutoScrollView: UIScrollView {
     /// Top and Bottom margin for textFiled, this will give an empty spacing between active textField and keyboard
     var topBottomMarginForTextField: CGFloat = 20
     
+    /// contentView will has same width scrollView
+    var contentViewHasSameWidthWithScrollView: Bool = false {
+        didSet {
+            if cContentViewWidth == nil {
+                return
+            }
+            self.removeConstraint(cContentViewWidth)
+            cContentViewWidth = contentViewConstraintSame(.Width)
+            if contentViewHasSameWidthWithScrollView {
+                cContentViewWidth.priority = 1000
+            } else {
+                cContentViewWidth.priority = 10
+            }
+            self.addConstraint(cContentViewWidth)
+        }
+    }
+    
+    /// contentView will has same height scrollView
+    var contentViewHasSameHeightWithScrollView: Bool = false {
+        didSet {
+            if cContentViewHeight == nil {
+                return
+            }
+            self.removeConstraint(cContentViewHeight)
+            cContentViewHeight = contentViewConstraintSame(.Height)
+            if contentViewHasSameHeightWithScrollView {
+                cContentViewHeight.priority = 1000
+            } else {
+                cContentViewHeight.priority = 10
+            }
+            self.addConstraint(cContentViewHeight)
+        }
+    }
+    
     // MARK: Private
     private class ZHContentView: UIView {
         var textFields = [UITextField]()
@@ -81,6 +115,8 @@ class ZHAutoScrollView: UIScrollView {
     // ContentView's size determines contentSize of ScrollView
     // By default, contentView has same size as ScrollView, to expand the contentSize, let subviews' constraints to determin all four edges
     var contentView: UIView!
+    var cContentViewWidth: NSLayoutConstraint!
+    var cContentViewHeight: NSLayoutConstraint!
     
     // These two values are used to backup original states
     private var originalContentInset: UIEdgeInsets!
@@ -151,12 +187,21 @@ class ZHAutoScrollView: UIScrollView {
         let right = NSLayoutConstraint(item: contentView, attribute: NSLayoutAttribute.Trailing, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Trailing, multiplier: 1.0, constant: 0.0)
         
         // Width and height constraints with a lower priority
-        let width = NSLayoutConstraint(item: contentView, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.GreaterThanOrEqual, toItem: self, attribute: NSLayoutAttribute.Width, multiplier: 1.0, constant: 0.0)
-        // Set its priority to be a very low value, to avoid conflicts
-        width.priority = 10
-        let height = NSLayoutConstraint(item: contentView, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.GreaterThanOrEqual, toItem: self, attribute: NSLayoutAttribute.Height, multiplier: 1.0, constant: 0.0)
-        height.priority = 10
-        self.addConstraints([top, left, bottom, right, width, height])
+        cContentViewWidth = contentViewConstraintSame(.Width)
+        // If sameWidth is not required, set its priority to a low value
+        if !contentViewHasSameWidthWithScrollView {
+            // Set its priority to be a very low value, to avoid conflicts
+            cContentViewWidth.priority = 10
+        }
+        cContentViewHeight = contentViewConstraintSame(.Height)
+        if !contentViewHasSameHeightWithScrollView {
+            cContentViewHeight.priority = 10
+        }
+        self.addConstraints([top, left, bottom, right, cContentViewWidth, cContentViewHeight])
+    }
+    
+    func contentViewConstraintSame(attr: NSLayoutAttribute) -> NSLayoutConstraint {
+        return NSLayoutConstraint(item: contentView, attribute: attr, relatedBy: NSLayoutRelation.GreaterThanOrEqual, toItem: self, attribute: attr, multiplier: 1.0, constant: 0.0)
     }
     
     deinit {
