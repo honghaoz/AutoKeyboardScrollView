@@ -1,7 +1,9 @@
 # ZHAutoScrollView
 ZHAutoScrollView is a smart UIScrollView which can:
-  - Auto scroll to show active textField
-  - Dismiss keyboard by tapping empty space or tapping "Return"
+  - Scroll to proper position and make sure the active textField is visible when keyboard is showing
+  - Customize top and bottom margin for textField
+  - Dismiss keyboard when tap on scrollView
+  - Dismiss keyboard on tap "Return"
   - Support `contentView` and make your life with Auto Layout easier
 
 # Preview
