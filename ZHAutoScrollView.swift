@@ -17,7 +17,7 @@ class ZHAutoScrollView: UIScrollView {
     :param: textField textField in subView tree of receiver
     */
     func handleTextField(textField: UITextField) {
-        (self.contentView as ZHContentView).addTextField(textField)
+        (self.contentView as! ZHContentView).addTextField(textField)
     }
     
     /**
@@ -129,7 +129,7 @@ class ZHAutoScrollView: UIScrollView {
     // TextFields on subtrees for scrollView
     private var textFields: [UITextField] {
         get {
-            return (contentView as ZHContentView).textFields
+            return (contentView as! ZHContentView).textFields
         }
     }
     
