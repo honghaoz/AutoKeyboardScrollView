@@ -19,9 +19,9 @@ To keep your code DRY and make your life with iOS development easier.
 
 # Usage
 
-Just use `ZHAutoScrollView` as parent view for textFields, or views contain textFields. Add subViews on `zhAutoScrollView.contentView`, then that's it!
+Just use `ZHAutoScrollView` as parent view of textFields, or views contain textFields. Add subViews on `zhAutoScrollView.contentView` (Be sure to add subViews on `.contentView`), then that's it!
 
-(Note, only textField which is already on the view to be added can be handled, you can manualy add textField by calling `addTextField:`)
+(Note, only textField which is already on the view to be added can be handled, you can manualy add textFields that need to be handled by calling `handleTextField:` or `handleTextFields`)
 
 
 # How it works?
@@ -43,7 +43,7 @@ ZHAutoScrollView will automatically detect textFields on newly added subViews, a
 
 Works with Auto Layout, not tested on frame based code.
 
-Support iOS7 and above. Not tested on iOS6, since iOS6 support autolayout, should work.
+Support iOS7 and above. Not tested on iOS6, since iOS6 supports autolayout, should be fine.
 
 # The MIT License (MIT)
 
