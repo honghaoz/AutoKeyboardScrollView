@@ -21,7 +21,7 @@ To keep your code DRY and make your life with iOS development easier.
 
 Just use `ZHAutoScrollView` as parent view of textFields, or views contain textFields. Add subViews on `zhAutoScrollView.contentView` (Be sure to add subViews on `.contentView`), then that's it!
 
-(Note, only textField which is already on the view to be added can be handled, you can manualy add textFields that need to be handled by calling `handleTextField:` or `handleTextFields`)
+(Note, only textField which is already on the view to be added can be handled, you can manualy add textFields that need to be handled by calling `handleTextField:` or `handleTextFields:`)
 
 
 # How it works?
