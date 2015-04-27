@@ -135,11 +135,7 @@ class ZHAutoScrollView: UIScrollView {
     
     // Current editing textField
     private var activeTextField: UITextField?
-    
-    override convenience init() {
-        self.init(frame: CGRectZero)
-    }
-    
+        
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
@@ -279,8 +275,8 @@ extension ZHAutoScrollView {
         } else if isKeyboardWillHide(notification) {
             // Animated to restore to original state
             UIView.animateWithDuration(keyboardDismissingDuration(notification), animations: { () -> Void in
-                self.contentInset = self.originalContentInset
-                self.contentOffset = self.originalContentOffset
+                self.contentInset = self.originalContentInset ?? UIEdgeInsetsZero
+                self.contentOffset = self.originalContentOffset ?? CGPointZero
                 }, completion: { (completed) -> Void in
                     self.keyboardFrame = nil
             })
