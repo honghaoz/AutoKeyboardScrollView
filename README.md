@@ -12,7 +12,7 @@ It's kind of annoying to handle scrolling on UIScrollView and it's trivial to wr
 To keep your code DRY and make your life with iOS development easier.
 
 # Usage
-Just use `AutoKeyboardScrollView` as parent view of textFields, or views contain textFields. Add subViews on `autoKeyboardScrollView.contentView` (Be sure to add subViews on `.contentView`), then that's it!
+Just use `AutoKeyboardScrollView` as parent view of textFields, or views contain textFields. Add subViews on `autoKeyboardScrollView.contentView` (Be sure to add subViews on `.contentView`), then it just works!
 
 (Note, only textField which is already on the view to be added can be handled, you can manually add textFields that need to be handled by calling `handleTextField:` or `handleTextFields:`)
 
