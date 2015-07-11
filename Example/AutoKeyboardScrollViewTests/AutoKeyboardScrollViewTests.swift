@@ -1,15 +1,15 @@
 //
-//  ZHAutoScrollViewDemoTests.swift
-//  ZHAutoScrollViewDemoTests
+//  AutoKeyboardScrollViewTests.swift
+//  AutoKeyboardScrollViewTests
 //
-//  Created by Honghao Zhang on 2/1/15.
+//  Created by Honghao Zhang on 2015-07-11.
 //  Copyright (c) 2015 Honghao Zhang. All rights reserved.
 //
 
 import UIKit
 import XCTest
 
-class ZHAutoScrollViewDemoTests: XCTestCase {
+class AutoKeyboardScrollViewTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

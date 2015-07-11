@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 	
 	@IBOutlet weak var wrapperView: UIView!
-	var scrollView: ZHAutoScrollView!
+	var scrollView: AutoKeyboardScrollView!
 	var views = [String: UIView]()
 
 	override func viewDidLoad() {
@@ -22,7 +22,7 @@ class ViewController: UIViewController {
 	}
 	
 	func setupViews() {
-		scrollView = ZHAutoScrollView()
+		scrollView = AutoKeyboardScrollView()
 		scrollView.setTranslatesAutoresizingMaskIntoConstraints(false)
 		self.view.addSubview(scrollView)
 		

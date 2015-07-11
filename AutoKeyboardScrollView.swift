@@ -1,5 +1,5 @@
 //
-//  ZHAutoScrollView.swift
+//  AutoKeyboardScrollView.swift
 //
 //  Created by Honghao Zhang on 2/1/15.
 //  Copyright (c) 2015 Honghao Zhang. All rights reserved.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ZHAutoScrollView: UIScrollView {
+class AutoKeyboardScrollView: UIScrollView {
     
     // MARK: Public APIs
     
@@ -17,7 +17,7 @@ class ZHAutoScrollView: UIScrollView {
     :param: textField textField in subView tree of receiver
     */
     func handleTextField(textField: UITextField) {
-        (self.contentView as! ZHContentView).addTextField(textField)
+        (self.contentView as! ContentView).addTextField(textField)
     }
     
     /**
@@ -70,7 +70,7 @@ class ZHAutoScrollView: UIScrollView {
     }
     
     // MARK: Private
-    private class ZHContentView: UIView {
+    private class ContentView: UIView {
         var textFields = [UITextField]()
         
         // addSubView will check whether there's textField on this view, be sure to add textField before adding its container View
@@ -129,7 +129,7 @@ class ZHAutoScrollView: UIScrollView {
     // TextFields on subtrees for scrollView
     private var textFields: [UITextField] {
         get {
-            return (contentView as! ZHContentView).textFields
+            return (contentView as! ContentView).textFields
         }
     }
     
@@ -138,12 +138,12 @@ class ZHAutoScrollView: UIScrollView {
         
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setup()
+        commonInit()
     }
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        setup()
+        commonInit()
     }
     
     // MARK: Disable undesired scroll behavior of default UIScrollView
@@ -166,14 +166,14 @@ class ZHAutoScrollView: UIScrollView {
     }
     
     // MARK: Setups
-    private func setup() {
+    private func commonInit() {
         setupContentView()
         setupGestures()
         registerNotifications()
     }
     
     private func setupContentView() {
-        contentView = ZHContentView()
+        contentView = ContentView()
         contentView.setTranslatesAutoresizingMaskIntoConstraints(false)
         self.addSubview(contentView)
         
@@ -193,6 +193,7 @@ class ZHAutoScrollView: UIScrollView {
         if !contentViewHasSameHeightWithScrollView {
             cContentViewHeight.priority = 10
         }
+		
         self.addConstraints([top, left, bottom, right, cContentViewWidth, cContentViewHeight])
     }
     
@@ -206,7 +207,7 @@ class ZHAutoScrollView: UIScrollView {
 }
 
 // MARK: TapGesture - Tap to dismiss
-extension ZHAutoScrollView {
+extension AutoKeyboardScrollView {
     private func setupGestures() {
         let tapGesture = UITapGestureRecognizer(target: self, action: "selfIsTapped:")
         tapGesture.cancelsTouchesInView = false
@@ -219,7 +220,7 @@ extension ZHAutoScrollView {
 }
 
 // MARK: TextFields Actions
-extension ZHAutoScrollView {
+extension AutoKeyboardScrollView {
     func _textFiledEditingDidBegin(sender: AnyObject) {
         activeTextField = sender as? UITextField
         if self.keyboardFrame != nil {
@@ -243,7 +244,7 @@ extension ZHAutoScrollView {
 }
 
 // MARK: Keyboard Notification
-extension ZHAutoScrollView {
+extension AutoKeyboardScrollView {
     private func registerNotifications() {
         // Reason for only registering UIKeyboardWillChangeFrameNotification
         // Since UIKeyboardWillChangeFrameNotification will be posted before willShow and willBeHidden, to avoid duplicated animations, detecting keyboard behaviors only from this notification
@@ -364,7 +365,7 @@ extension ZHAutoScrollView {
     
     /**
     Flip frame for landscape on iOS7
-    Since on landscape on iOS7, CGRect's origin and size is same as portrait, need to flip the rect to let it reflect true widht and height
+    Since on landscape on iOS7, CGRect's origin and size is same as portrait, need to flip the rect to let it reflect true width and height
     
     :param: frame Original CGRect
     

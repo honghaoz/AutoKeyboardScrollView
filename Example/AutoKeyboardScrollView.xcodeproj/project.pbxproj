@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E45C7D8D1B519F2300226FA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C7D8C1B519F2300226FA8 /* AppDelegate.swift */; };
+		E45C7D8F1B519F2300226FA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C7D8E1B519F2300226FA8 /* ViewController.swift */; };
+		E45C7D921B519F2300226FA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E45C7D901B519F2300226FA8 /* Main.storyboard */; };
+		E45C7D941B519F2300226FA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E45C7D931B519F2300226FA8 /* Images.xcassets */; };
+		E45C7D971B519F2300226FA8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45C7D951B519F2300226FA8 /* LaunchScreen.xib */; };
+		E45C7DA31B519F2300226FA8 /* AutoKeyboardScrollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C7DA21B519F2300226FA8 /* AutoKeyboardScrollViewTests.swift */; };
+		E45C7DAF1B519F3A00226FA8 /* AutoKeyboardScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C7DAE1B519F3A00226FA8 /* AutoKeyboardScrollView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E45C7D9D1B519F2300226FA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E45C7D7F1B519F2300226FA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E45C7D861B519F2300226FA8;
+			remoteInfo = AutoKeyboardScrollView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E45C7D871B519F2300226FA8 /* AutoKeyboardScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoKeyboardScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E45C7D8B1B519F2300226FA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E45C7D8C1B519F2300226FA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E45C7D8E1B519F2300226FA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E45C7D911B519F2300226FA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E45C7D931B519F2300226FA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E45C7D961B519F2300226FA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E45C7D9C1B519F2300226FA8 /* AutoKeyboardScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoKeyboardScrollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E45C7DA11B519F2300226FA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E45C7DA21B519F2300226FA8 /* AutoKeyboardScrollViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoKeyboardScrollViewTests.swift; sourceTree = "<group>"; };
+		E45C7DAE1B519F3A00226FA8 /* AutoKeyboardScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoKeyboardScrollView.swift; path = ../../AutoKeyboardScrollView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E45C7D841B519F2300226FA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E45C7D991B519F2300226FA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E45C7D7E1B519F2300226FA8 = {
+			isa = PBXGroup;
+			children = (
+				E45C7D891B519F2300226FA8 /* AutoKeyboardScrollView */,
+				E45C7D9F1B519F2300226FA8 /* AutoKeyboardScrollViewTests */,
+				E45C7D881B519F2300226FA8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E45C7D881B519F2300226FA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E45C7D871B519F2300226FA8 /* AutoKeyboardScrollView.app */,
+				E45C7D9C1B519F2300226FA8 /* AutoKeyboardScrollViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E45C7D891B519F2300226FA8 /* AutoKeyboardScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				E45C7DAE1B519F3A00226FA8 /* AutoKeyboardScrollView.swift */,
+				E45C7D8C1B519F2300226FA8 /* AppDelegate.swift */,
+				E45C7D8E1B519F2300226FA8 /* ViewController.swift */,
+				E45C7D901B519F2300226FA8 /* Main.storyboard */,
+				E45C7D931B519F2300226FA8 /* Images.xcassets */,
+				E45C7D951B519F2300226FA8 /* LaunchScreen.xib */,
+				E45C7D8A1B519F2300226FA8 /* Supporting Files */,
+			);
+			path = AutoKeyboardScrollView;
+			sourceTree = "<group>";
+		};
+		E45C7D8A1B519F2300226FA8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E45C7D8B1B519F2300226FA8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E45C7D9F1B519F2300226FA8 /* AutoKeyboardScrollViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				E45C7DA21B519F2300226FA8 /* AutoKeyboardScrollViewTests.swift */,
+				E45C7DA01B519F2300226FA8 /* Supporting Files */,
+			);
+			path = AutoKeyboardScrollViewTests;
+			sourceTree = "<group>";
+		};
+		E45C7DA01B519F2300226FA8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E45C7DA11B519F2300226FA8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E45C7D861B519F2300226FA8 /* AutoKeyboardScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E45C7DA61B519F2300226FA8 /* Build configuration list for PBXNativeTarget "AutoKeyboardScrollView" */;
+			buildPhases = (
+				E45C7D831B519F2300226FA8 /* Sources */,
+				E45C7D841B519F2300226FA8 /* Frameworks */,
+				E45C7D851B519F2300226FA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutoKeyboardScrollView;
+			productName = AutoKeyboardScrollView;
+			productReference = E45C7D871B519F2300226FA8 /* AutoKeyboardScrollView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E45C7D9B1B519F2300226FA8 /* AutoKeyboardScrollViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E45C7DA91B519F2300226FA8 /* Build configuration list for PBXNativeTarget "AutoKeyboardScrollViewTests" */;
+			buildPhases = (
+				E45C7D981B519F2300226FA8 /* Sources */,
+				E45C7D991B519F2300226FA8 /* Frameworks */,
+				E45C7D9A1B519F2300226FA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E45C7D9E1B519F2300226FA8 /* PBXTargetDependency */,
+			);
+			name = AutoKeyboardScrollViewTests;
+			productName = AutoKeyboardScrollViewTests;
+			productReference = E45C7D9C1B519F2300226FA8 /* AutoKeyboardScrollViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E45C7D7F1B519F2300226FA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Honghao Zhang";
+				TargetAttributes = {
+					E45C7D861B519F2300226FA8 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					E45C7D9B1B519F2300226FA8 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = E45C7D861B519F2300226FA8;
+					};
+				};
+			};
+			buildConfigurationList = E45C7D821B519F2300226FA8 /* Build configuration list for PBXProject "AutoKeyboardScrollView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E45C7D7E1B519F2300226FA8;
+			productRefGroup = E45C7D881B519F2300226FA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E45C7D861B519F2300226FA8 /* AutoKeyboardScrollView */,
+				E45C7D9B1B519F2300226FA8 /* AutoKeyboardScrollViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E45C7D851B519F2300226FA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E45C7D921B519F2300226FA8 /* Main.storyboard in Resources */,
+				E45C7D971B519F2300226FA8 /* LaunchScreen.xib in Resources */,
+				E45C7D941B519F2300226FA8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E45C7D9A1B519F2300226FA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E45C7D831B519F2300226FA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E45C7D8F1B519F2300226FA8 /* ViewController.swift in Sources */,
+				E45C7DAF1B519F3A00226FA8 /* AutoKeyboardScrollView.swift in Sources */,
+				E45C7D8D1B519F2300226FA8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E45C7D981B519F2300226FA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E45C7DA31B519F2300226FA8 /* AutoKeyboardScrollViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E45C7D9E1B519F2300226FA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E45C7D861B519F2300226FA8 /* AutoKeyboardScrollView */;
+			targetProxy = E45C7D9D1B519F2300226FA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E45C7D901B519F2300226FA8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E45C7D911B519F2300226FA8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E45C7D951B519F2300226FA8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E45C7D961B519F2300226FA8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E45C7DA41B519F2300226FA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E45C7DA51B519F2300226FA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E45C7DA71B519F2300226FA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AutoKeyboardScrollView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E45C7DA81B519F2300226FA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AutoKeyboardScrollView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E45C7DAA1B519F2300226FA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AutoKeyboardScrollViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoKeyboardScrollView.app/AutoKeyboardScrollView";
+			};
+			name = Debug;
+		};
+		E45C7DAB1B519F2300226FA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AutoKeyboardScrollViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoKeyboardScrollView.app/AutoKeyboardScrollView";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E45C7D821B519F2300226FA8 /* Build configuration list for PBXProject "AutoKeyboardScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E45C7DA41B519F2300226FA8 /* Debug */,
+				E45C7DA51B519F2300226FA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E45C7DA61B519F2300226FA8 /* Build configuration list for PBXNativeTarget "AutoKeyboardScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E45C7DA71B519F2300226FA8 /* Debug */,
+				E45C7DA81B519F2300226FA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E45C7DA91B519F2300226FA8 /* Build configuration list for PBXNativeTarget "AutoKeyboardScrollViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E45C7DAA1B519F2300226FA8 /* Debug */,
+				E45C7DAB1B519F2300226FA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E45C7D7F1B519F2300226FA8 /* Project object */;
+}

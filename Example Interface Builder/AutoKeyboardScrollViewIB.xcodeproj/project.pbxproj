@@ -12,8 +12,8 @@
 		E4829D8C1B4CDA8300C9C472 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4829D8A1B4CDA8300C9C472 /* Main.storyboard */; };
 		E4829D8E1B4CDA8300C9C472 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4829D8D1B4CDA8300C9C472 /* Images.xcassets */; };
 		E4829D911B4CDA8300C9C472 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4829D8F1B4CDA8300C9C472 /* LaunchScreen.xib */; };
-		E4829D9D1B4CDA8300C9C472 /* AutoScrollViewIBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4829D9C1B4CDA8300C9C472 /* AutoScrollViewIBTests.swift */; };
-		E4829DA71B4CDA9E00C9C472 /* ZHAutoScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4829DA61B4CDA9E00C9C472 /* ZHAutoScrollView.swift */; };
+		E4829DA71B4CDA9E00C9C472 /* AutoKeyboardScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4829DA61B4CDA9E00C9C472 /* AutoKeyboardScrollView.swift */; };
+		E4E47ECD1B519A2F002B10BA /* AutoKeyboardScrollViewIBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E47ECB1B519A2D002B10BA /* AutoKeyboardScrollViewIBTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +27,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E4829D811B4CDA8300C9C472 /* AutoScrollViewIB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoScrollViewIB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4829D811B4CDA8300C9C472 /* AutoKeyboardScrollViewIB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoKeyboardScrollViewIB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4829D851B4CDA8300C9C472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4829D861B4CDA8300C9C472 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4829D881B4CDA8300C9C472 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E4829D8B1B4CDA8300C9C472 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E4829D8D1B4CDA8300C9C472 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E4829D901B4CDA8300C9C472 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		E4829D961B4CDA8300C9C472 /* AutoScrollViewIBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoScrollViewIBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4829D961B4CDA8300C9C472 /* AutoKeyboardScrollViewIBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoKeyboardScrollViewIBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4829D9B1B4CDA8300C9C472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E4829D9C1B4CDA8300C9C472 /* AutoScrollViewIBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoScrollViewIBTests.swift; sourceTree = "<group>"; };
-		E4829DA61B4CDA9E00C9C472 /* ZHAutoScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZHAutoScrollView.swift; path = ../../ZHAutoScrollView.swift; sourceTree = "<group>"; };
+		E4829DA61B4CDA9E00C9C472 /* AutoKeyboardScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoKeyboardScrollView.swift; path = ../../AutoKeyboardScrollView.swift; sourceTree = "<group>"; };
+		E4E47ECB1B519A2D002B10BA /* AutoKeyboardScrollViewIBTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoKeyboardScrollViewIBTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 		E4829D781B4CDA8300C9C472 = {
 			isa = PBXGroup;
 			children = (
-				E4829D831B4CDA8300C9C472 /* AutoScrollViewIB */,
-				E4829D991B4CDA8300C9C472 /* AutoScrollViewIBTests */,
+				E4829D831B4CDA8300C9C472 /* AutoKeyboardScrollViewIB */,
+				E4829D991B4CDA8300C9C472 /* AutoKeyboardScrollViewIBTests */,
 				E4829D821B4CDA8300C9C472 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,16 +70,16 @@
 		E4829D821B4CDA8300C9C472 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E4829D811B4CDA8300C9C472 /* AutoScrollViewIB.app */,
-				E4829D961B4CDA8300C9C472 /* AutoScrollViewIBTests.xctest */,
+				E4829D811B4CDA8300C9C472 /* AutoKeyboardScrollViewIB.app */,
+				E4829D961B4CDA8300C9C472 /* AutoKeyboardScrollViewIBTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E4829D831B4CDA8300C9C472 /* AutoScrollViewIB */ = {
+		E4829D831B4CDA8300C9C472 /* AutoKeyboardScrollViewIB */ = {
 			isa = PBXGroup;
 			children = (
-				E4829DA61B4CDA9E00C9C472 /* ZHAutoScrollView.swift */,
+				E4829DA61B4CDA9E00C9C472 /* AutoKeyboardScrollView.swift */,
 				E4829D861B4CDA8300C9C472 /* AppDelegate.swift */,
 				E4829D881B4CDA8300C9C472 /* ViewController.swift */,
 				E4829D8A1B4CDA8300C9C472 /* Main.storyboard */,
@@ -87,7 +87,7 @@
 				E4829D8F1B4CDA8300C9C472 /* LaunchScreen.xib */,
 				E4829D841B4CDA8300C9C472 /* Supporting Files */,
 			);
-			path = AutoScrollViewIB;
+			path = AutoKeyboardScrollViewIB;
 			sourceTree = "<group>";
 		};
 		E4829D841B4CDA8300C9C472 /* Supporting Files */ = {
@@ -98,13 +98,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E4829D991B4CDA8300C9C472 /* AutoScrollViewIBTests */ = {
+		E4829D991B4CDA8300C9C472 /* AutoKeyboardScrollViewIBTests */ = {
 			isa = PBXGroup;
 			children = (
-				E4829D9C1B4CDA8300C9C472 /* AutoScrollViewIBTests.swift */,
+				E4E47ECB1B519A2D002B10BA /* AutoKeyboardScrollViewIBTests.swift */,
 				E4829D9A1B4CDA8300C9C472 /* Supporting Files */,
 			);
-			path = AutoScrollViewIBTests;
+			path = AutoKeyboardScrollViewIBTests;
 			sourceTree = "<group>";
 		};
 		E4829D9A1B4CDA8300C9C472 /* Supporting Files */ = {
@@ -118,9 +118,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E4829D801B4CDA8300C9C472 /* AutoScrollViewIB */ = {
+		E4829D801B4CDA8300C9C472 /* AutoKeyboardScrollViewIB */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E4829DA01B4CDA8300C9C472 /* Build configuration list for PBXNativeTarget "AutoScrollViewIB" */;
+			buildConfigurationList = E4829DA01B4CDA8300C9C472 /* Build configuration list for PBXNativeTarget "AutoKeyboardScrollViewIB" */;
 			buildPhases = (
 				E4829D7D1B4CDA8300C9C472 /* Sources */,
 				E4829D7E1B4CDA8300C9C472 /* Frameworks */,
@@ -130,14 +130,14 @@
 			);
 			dependencies = (
 			);
-			name = AutoScrollViewIB;
+			name = AutoKeyboardScrollViewIB;
 			productName = AutoScrollViewIB;
-			productReference = E4829D811B4CDA8300C9C472 /* AutoScrollViewIB.app */;
+			productReference = E4829D811B4CDA8300C9C472 /* AutoKeyboardScrollViewIB.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E4829D951B4CDA8300C9C472 /* AutoScrollViewIBTests */ = {
+		E4829D951B4CDA8300C9C472 /* AutoKeyboardScrollViewIBTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E4829DA31B4CDA8300C9C472 /* Build configuration list for PBXNativeTarget "AutoScrollViewIBTests" */;
+			buildConfigurationList = E4829DA31B4CDA8300C9C472 /* Build configuration list for PBXNativeTarget "AutoKeyboardScrollViewIBTests" */;
 			buildPhases = (
 				E4829D921B4CDA8300C9C472 /* Sources */,
 				E4829D931B4CDA8300C9C472 /* Frameworks */,
@@ -148,9 +148,9 @@
 			dependencies = (
 				E4829D981B4CDA8300C9C472 /* PBXTargetDependency */,
 			);
-			name = AutoScrollViewIBTests;
+			name = AutoKeyboardScrollViewIBTests;
 			productName = AutoScrollViewIBTests;
-			productReference = E4829D961B4CDA8300C9C472 /* AutoScrollViewIBTests.xctest */;
+			productReference = E4829D961B4CDA8300C9C472 /* AutoKeyboardScrollViewIBTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -171,7 +171,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E4829D7C1B4CDA8300C9C472 /* Build configuration list for PBXProject "AutoScrollViewIB" */;
+			buildConfigurationList = E4829D7C1B4CDA8300C9C472 /* Build configuration list for PBXProject "AutoKeyboardScrollViewIB" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -184,8 +184,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E4829D801B4CDA8300C9C472 /* AutoScrollViewIB */,
-				E4829D951B4CDA8300C9C472 /* AutoScrollViewIBTests */,
+				E4829D801B4CDA8300C9C472 /* AutoKeyboardScrollViewIB */,
+				E4829D951B4CDA8300C9C472 /* AutoKeyboardScrollViewIBTests */,
 			);
 		};
 /* End PBXProject section */
@@ -217,7 +217,7 @@
 			files = (
 				E4829D891B4CDA8300C9C472 /* ViewController.swift in Sources */,
 				E4829D871B4CDA8300C9C472 /* AppDelegate.swift in Sources */,
-				E4829DA71B4CDA9E00C9C472 /* ZHAutoScrollView.swift in Sources */,
+				E4829DA71B4CDA9E00C9C472 /* AutoKeyboardScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,7 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4829D9D1B4CDA8300C9C472 /* AutoScrollViewIBTests.swift in Sources */,
+				E4E47ECD1B519A2F002B10BA /* AutoKeyboardScrollViewIBTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +234,7 @@
 /* Begin PBXTargetDependency section */
 		E4829D981B4CDA8300C9C472 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E4829D801B4CDA8300C9C472 /* AutoScrollViewIB */;
+			target = E4829D801B4CDA8300C9C472 /* AutoKeyboardScrollViewIB */;
 			targetProxy = E4829D971B4CDA8300C9C472 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -346,9 +346,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = AutoScrollViewIB/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AutoKeyboardScrollViewIB/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AutoKeyboardScrollViewIB;
 			};
 			name = Debug;
 		};
@@ -356,9 +357,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = AutoScrollViewIB/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AutoKeyboardScrollViewIB/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AutoKeyboardScrollViewIB;
 			};
 			name = Release;
 		};
@@ -374,10 +376,10 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = AutoScrollViewIBTests/Info.plist;
+				INFOPLIST_FILE = AutoKeyboardScrollViewIBTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoScrollViewIB.app/AutoScrollViewIB";
+				PRODUCT_NAME = AutoKeyboardScrollViewIBTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoKeyboardScrollViewIB.app/AutoKeyboardScrollViewIB";
 			};
 			name = Debug;
 		};
@@ -389,17 +391,17 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = AutoScrollViewIBTests/Info.plist;
+				INFOPLIST_FILE = AutoKeyboardScrollViewIBTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoScrollViewIB.app/AutoScrollViewIB";
+				PRODUCT_NAME = AutoKeyboardScrollViewIBTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoKeyboardScrollViewIB.app/AutoKeyboardScrollViewIB";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E4829D7C1B4CDA8300C9C472 /* Build configuration list for PBXProject "AutoScrollViewIB" */ = {
+		E4829D7C1B4CDA8300C9C472 /* Build configuration list for PBXProject "AutoKeyboardScrollViewIB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4829D9E1B4CDA8300C9C472 /* Debug */,
@@ -408,21 +410,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E4829DA01B4CDA8300C9C472 /* Build configuration list for PBXNativeTarget "AutoScrollViewIB" */ = {
+		E4829DA01B4CDA8300C9C472 /* Build configuration list for PBXNativeTarget "AutoKeyboardScrollViewIB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4829DA11B4CDA8300C9C472 /* Debug */,
 				E4829DA21B4CDA8300C9C472 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		E4829DA31B4CDA8300C9C472 /* Build configuration list for PBXNativeTarget "AutoScrollViewIBTests" */ = {
+		E4829DA31B4CDA8300C9C472 /* Build configuration list for PBXNativeTarget "AutoKeyboardScrollViewIBTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4829DA41B4CDA8300C9C472 /* Debug */,
 				E4829DA51B4CDA8300C9C472 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

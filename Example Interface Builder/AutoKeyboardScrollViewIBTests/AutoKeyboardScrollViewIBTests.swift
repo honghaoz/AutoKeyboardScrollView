@@ -1,6 +1,6 @@
 //
-//  AutoScrollViewIBTests.swift
-//  AutoScrollViewIBTests
+//  AutoKeyboardScrollViewIBTests.swift
+//  AutoKeyboardScrollViewIBTests
 //
 //  Created by Honghao Zhang on 2015-07-08.
 //  Copyright (c) 2015 Honghao Zhang. All rights reserved.
@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class AutoScrollViewIBTests: XCTestCase {
+class AutoKeyboardScrollViewIBTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
