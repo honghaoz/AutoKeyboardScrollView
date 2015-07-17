@@ -1,6 +1,6 @@
 # AutoKeyboardScrollView
 
-[![CI Status](http://img.shields.io/travis/Honghao Zhang/AutoKeyboardScrollView.svg?style=flat)](https://travis-ci.org/Honghao Zhang/AutoKeyboardScrollView)
+[![CI Status](http://img.shields.io/travis/honghaoz/AutoKeyboardScrollView.svg?style=flat)](https://travis-ci.org/Honghao Zhang/AutoKeyboardScrollView)
 [![Version](https://img.shields.io/cocoapods/v/AutoKeyboardScrollView.svg?style=flat)](http://cocoapods.org/pods/AutoKeyboardScrollView)
 [![License](https://img.shields.io/cocoapods/l/AutoKeyboardScrollView.svg?style=flat)](http://cocoapods.org/pods/AutoKeyboardScrollView)
 [![Platform](https://img.shields.io/cocoapods/p/AutoKeyboardScrollView.svg?style=flat)](http://cocoapods.org/pods/AutoKeyboardScrollView)
