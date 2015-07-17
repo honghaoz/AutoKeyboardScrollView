@@ -320,7 +320,7 @@ extension AutoKeyboardScrollView {
         visibleScrollFrame = flipLandscapeFrameForIOS7(visibleScrollFrame)
         
         // If keyboard covers part of visibleScrollFrame, cut off visibleScrollFrame
-        var bottomOfScrollView = CGRectGetMaxY(visibleScrollFrame)
+		let bottomOfScrollView = CGRectGetMaxY(visibleScrollFrame)
         if bottomOfScrollView > keyboardRect.origin.y {
             let cutHeight = bottomOfScrollView - keyboardRect.origin.y
             visibleScrollFrame.size.height -= cutHeight
