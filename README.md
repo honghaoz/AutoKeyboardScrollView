@@ -56,6 +56,13 @@ AutoKeyboardScrollView will be attached with a Tap gesture and let you dismiss k
 #### Dismiss keyboard on "Return"
 AutoKeyboardScrollView will automatically detect textFields on newly added subViews, and add UIControlEditing actions for these textField, it will let you dismiss keyboard when tap "Return".
 
+#### Work with Interface Builder
+Create a wrapper view in IB, then add it as a subview on `autoKeyboardScrollView.contentView`. 
+
+See example project and select target:
+
+![targets](https://raw.githubusercontent.com/honghaoz/AutoKeyboardScrollView/master/Example/select_targets.png)
+
 ## Requirements
 Works with Auto Layout, not tested on frame based code.
 

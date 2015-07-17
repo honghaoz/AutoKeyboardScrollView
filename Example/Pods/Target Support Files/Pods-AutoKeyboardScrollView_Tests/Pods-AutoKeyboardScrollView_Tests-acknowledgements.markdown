@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## AutoKeyboardScrollView
 
-Copyright (c) 2015 Honghao Zhang <zhh358@gmail.com>
+Copyright (c) 2015 Honghao Zhang 张宏昊 <zhh358@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
