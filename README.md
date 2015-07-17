@@ -33,7 +33,7 @@ pod "AutoKeyboardScrollView"
 
 ### Manually
 
-Just drag [`AutoKeyboardScrollView.swift`](https://raw.githubusercontent.com/honghaoz/AutoKeyboardScrollView/master/Pod/Classes/AutoKeyboardScrollView.swift) into your project and use it directly.
+Just drag [`AutoKeyboardScrollView.swift`](https://raw.githubusercontent.com/honghaoz/AutoKeyboardScrollView/master/Pod/Classes/AutoKeyboardScrollView.swift) (Located in `./Pod/Classes`, right click and **Download Linked File**) into your project and use it directly.
 
 ## Usage
 Just use `AutoKeyboardScrollView` as parent view of textFields, or views contain textFields. Add subViews on `autoKeyboardScrollView.contentView` (Be sure to add subViews on `.contentView`), then it just works!
