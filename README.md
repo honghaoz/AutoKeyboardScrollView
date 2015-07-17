@@ -45,15 +45,15 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## How it works?
 `AutoKeyboardScrollView` is a subClass of `UIScrollView`, some key features are list as following:
 
-### contentView
+#### contentView
 A new property: `contentView` is added, which is served same purpose as UITableViewCell. All subviews should be added on contentView, this is extremely helpful when dealing Auto Layout with ScrollView (refer: [Apple Technical Note TN2154 - UIScrollView And Autolayout](https://developer.apple.com/library/ios/technotes/tn2154/_index.html))
 
 Note: To let `AutoKeyboardScrollView` determine its `contentSize`, the height and width of `contentView` must be fully specified.
 
-### Dismiss keyboard on Tap
+#### Dismiss keyboard on Tap
 AutoKeyboardScrollView will be attached with a Tap gesture and let you dismiss keyboard by tapping the empty space around textFields.
 
-### Dismiss keyboard on "Return"
+#### Dismiss keyboard on "Return"
 AutoKeyboardScrollView will automatically detect textFields on newly added subViews, and add UIControlEditing actions for these textField, it will let you dismiss keyboard when tap "Return".
 
 ## Requirements
