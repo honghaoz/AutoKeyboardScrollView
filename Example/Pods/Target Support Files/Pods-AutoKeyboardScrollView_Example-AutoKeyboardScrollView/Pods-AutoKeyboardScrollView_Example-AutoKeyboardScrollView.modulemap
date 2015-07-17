@@ -1,0 +1,6 @@
+framework module AutoKeyboardScrollView {
+  umbrella header "Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,14 @@
+PODS:
+  - AutoKeyboardScrollView (0.1.0)
+
+DEPENDENCIES:
+  - AutoKeyboardScrollView (from `../`)
+
+EXTERNAL SOURCES:
+  AutoKeyboardScrollView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AutoKeyboardScrollView: 367d57706a4bf28ee25762f3b5a1fd41735ccbc0
+
+COCOAPODS: 0.37.2

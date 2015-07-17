@@ -1,0 +1,1784 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09138AFF3AFC6DA24B51B507 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAEF8382552EE4E02CC24D9E /* Foundation.framework */; };
+		1AA420E1EFA32B80B1CAE3ED /* Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3181D272435EFC8E00E6F91E /* Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		233CEF4881D847E003285E23 /* AutoKeyboardScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45361AD09E45BFA44B7F7029 /* AutoKeyboardScrollView.swift */; };
+		2B857220EE45123850DD2D59 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD9790D47CF11C6FD1218F49 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B1B5FC490C6480BE3B5A3A3 /* AutoKeyboardScrollView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C5E3427B6E2E1D3FBCBC49FE /* AutoKeyboardScrollView.bundle */; };
+		3CEC8F11963F7B2ACA580D9D /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F84E2A6AF4F44E05777CD100 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-dummy.m */; };
+		46F48426684B139BDE24D1D8 /* Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0846653BD1E0A04552521FEF /* Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		474D9923EE2B3393A1E8AFCC /* AutoKeyboardScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45361AD09E45BFA44B7F7029 /* AutoKeyboardScrollView.swift */; };
+		5695263F871B4362E46F3927 /* Pods-AutoKeyboardScrollView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CDFABB59D7D367315DAF905 /* Pods-AutoKeyboardScrollView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57B5A4C716E912C66BBD06C0 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E468A4BB328B52A54157FE9 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-dummy.m */; };
+		599D30E808694215AC286776 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4480FB53518DC6C8E4477C7F /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66C4778FD33256C46EB0C38E /* AutoKeyboardScrollView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 02EA7B5EBCC3D859BD2D321C /* AutoKeyboardScrollView.bundle */; };
+		6B336E2B9437904793CECE50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAEF8382552EE4E02CC24D9E /* Foundation.framework */; };
+		764B22C415B6A62B8CBBA306 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7681FED2D8C95D8CF9864D0B /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76FF1FABFB13941460C3FFF6 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AE6F0142B312253173A44D /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-dummy.m */; };
+		853892C23AC2EEA3B33B84C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAEF8382552EE4E02CC24D9E /* Foundation.framework */; };
+		8F80C22B64DBA6788D29342F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAEF8382552EE4E02CC24D9E /* Foundation.framework */; };
+		953564E765A8B8FC9E62FDF4 /* AutoKeyboardScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45361AD09E45BFA44B7F7029 /* AutoKeyboardScrollView.swift */; };
+		97F2D1D5606AABC9B6533E24 /* Pods-AutoKeyboardScrollView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77490E6554D9D8003E9A4545 /* Pods-AutoKeyboardScrollView_Tests-dummy.m */; };
+		98FF0EEAD1BBA0B8A46FECED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAEF8382552EE4E02CC24D9E /* Foundation.framework */; };
+		9F108E6C88B280D6E15EA40B /* Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D5D0415C2506EF0092560A /* Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-dummy.m */; };
+		A3D5E02B3447A2EE4C50AD48 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C2AC3ECE0F84ABC41151C13 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B27E98F52F62EE566F2E6B00 /* Pods-AutoKeyboardScrollView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 715AE1F182175B92C3717688 /* Pods-AutoKeyboardScrollView_Example-dummy.m */; };
+		C20A0F1373F82C29B3A3A008 /* AutoKeyboardScrollView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D70BFA95ACD5A69769BFF081 /* AutoKeyboardScrollView.bundle */; };
+		C6EC97608B9433DA7246328E /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1786353090F1ECC93B8644 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-dummy.m */; };
+		C88BC38366BB9EDDD5FB461E /* Pods-AutoKeyboardScrollView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FF97D32641C275B48386174 /* Pods-AutoKeyboardScrollView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6E281D18AE7B4F96E2AA5ED /* AutoKeyboardScrollView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 182750727322DC9E93541ECD /* AutoKeyboardScrollView.bundle */; };
+		DD23D4A8FFEA7A2AA23EFFCC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAEF8382552EE4E02CC24D9E /* Foundation.framework */; };
+		EB1882D0E0D7C31DDA05C78F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAEF8382552EE4E02CC24D9E /* Foundation.framework */; };
+		EDEE06B49587043D622CFD2C /* Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 801C79BF824E549335EFC8F2 /* Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-dummy.m */; };
+		FA3F830629D564F30CA24ABA /* AutoKeyboardScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45361AD09E45BFA44B7F7029 /* AutoKeyboardScrollView.swift */; };
+		FAD44802B277B74A7946E932 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAEF8382552EE4E02CC24D9E /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03E48BD034D30A288CDCCDF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8C935E1413F0855C30FFBB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 316DB6ED586ECE5231917CA9;
+			remoteInfo = "Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView";
+		};
+		1158DB9985394D7533E93DF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8C935E1413F0855C30FFBB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12A2D43E7E4C5F8FEA2BDA08;
+			remoteInfo = "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-AutoKeyboardScrollView";
+		};
+		18668BD18A154EF28993D94A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8C935E1413F0855C30FFBB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6670729FBD01A1F2FA7F0D58;
+			remoteInfo = "Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-AutoKeyboardScrollView";
+		};
+		21D20ECEF62BB9B5666CFDF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8C935E1413F0855C30FFBB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7630C20C73D8C063E5108AA1;
+			remoteInfo = "Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-AutoKeyboardScrollView";
+		};
+		298030CC02938A30196DE6E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8C935E1413F0855C30FFBB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4ACEFD2C8AFE7EB14CEEDA17;
+			remoteInfo = "Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView";
+		};
+		4626F37CE1C2E1CD83287641 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8C935E1413F0855C30FFBB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 127EDEB83D303C65C6F84C20;
+			remoteInfo = "Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView";
+		};
+		5036872B4E8B0623F1BA1B9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8C935E1413F0855C30FFBB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CAF4F1B7C6B3485BD23ACCC;
+			remoteInfo = "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView";
+		};
+		AFB27BA94E7202EDAE40974E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8C935E1413F0855C30FFBB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67F42CEF4BE09A9D9F375A74;
+			remoteInfo = "Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-AutoKeyboardScrollView";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		016CDDF733D92151B1909FEA /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0200507911A5E5102B1B2B09 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AutoKeyboardScrollView_Interface_Builder_Example-resources.sh"; sourceTree = "<group>"; };
+		02EA7B5EBCC3D859BD2D321C /* AutoKeyboardScrollView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoKeyboardScrollView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		0496B93E2576BC787FA84FB4 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-Private.xcconfig"; path = "../Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-Private.xcconfig"; sourceTree = "<group>"; };
+		0846653BD1E0A04552521FEF /* Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-umbrella.h"; sourceTree = "<group>"; };
+		0C2AC3ECE0F84ABC41151C13 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-umbrella.h"; path = "../Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-umbrella.h"; sourceTree = "<group>"; };
+		0E00103065C91C1644A73FA1 /* Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView.xcconfig"; path = "../Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView.xcconfig"; sourceTree = "<group>"; };
+		1316CABEA40FE0744A73F967 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView.modulemap"; path = "../Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView.modulemap"; sourceTree = "<group>"; };
+		1704E2019C652474D9FF976D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182750727322DC9E93541ECD /* AutoKeyboardScrollView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoKeyboardScrollView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B3E8D2801772A6F49811C65 /* Pods-AutoKeyboardScrollView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AutoKeyboardScrollView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		20D5D0415C2506EF0092560A /* Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-dummy.m"; path = "../Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-dummy.m"; sourceTree = "<group>"; };
+		2719A8FD2C4E3EE2EF5D90D1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView/Info.plist"; sourceTree = "<group>"; };
+		27AE6F0142B312253173A44D /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-dummy.m"; sourceTree = "<group>"; };
+		2A69AD58887B5A83E883DAE0 /* Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-Private.xcconfig"; sourceTree = "<group>"; };
+		2CDFABB59D7D367315DAF905 /* Pods-AutoKeyboardScrollView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AutoKeyboardScrollView_Example-umbrella.h"; sourceTree = "<group>"; };
+		2E5CE735E73B18C5890FB1AB /* Pods-AutoKeyboardScrollView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AutoKeyboardScrollView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3181D272435EFC8E00E6F91E /* Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-umbrella.h"; path = "../Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-umbrella.h"; sourceTree = "<group>"; };
+		332CAECC12A648FB359600BC /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests.modulemap"; sourceTree = "<group>"; };
+		3E468A4BB328B52A54157FE9 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-dummy.m"; path = "../Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-dummy.m"; sourceTree = "<group>"; };
+		3F4657247814371DF6B90331 /* Pods-AutoKeyboardScrollView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AutoKeyboardScrollView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		407669FBD7F887D2C92034D0 /* Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-prefix.pch"; path = "../Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-prefix.pch"; sourceTree = "<group>"; };
+		43725F4359CAA49C123FACC6 /* Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-prefix.pch"; sourceTree = "<group>"; };
+		44098BBE4CEA7AB2775F9AE6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		440DE0ED5DD7E2B01ED89330 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		4480FB53518DC6C8E4477C7F /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AutoKeyboardScrollView_Interface_Builder_Example-umbrella.h"; sourceTree = "<group>"; };
+		45361AD09E45BFA44B7F7029 /* AutoKeyboardScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AutoKeyboardScrollView.swift; sourceTree = "<group>"; };
+		4E6C7A316FC4D4BF680AE365 /* Pods_AutoKeyboardScrollView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoKeyboardScrollView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EA492D61E032C0C563D449E /* Pods-AutoKeyboardScrollView_Interface_Builder_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AutoKeyboardScrollView_Interface_Builder_Example.modulemap"; sourceTree = "<group>"; };
+		5EE519110D2052702B482619 /* Pods-AutoKeyboardScrollView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AutoKeyboardScrollView_Tests-resources.sh"; sourceTree = "<group>"; };
+		6107D1D080D9CE86F905296E /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6637B11B13A3F05DECC7B3AF /* AutoKeyboardScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AutoKeyboardScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67C01E3BF8DC7F5973CC4BF9 /* Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-Private.xcconfig"; path = "../Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-Private.xcconfig"; sourceTree = "<group>"; };
+		698FF7A958A12D2548676D55 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AutoKeyboardScrollView_Interface_Builder_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		6C1786353090F1ECC93B8644 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AutoKeyboardScrollView_Interface_Builder_Example-dummy.m"; sourceTree = "<group>"; };
+		6F2895F8C6A19EA1D69E140D /* Pods-AutoKeyboardScrollView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AutoKeyboardScrollView_Example.modulemap"; sourceTree = "<group>"; };
+		715AE1F182175B92C3717688 /* Pods-AutoKeyboardScrollView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AutoKeyboardScrollView_Example-dummy.m"; sourceTree = "<group>"; };
+		746F9EA5EB1A6C1897634745 /* Pods_AutoKeyboardScrollView_Interface_Builder_Example_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoKeyboardScrollView_Interface_Builder_Example_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7679C4374C3D339359B8B9DE /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AutoKeyboardScrollView_Interface_Builder_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7681FED2D8C95D8CF9864D0B /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-umbrella.h"; sourceTree = "<group>"; };
+		769091E748B55594AF50680F /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-prefix.pch"; path = "../Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-prefix.pch"; sourceTree = "<group>"; };
+		77490E6554D9D8003E9A4545 /* Pods-AutoKeyboardScrollView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AutoKeyboardScrollView_Tests-dummy.m"; sourceTree = "<group>"; };
+		7D8BFAA1127120BBC77F469D /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView.xcconfig"; path = "../Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView.xcconfig"; sourceTree = "<group>"; };
+		7F19C53D7AEA8A9FC847FFE1 /* Pods-AutoKeyboardScrollView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AutoKeyboardScrollView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		801C79BF824E549335EFC8F2 /* Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-dummy.m"; sourceTree = "<group>"; };
+		80677E46370C323C4BDFA200 /* Pods-AutoKeyboardScrollView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AutoKeyboardScrollView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		81A30EAF218349B9CBE66F25 /* Pods-AutoKeyboardScrollView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AutoKeyboardScrollView_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		876D70F260F45213AAFB3D26 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AutoKeyboardScrollView_Interface_Builder_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		88A23190C4E61638E6D47B10 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView.modulemap"; path = "../Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView.modulemap"; sourceTree = "<group>"; };
+		8C88270C0B4AFD9A0ED6FD51 /* Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView.modulemap"; path = "../Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView.modulemap"; sourceTree = "<group>"; };
+		93E4F09DFE4DB7F1D8ED7B47 /* AutoKeyboardScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AutoKeyboardScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94CEA6478BD99D33FD16C8F2 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-Private.xcconfig"; path = "../Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-Private.xcconfig"; sourceTree = "<group>"; };
+		97C82920344425EAB6320FD8 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-environment.h"; sourceTree = "<group>"; };
+		9B6A89B1C6F75CA061FDCB05 /* Pods-AutoKeyboardScrollView_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AutoKeyboardScrollView_Example-environment.h"; sourceTree = "<group>"; };
+		9FF97D32641C275B48386174 /* Pods-AutoKeyboardScrollView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AutoKeyboardScrollView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		A14861259847FED95BE34300 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView/Info.plist"; sourceTree = "<group>"; };
+		A7E20DF7FFFBC286CEB9E8A7 /* Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView.xcconfig"; sourceTree = "<group>"; };
+		A97B3AE468C7035AAA349C1D /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		A9D05469E250B91FA87A02DC /* Pods-AutoKeyboardScrollView_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AutoKeyboardScrollView_Tests-environment.h"; sourceTree = "<group>"; };
+		ACFEEE2DB00AC8FEEBC4A1C6 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AutoKeyboardScrollView_Interface_Builder_Example-environment.h"; sourceTree = "<group>"; };
+		AF7D26D6AA6C3316BF153539 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B2112798A234B399A9EA25F2 /* Pods-AutoKeyboardScrollView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AutoKeyboardScrollView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B316B1A249C6E2E68A01EAD5 /* Pods_AutoKeyboardScrollView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoKeyboardScrollView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7CCCF6D5A738438CDD3FA4D /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView.xcconfig"; path = "../Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView.xcconfig"; sourceTree = "<group>"; };
+		BAEF8382552EE4E02CC24D9E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C5E3427B6E2E1D3FBCBC49FE /* AutoKeyboardScrollView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoKeyboardScrollView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5FF325E5B8150D88B05D124 /* AutoKeyboardScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AutoKeyboardScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6E050F21D5D663F11F5FA58 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-prefix.pch"; path = "../Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-prefix.pch"; sourceTree = "<group>"; };
+		CAA3F4F521D97EA0CE18B864 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AutoKeyboardScrollView_Interface_Builder_Example-frameworks.sh"; sourceTree = "<group>"; };
+		CD69B365D15548AE8B706E1F /* Pods-AutoKeyboardScrollView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AutoKeyboardScrollView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D0F70594144AD72CC06515A9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D24616F2712293DEABFD14B1 /* Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView.modulemap"; sourceTree = "<group>"; };
+		D37C06E2527D105D3E7977F0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView/Info.plist"; sourceTree = "<group>"; };
+		D46D429140159AC2DC0F76C4 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-resources.sh"; sourceTree = "<group>"; };
+		D70BFA95ACD5A69769BFF081 /* AutoKeyboardScrollView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoKeyboardScrollView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		D87CEDD7968D7A90149897A6 /* Pods-AutoKeyboardScrollView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AutoKeyboardScrollView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DE24FEB9AADCE6018AF8CB19 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE5299202287620A16311779 /* AutoKeyboardScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AutoKeyboardScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF9E8BFBA4101D9115C0956D /* Pods-AutoKeyboardScrollView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AutoKeyboardScrollView_Example-resources.sh"; sourceTree = "<group>"; };
+		E06410551662451470F36982 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AutoKeyboardScrollView_Interface_Builder_Example.release.xcconfig"; sourceTree = "<group>"; };
+		EFF12515F8AD285643B22E2E /* Pods_AutoKeyboardScrollView_Interface_Builder_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoKeyboardScrollView_Interface_Builder_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0FC20968F89C4F559487227 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F6F1A673502D3F0DF948ED9B /* Pods-AutoKeyboardScrollView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AutoKeyboardScrollView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F7AC2B07785FCEC9FAB1A885 /* Pods-AutoKeyboardScrollView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AutoKeyboardScrollView_Tests.modulemap"; sourceTree = "<group>"; };
+		F7D9080771436E079587BE5E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F84E2A6AF4F44E05777CD100 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-dummy.m"; path = "../Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-dummy.m"; sourceTree = "<group>"; };
+		FD9790D47CF11C6FD1218F49 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-umbrella.h"; path = "../Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		066685F7A03D68CADD061DD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B336E2B9437904793CECE50 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58E6B53DE42BE00670338DE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59C33B7A8A3287BA18B6A847 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				853892C23AC2EEA3B33B84C5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67FF9F9CE459EB1167381896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1882D0E0D7C31DDA05C78F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B6815CE817F4763C238E7BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD44802B277B74A7946E932 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9521FB97C11D9C05A81B768E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4F4BFC53D61CDAE66F55652 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98FF0EEAD1BBA0B8A46FECED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0168ABABE5D979C5A96549B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC0BF3283F8B932FD58A1109 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6E8BFF9D7BAFC4AC4BFD752 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD23D4A8FFEA7A2AA23EFFCC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2C31E80C183BF187201B32B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F80C22B64DBA6788D29342F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE4EC36EDC198855B2EE5AA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09138AFF3AFC6DA24B51B507 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05BC3A116D870EDD0A6288C6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				45361AD09E45BFA44B7F7029 /* AutoKeyboardScrollView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		141E91FE7C730C8C4CDBAB7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D70BFA95ACD5A69769BFF081 /* AutoKeyboardScrollView.bundle */,
+				C5E3427B6E2E1D3FBCBC49FE /* AutoKeyboardScrollView.bundle */,
+				02EA7B5EBCC3D859BD2D321C /* AutoKeyboardScrollView.bundle */,
+				182750727322DC9E93541ECD /* AutoKeyboardScrollView.bundle */,
+				6637B11B13A3F05DECC7B3AF /* AutoKeyboardScrollView.framework */,
+				DE5299202287620A16311779 /* AutoKeyboardScrollView.framework */,
+				93E4F09DFE4DB7F1D8ED7B47 /* AutoKeyboardScrollView.framework */,
+				C5FF325E5B8150D88B05D124 /* AutoKeyboardScrollView.framework */,
+				4E6C7A316FC4D4BF680AE365 /* Pods_AutoKeyboardScrollView_Example.framework */,
+				EFF12515F8AD285643B22E2E /* Pods_AutoKeyboardScrollView_Interface_Builder_Example.framework */,
+				746F9EA5EB1A6C1897634745 /* Pods_AutoKeyboardScrollView_Interface_Builder_Example_Tests.framework */,
+				B316B1A249C6E2E68A01EAD5 /* Pods_AutoKeyboardScrollView_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FB4B16469C7154370F3CE84 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				84DDED4DE049F483CF78F85C /* Pods-AutoKeyboardScrollView_Example */,
+				F76A9F374A009BFB607375CD /* Pods-AutoKeyboardScrollView_Interface_Builder_Example */,
+				251A792A92F9D2EE0A6C1821 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests */,
+				888ABCC835C7E111BE4291F3 /* Pods-AutoKeyboardScrollView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		251A792A92F9D2EE0A6C1821 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F7D9080771436E079587BE5E /* Info.plist */,
+				332CAECC12A648FB359600BC /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests.modulemap */,
+				F0FC20968F89C4F559487227 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-acknowledgements.markdown */,
+				016CDDF733D92151B1909FEA /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-acknowledgements.plist */,
+				27AE6F0142B312253173A44D /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-dummy.m */,
+				97C82920344425EAB6320FD8 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-environment.h */,
+				440DE0ED5DD7E2B01ED89330 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-frameworks.sh */,
+				D46D429140159AC2DC0F76C4 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-resources.sh */,
+				7681FED2D8C95D8CF9864D0B /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-umbrella.h */,
+				AF7D26D6AA6C3316BF153539 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests.debug.xcconfig */,
+				A97B3AE468C7035AAA349C1D /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests.release.xcconfig */,
+			);
+			name = "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests";
+			path = "Target Support Files/Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests";
+			sourceTree = "<group>";
+		};
+		338744341108E438FB0FEDE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D83748A31097A32F2C1CDDA0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62AAC23DA5EED86E8803D023 = {
+			isa = PBXGroup;
+			children = (
+				6107D1D080D9CE86F905296E /* Podfile */,
+				7653497486069D3F4AC19CD3 /* Development Pods */,
+				338744341108E438FB0FEDE5 /* Frameworks */,
+				141E91FE7C730C8C4CDBAB7A /* Products */,
+				1FB4B16469C7154370F3CE84 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		6355A275BC8B9CD3ABCA6CB4 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				05BC3A116D870EDD0A6288C6 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		7653497486069D3F4AC19CD3 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7CCCBC45052E90FFE86C8CBB /* AutoKeyboardScrollView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		79BFB901A562E9BDAB2198A5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D37C06E2527D105D3E7977F0 /* Info.plist */,
+				2719A8FD2C4E3EE2EF5D90D1 /* Info.plist */,
+				A14861259847FED95BE34300 /* Info.plist */,
+				1704E2019C652474D9FF976D /* Info.plist */,
+				D24616F2712293DEABFD14B1 /* Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView.modulemap */,
+				A7E20DF7FFFBC286CEB9E8A7 /* Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView.xcconfig */,
+				2A69AD58887B5A83E883DAE0 /* Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-Private.xcconfig */,
+				801C79BF824E549335EFC8F2 /* Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-dummy.m */,
+				43725F4359CAA49C123FACC6 /* Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-prefix.pch */,
+				0846653BD1E0A04552521FEF /* Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-umbrella.h */,
+				1316CABEA40FE0744A73F967 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView.modulemap */,
+				7D8BFAA1127120BBC77F469D /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView.xcconfig */,
+				94CEA6478BD99D33FD16C8F2 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-Private.xcconfig */,
+				F84E2A6AF4F44E05777CD100 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-dummy.m */,
+				769091E748B55594AF50680F /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-prefix.pch */,
+				FD9790D47CF11C6FD1218F49 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-umbrella.h */,
+				88A23190C4E61638E6D47B10 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView.modulemap */,
+				B7CCCF6D5A738438CDD3FA4D /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView.xcconfig */,
+				0496B93E2576BC787FA84FB4 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-Private.xcconfig */,
+				3E468A4BB328B52A54157FE9 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-dummy.m */,
+				C6E050F21D5D663F11F5FA58 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-prefix.pch */,
+				0C2AC3ECE0F84ABC41151C13 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-umbrella.h */,
+				8C88270C0B4AFD9A0ED6FD51 /* Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView.modulemap */,
+				0E00103065C91C1644A73FA1 /* Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView.xcconfig */,
+				67C01E3BF8DC7F5973CC4BF9 /* Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-Private.xcconfig */,
+				20D5D0415C2506EF0092560A /* Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-dummy.m */,
+				407669FBD7F887D2C92034D0 /* Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-prefix.pch */,
+				3181D272435EFC8E00E6F91E /* Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView";
+			sourceTree = "<group>";
+		};
+		7CCCBC45052E90FFE86C8CBB /* AutoKeyboardScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				6355A275BC8B9CD3ABCA6CB4 /* Pod */,
+				79BFB901A562E9BDAB2198A5 /* Support Files */,
+			);
+			name = AutoKeyboardScrollView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		84DDED4DE049F483CF78F85C /* Pods-AutoKeyboardScrollView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				D0F70594144AD72CC06515A9 /* Info.plist */,
+				6F2895F8C6A19EA1D69E140D /* Pods-AutoKeyboardScrollView_Example.modulemap */,
+				CD69B365D15548AE8B706E1F /* Pods-AutoKeyboardScrollView_Example-acknowledgements.markdown */,
+				80677E46370C323C4BDFA200 /* Pods-AutoKeyboardScrollView_Example-acknowledgements.plist */,
+				715AE1F182175B92C3717688 /* Pods-AutoKeyboardScrollView_Example-dummy.m */,
+				9B6A89B1C6F75CA061FDCB05 /* Pods-AutoKeyboardScrollView_Example-environment.h */,
+				3F4657247814371DF6B90331 /* Pods-AutoKeyboardScrollView_Example-frameworks.sh */,
+				DF9E8BFBA4101D9115C0956D /* Pods-AutoKeyboardScrollView_Example-resources.sh */,
+				2CDFABB59D7D367315DAF905 /* Pods-AutoKeyboardScrollView_Example-umbrella.h */,
+				2E5CE735E73B18C5890FB1AB /* Pods-AutoKeyboardScrollView_Example.debug.xcconfig */,
+				7F19C53D7AEA8A9FC847FFE1 /* Pods-AutoKeyboardScrollView_Example.release.xcconfig */,
+			);
+			name = "Pods-AutoKeyboardScrollView_Example";
+			path = "Target Support Files/Pods-AutoKeyboardScrollView_Example";
+			sourceTree = "<group>";
+		};
+		888ABCC835C7E111BE4291F3 /* Pods-AutoKeyboardScrollView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DE24FEB9AADCE6018AF8CB19 /* Info.plist */,
+				F7AC2B07785FCEC9FAB1A885 /* Pods-AutoKeyboardScrollView_Tests.modulemap */,
+				1B3E8D2801772A6F49811C65 /* Pods-AutoKeyboardScrollView_Tests-acknowledgements.markdown */,
+				D87CEDD7968D7A90149897A6 /* Pods-AutoKeyboardScrollView_Tests-acknowledgements.plist */,
+				77490E6554D9D8003E9A4545 /* Pods-AutoKeyboardScrollView_Tests-dummy.m */,
+				A9D05469E250B91FA87A02DC /* Pods-AutoKeyboardScrollView_Tests-environment.h */,
+				81A30EAF218349B9CBE66F25 /* Pods-AutoKeyboardScrollView_Tests-frameworks.sh */,
+				5EE519110D2052702B482619 /* Pods-AutoKeyboardScrollView_Tests-resources.sh */,
+				9FF97D32641C275B48386174 /* Pods-AutoKeyboardScrollView_Tests-umbrella.h */,
+				B2112798A234B399A9EA25F2 /* Pods-AutoKeyboardScrollView_Tests.debug.xcconfig */,
+				F6F1A673502D3F0DF948ED9B /* Pods-AutoKeyboardScrollView_Tests.release.xcconfig */,
+			);
+			name = "Pods-AutoKeyboardScrollView_Tests";
+			path = "Target Support Files/Pods-AutoKeyboardScrollView_Tests";
+			sourceTree = "<group>";
+		};
+		D83748A31097A32F2C1CDDA0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BAEF8382552EE4E02CC24D9E /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F76A9F374A009BFB607375CD /* Pods-AutoKeyboardScrollView_Interface_Builder_Example */ = {
+			isa = PBXGroup;
+			children = (
+				44098BBE4CEA7AB2775F9AE6 /* Info.plist */,
+				5EA492D61E032C0C563D449E /* Pods-AutoKeyboardScrollView_Interface_Builder_Example.modulemap */,
+				7679C4374C3D339359B8B9DE /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-acknowledgements.markdown */,
+				698FF7A958A12D2548676D55 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-acknowledgements.plist */,
+				6C1786353090F1ECC93B8644 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-dummy.m */,
+				ACFEEE2DB00AC8FEEBC4A1C6 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-environment.h */,
+				CAA3F4F521D97EA0CE18B864 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-frameworks.sh */,
+				0200507911A5E5102B1B2B09 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-resources.sh */,
+				4480FB53518DC6C8E4477C7F /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-umbrella.h */,
+				876D70F260F45213AAFB3D26 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example.debug.xcconfig */,
+				E06410551662451470F36982 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example.release.xcconfig */,
+			);
+			name = "Pods-AutoKeyboardScrollView_Interface_Builder_Example";
+			path = "Target Support Files/Pods-AutoKeyboardScrollView_Interface_Builder_Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		020699494B7B2CB8A71EE584 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B857220EE45123850DD2D59 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02582BD092C43EE45D6EA3B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C88BC38366BB9EDDD5FB461E /* Pods-AutoKeyboardScrollView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43919E62EF2A304BFAED0841 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3D5E02B3447A2EE4C50AD48 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66AC5FFB695147AC0A0774D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AA420E1EFA32B80B1CAE3ED /* Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72CC7D5D72658B861789CA4F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46F48426684B139BDE24D1D8 /* Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		753013B0BF166D88D45D472C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				764B22C415B6A62B8CBBA306 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E6BCEFF1770557B2CEFBE53 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5695263F871B4362E46F3927 /* Pods-AutoKeyboardScrollView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		928F655BEAC95B3BAE706566 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				599D30E808694215AC286776 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		127EDEB83D303C65C6F84C20 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55D5A9C56C440B89F8097B33 /* Build configuration list for PBXNativeTarget "Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView" */;
+			buildPhases = (
+				4B16045F32E6F1533D26A379 /* Sources */,
+				F2C31E80C183BF187201B32B /* Frameworks */,
+				83F87D4828190A636060346E /* Resources */,
+				020699494B7B2CB8A71EE584 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC16E2020681869DBA98A310 /* PBXTargetDependency */,
+			);
+			name = "Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView";
+			productName = "Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView";
+			productReference = DE5299202287620A16311779 /* AutoKeyboardScrollView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		12A2D43E7E4C5F8FEA2BDA08 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-AutoKeyboardScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 400FBD1A3C95BBC050249A4D /* Build configuration list for PBXNativeTarget "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-AutoKeyboardScrollView" */;
+			buildPhases = (
+				E1548399EB8D4A3BE647FDCD /* Sources */,
+				CC0BF3283F8B932FD58A1109 /* Frameworks */,
+				7E6427A5464978EE09E94A3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-AutoKeyboardScrollView";
+			productName = "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-AutoKeyboardScrollView";
+			productReference = 02EA7B5EBCC3D859BD2D321C /* AutoKeyboardScrollView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		2F10F0E20532971D0E780E49 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9F52539F5672B7F4B8A7E44 /* Build configuration list for PBXNativeTarget "Pods-AutoKeyboardScrollView_Interface_Builder_Example" */;
+			buildPhases = (
+				611F955D4E4D7BFC9AC61F4B /* Sources */,
+				67FF9F9CE459EB1167381896 /* Frameworks */,
+				928F655BEAC95B3BAE706566 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F9B350AD18A820DF786808B /* PBXTargetDependency */,
+			);
+			name = "Pods-AutoKeyboardScrollView_Interface_Builder_Example";
+			productName = "Pods-AutoKeyboardScrollView_Interface_Builder_Example";
+			productReference = EFF12515F8AD285643B22E2E /* Pods_AutoKeyboardScrollView_Interface_Builder_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		316DB6ED586ECE5231917CA9 /* Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBA47C51A80EB1BB7C3E2B69 /* Build configuration list for PBXNativeTarget "Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView" */;
+			buildPhases = (
+				C63CCBDCE338CDB6F22DA4EE /* Sources */,
+				59C33B7A8A3287BA18B6A847 /* Frameworks */,
+				4AB64EBCC4EDEAA3BE566E58 /* Resources */,
+				66AC5FFB695147AC0A0774D6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AB57E77F7E945DCC39AC261 /* PBXTargetDependency */,
+			);
+			name = "Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView";
+			productName = "Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView";
+			productReference = 93E4F09DFE4DB7F1D8ED7B47 /* AutoKeyboardScrollView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4ACEFD2C8AFE7EB14CEEDA17 /* Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D1DDD52A4E93E8B7F47F6E3 /* Build configuration list for PBXNativeTarget "Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView" */;
+			buildPhases = (
+				DC0CF3925967A14DA2C2134C /* Sources */,
+				066685F7A03D68CADD061DD7 /* Frameworks */,
+				D66DD4B2626809EBACB34C1B /* Resources */,
+				72CC7D5D72658B861789CA4F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E620EE07B543CC61036FAE1 /* PBXTargetDependency */,
+			);
+			name = "Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView";
+			productName = "Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView";
+			productReference = C5FF325E5B8150D88B05D124 /* AutoKeyboardScrollView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		59CEB769DBE36E98D2064F90 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B63610EEBBE5BAA22376E16 /* Build configuration list for PBXNativeTarget "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests" */;
+			buildPhases = (
+				8533700ED6B2537606E7B4B5 /* Sources */,
+				B4F4BFC53D61CDAE66F55652 /* Frameworks */,
+				753013B0BF166D88D45D472C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78A5282A52B78B7667D41BA2 /* PBXTargetDependency */,
+			);
+			name = "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests";
+			productName = "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests";
+			productReference = 746F9EA5EB1A6C1897634745 /* Pods_AutoKeyboardScrollView_Interface_Builder_Example_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6670729FBD01A1F2FA7F0D58 /* Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-AutoKeyboardScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC21619F275763CEFE2FFF32 /* Build configuration list for PBXNativeTarget "Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-AutoKeyboardScrollView" */;
+			buildPhases = (
+				6569835A50595198DECE4D61 /* Sources */,
+				58E6B53DE42BE00670338DE8 /* Frameworks */,
+				5AA1E4DE9006B822858ACE53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-AutoKeyboardScrollView";
+			productName = "Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-AutoKeyboardScrollView";
+			productReference = D70BFA95ACD5A69769BFF081 /* AutoKeyboardScrollView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		67F42CEF4BE09A9D9F375A74 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-AutoKeyboardScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDBACBF13FF8933556B7A425 /* Build configuration list for PBXNativeTarget "Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-AutoKeyboardScrollView" */;
+			buildPhases = (
+				D304BDC259BF8ED749D40026 /* Sources */,
+				C0168ABABE5D979C5A96549B /* Frameworks */,
+				B00F3D609E54FE8154616D9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-AutoKeyboardScrollView";
+			productName = "Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-AutoKeyboardScrollView";
+			productReference = 182750727322DC9E93541ECD /* AutoKeyboardScrollView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		7630C20C73D8C063E5108AA1 /* Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-AutoKeyboardScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FB5DED46DBF236155EC4C64 /* Build configuration list for PBXNativeTarget "Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-AutoKeyboardScrollView" */;
+			buildPhases = (
+				57EEC652035E6229A3AC339C /* Sources */,
+				9521FB97C11D9C05A81B768E /* Frameworks */,
+				0D22DEF407DAE693525131CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-AutoKeyboardScrollView";
+			productName = "Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-AutoKeyboardScrollView";
+			productReference = C5E3427B6E2E1D3FBCBC49FE /* AutoKeyboardScrollView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		9CAF4F1B7C6B3485BD23ACCC /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9D3E158F764F95C3B713101 /* Build configuration list for PBXNativeTarget "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView" */;
+			buildPhases = (
+				84C3209CEA50F87C1D9B7F2F /* Sources */,
+				D6E8BFF9D7BAFC4AC4BFD752 /* Frameworks */,
+				AB91404277A71C4BE94E2183 /* Resources */,
+				43919E62EF2A304BFAED0841 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C1872E49E6AD9DF5A92AD67 /* PBXTargetDependency */,
+			);
+			name = "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView";
+			productName = "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView";
+			productReference = 6637B11B13A3F05DECC7B3AF /* AutoKeyboardScrollView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C4D8AAA45DC42C37C3F41386 /* Pods-AutoKeyboardScrollView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97DA886CBF29033E49FE6370 /* Build configuration list for PBXNativeTarget "Pods-AutoKeyboardScrollView_Example" */;
+			buildPhases = (
+				B969DEA823FBE80A646D2687 /* Sources */,
+				8B6815CE817F4763C238E7BE /* Frameworks */,
+				8E6BCEFF1770557B2CEFBE53 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				951D10FAD27D516AAD284BBD /* PBXTargetDependency */,
+			);
+			name = "Pods-AutoKeyboardScrollView_Example";
+			productName = "Pods-AutoKeyboardScrollView_Example";
+			productReference = 4E6C7A316FC4D4BF680AE365 /* Pods_AutoKeyboardScrollView_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D5A5131336D96490E5244219 /* Pods-AutoKeyboardScrollView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFC5D697E644EFBDE55E3ADC /* Build configuration list for PBXNativeTarget "Pods-AutoKeyboardScrollView_Tests" */;
+			buildPhases = (
+				CD10A421D662176DB84F1325 /* Sources */,
+				FE4EC36EDC198855B2EE5AA7 /* Frameworks */,
+				02582BD092C43EE45D6EA3B0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E10D522E8F494E4BDF2688FE /* PBXTargetDependency */,
+			);
+			name = "Pods-AutoKeyboardScrollView_Tests";
+			productName = "Pods-AutoKeyboardScrollView_Tests";
+			productReference = B316B1A249C6E2E68A01EAD5 /* Pods_AutoKeyboardScrollView_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8C935E1413F0855C30FFBB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 293F76716305478A559D65DC /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 62AAC23DA5EED86E8803D023;
+			productRefGroup = 141E91FE7C730C8C4CDBAB7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4D8AAA45DC42C37C3F41386 /* Pods-AutoKeyboardScrollView_Example */,
+				4ACEFD2C8AFE7EB14CEEDA17 /* Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView */,
+				7630C20C73D8C063E5108AA1 /* Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-AutoKeyboardScrollView */,
+				2F10F0E20532971D0E780E49 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example */,
+				127EDEB83D303C65C6F84C20 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView */,
+				67F42CEF4BE09A9D9F375A74 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-AutoKeyboardScrollView */,
+				59CEB769DBE36E98D2064F90 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests */,
+				9CAF4F1B7C6B3485BD23ACCC /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView */,
+				12A2D43E7E4C5F8FEA2BDA08 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-AutoKeyboardScrollView */,
+				D5A5131336D96490E5244219 /* Pods-AutoKeyboardScrollView_Tests */,
+				316DB6ED586ECE5231917CA9 /* Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView */,
+				6670729FBD01A1F2FA7F0D58 /* Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-AutoKeyboardScrollView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D22DEF407DAE693525131CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AB64EBCC4EDEAA3BE566E58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C20A0F1373F82C29B3A3A008 /* AutoKeyboardScrollView.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA1E4DE9006B822858ACE53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E6427A5464978EE09E94A3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83F87D4828190A636060346E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6E281D18AE7B4F96E2AA5ED /* AutoKeyboardScrollView.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB91404277A71C4BE94E2183 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66C4778FD33256C46EB0C38E /* AutoKeyboardScrollView.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B00F3D609E54FE8154616D9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66DD4B2626809EBACB34C1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B1B5FC490C6480BE3B5A3A3 /* AutoKeyboardScrollView.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B16045F32E6F1533D26A379 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				953564E765A8B8FC9E62FDF4 /* AutoKeyboardScrollView.swift in Sources */,
+				3CEC8F11963F7B2ACA580D9D /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57EEC652035E6229A3AC339C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		611F955D4E4D7BFC9AC61F4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6EC97608B9433DA7246328E /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6569835A50595198DECE4D61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C3209CEA50F87C1D9B7F2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA3F830629D564F30CA24ABA /* AutoKeyboardScrollView.swift in Sources */,
+				57B5A4C716E912C66BBD06C0 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8533700ED6B2537606E7B4B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76FF1FABFB13941460C3FFF6 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B969DEA823FBE80A646D2687 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B27E98F52F62EE566F2E6B00 /* Pods-AutoKeyboardScrollView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C63CCBDCE338CDB6F22DA4EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				233CEF4881D847E003285E23 /* AutoKeyboardScrollView.swift in Sources */,
+				9F108E6C88B280D6E15EA40B /* Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD10A421D662176DB84F1325 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97F2D1D5606AABC9B6533E24 /* Pods-AutoKeyboardScrollView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D304BDC259BF8ED749D40026 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC0CF3925967A14DA2C2134C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				474D9923EE2B3393A1E8AFCC /* AutoKeyboardScrollView.swift in Sources */,
+				EDEE06B49587043D622CFD2C /* Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1548399EB8D4A3BE647FDCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C1872E49E6AD9DF5A92AD67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-AutoKeyboardScrollView";
+			target = 12A2D43E7E4C5F8FEA2BDA08 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-AutoKeyboardScrollView */;
+			targetProxy = 1158DB9985394D7533E93DF8 /* PBXContainerItemProxy */;
+		};
+		2E620EE07B543CC61036FAE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-AutoKeyboardScrollView";
+			target = 7630C20C73D8C063E5108AA1 /* Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-AutoKeyboardScrollView */;
+			targetProxy = 21D20ECEF62BB9B5666CFDF3 /* PBXContainerItemProxy */;
+		};
+		4F9B350AD18A820DF786808B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView";
+			target = 127EDEB83D303C65C6F84C20 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView */;
+			targetProxy = 4626F37CE1C2E1CD83287641 /* PBXContainerItemProxy */;
+		};
+		78A5282A52B78B7667D41BA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView";
+			target = 9CAF4F1B7C6B3485BD23ACCC /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView */;
+			targetProxy = 5036872B4E8B0623F1BA1B9A /* PBXContainerItemProxy */;
+		};
+		7AB57E77F7E945DCC39AC261 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-AutoKeyboardScrollView";
+			target = 6670729FBD01A1F2FA7F0D58 /* Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-AutoKeyboardScrollView */;
+			targetProxy = 18668BD18A154EF28993D94A /* PBXContainerItemProxy */;
+		};
+		951D10FAD27D516AAD284BBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView";
+			target = 4ACEFD2C8AFE7EB14CEEDA17 /* Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView */;
+			targetProxy = 298030CC02938A30196DE6E6 /* PBXContainerItemProxy */;
+		};
+		CC16E2020681869DBA98A310 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-AutoKeyboardScrollView";
+			target = 67F42CEF4BE09A9D9F375A74 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-AutoKeyboardScrollView */;
+			targetProxy = AFB27BA94E7202EDAE40974E /* PBXContainerItemProxy */;
+		};
+		E10D522E8F494E4BDF2688FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView";
+			target = 316DB6ED586ECE5231917CA9 /* Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView */;
+			targetProxy = 03E48BD034D30A288CDCCDF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		015FFBCEAAC88F431616793B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0496B93E2576BC787FA84FB4 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = AutoKeyboardScrollView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		0F878F3CD6B5125AA0EF8F82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94CEA6478BD99D33FD16C8F2 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AutoKeyboardScrollView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1FE57B4C29D8A3C57F618C5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67C01E3BF8DC7F5973CC4BF9 /* Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-AutoKeyboardScrollView_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = AutoKeyboardScrollView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		2790CFE9F3C909CA712DEE38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67C01E3BF8DC7F5973CC4BF9 /* Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-AutoKeyboardScrollView_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = AutoKeyboardScrollView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		2B200CAB7181442778A59335 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0496B93E2576BC787FA84FB4 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AutoKeyboardScrollView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		32714353E313F2DDC2CC05DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2112798A234B399A9EA25F2 /* Pods-AutoKeyboardScrollView_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Tests/Pods-AutoKeyboardScrollView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_AutoKeyboardScrollView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		42CC30F37BEEEC5120DBB12E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0496B93E2576BC787FA84FB4 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = AutoKeyboardScrollView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		44C18FE1CC474B39701E71DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94CEA6478BD99D33FD16C8F2 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-AutoKeyboardScrollView_Interface_Builder_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = AutoKeyboardScrollView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		4B029F673ACC53D8BE010A78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A97B3AE468C7035AAA349C1D /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests/Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_AutoKeyboardScrollView_Interface_Builder_Example_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		659944A56B5D4865D77F3BFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67C01E3BF8DC7F5973CC4BF9 /* Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AutoKeyboardScrollView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		67FAD4E0BCEF7F6FFDCA4E1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E06410551662451470F36982 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Interface_Builder_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Interface_Builder_Example/Pods-AutoKeyboardScrollView_Interface_Builder_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_AutoKeyboardScrollView_Interface_Builder_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6E8692DAB29BF0D00E21C92A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94CEA6478BD99D33FD16C8F2 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-AutoKeyboardScrollView_Interface_Builder_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = AutoKeyboardScrollView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		816EB7B5B3ED99578AD0122A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A69AD58887B5A83E883DAE0 /* Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-AutoKeyboardScrollView_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = AutoKeyboardScrollView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		8B3167CF9C064946B284678C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67C01E3BF8DC7F5973CC4BF9 /* Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AutoKeyboardScrollView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		95B1DD470F04CDE2B0B681B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94CEA6478BD99D33FD16C8F2 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AutoKeyboardScrollView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9D3CD166F07C75502BC6D59A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A69AD58887B5A83E883DAE0 /* Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-AutoKeyboardScrollView_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = AutoKeyboardScrollView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		AE8DD71AE515DCEB2D4B46BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B616DD7852137A5FA27A561D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF7D26D6AA6C3316BF153539 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests/Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_AutoKeyboardScrollView_Interface_Builder_Example_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C1E6CBC00D00720F4610B021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A69AD58887B5A83E883DAE0 /* Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AutoKeyboardScrollView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C2EFB2C9DA6AC11A23DF8CDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0496B93E2576BC787FA84FB4 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AutoKeyboardScrollView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C392CF096455FB39EFC640B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F19C53D7AEA8A9FC847FFE1 /* Pods-AutoKeyboardScrollView_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Example/Pods-AutoKeyboardScrollView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_AutoKeyboardScrollView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D0ABC1EA073B56F688A4253F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DA8ABAD94FF9A10DE4B7BD4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 876D70F260F45213AAFB3D26 /* Pods-AutoKeyboardScrollView_Interface_Builder_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Interface_Builder_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Interface_Builder_Example/Pods-AutoKeyboardScrollView_Interface_Builder_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_AutoKeyboardScrollView_Interface_Builder_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E7E2E656488EB3178B26F1E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6F1A673502D3F0DF948ED9B /* Pods-AutoKeyboardScrollView_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Tests/Pods-AutoKeyboardScrollView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_AutoKeyboardScrollView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ED4ECAD6D827779526C426F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E5CE735E73B18C5890FB1AB /* Pods-AutoKeyboardScrollView_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Example/Pods-AutoKeyboardScrollView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_AutoKeyboardScrollView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F10FEC2AE773C41E51552740 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A69AD58887B5A83E883DAE0 /* Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView/Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AutoKeyboardScrollView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		293F76716305478A559D65DC /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0ABC1EA073B56F688A4253F /* Debug */,
+				AE8DD71AE515DCEB2D4B46BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D1DDD52A4E93E8B7F47F6E3 /* Build configuration list for PBXNativeTarget "Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F10FEC2AE773C41E51552740 /* Debug */,
+				C1E6CBC00D00720F4610B021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		400FBD1A3C95BBC050249A4D /* Build configuration list for PBXNativeTarget "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView-AutoKeyboardScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015FFBCEAAC88F431616793B /* Debug */,
+				42CC30F37BEEEC5120DBB12E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55D5A9C56C440B89F8097B33 /* Build configuration list for PBXNativeTarget "Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95B1DD470F04CDE2B0B681B9 /* Debug */,
+				0F878F3CD6B5125AA0EF8F82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FB5DED46DBF236155EC4C64 /* Build configuration list for PBXNativeTarget "Pods-AutoKeyboardScrollView_Example-AutoKeyboardScrollView-AutoKeyboardScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D3CD166F07C75502BC6D59A /* Debug */,
+				816EB7B5B3ED99578AD0122A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B63610EEBBE5BAA22376E16 /* Build configuration list for PBXNativeTarget "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B616DD7852137A5FA27A561D /* Debug */,
+				4B029F673ACC53D8BE010A78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97DA886CBF29033E49FE6370 /* Build configuration list for PBXNativeTarget "Pods-AutoKeyboardScrollView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED4ECAD6D827779526C426F5 /* Debug */,
+				C392CF096455FB39EFC640B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9F52539F5672B7F4B8A7E44 /* Build configuration list for PBXNativeTarget "Pods-AutoKeyboardScrollView_Interface_Builder_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA8ABAD94FF9A10DE4B7BD4F /* Debug */,
+				67FAD4E0BCEF7F6FFDCA4E1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDBACBF13FF8933556B7A425 /* Build configuration list for PBXNativeTarget "Pods-AutoKeyboardScrollView_Interface_Builder_Example-AutoKeyboardScrollView-AutoKeyboardScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E8692DAB29BF0D00E21C92A /* Debug */,
+				44C18FE1CC474B39701E71DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFC5D697E644EFBDE55E3ADC /* Build configuration list for PBXNativeTarget "Pods-AutoKeyboardScrollView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32714353E313F2DDC2CC05DF /* Debug */,
+				E7E2E656488EB3178B26F1E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9D3E158F764F95C3B713101 /* Build configuration list for PBXNativeTarget "Pods-AutoKeyboardScrollView_Interface_Builder_Example_Tests-AutoKeyboardScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B200CAB7181442778A59335 /* Debug */,
+				C2EFB2C9DA6AC11A23DF8CDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBA47C51A80EB1BB7C3E2B69 /* Build configuration list for PBXNativeTarget "Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B3167CF9C064946B284678C /* Debug */,
+				659944A56B5D4865D77F3BFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC21619F275763CEFE2FFF32 /* Build configuration list for PBXNativeTarget "Pods-AutoKeyboardScrollView_Tests-AutoKeyboardScrollView-AutoKeyboardScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2790CFE9F3C909CA712DEE38 /* Debug */,
+				1FE57B4C29D8A3C57F618C5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8C935E1413F0855C30FFBB8 /* Project object */;
+}

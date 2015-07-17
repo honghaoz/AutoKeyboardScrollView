@@ -2,33 +2,35 @@
 //  ViewController.swift
 //  AutoKeyboardScrollView
 //
-//  Created by Honghao Zhang on 2015-07-11.
+//  Created by Honghao Zhang on 07/14/2015.
 //  Copyright (c) 2015 Honghao Zhang. All rights reserved.
 //
 
 import UIKit
+import AutoKeyboardScrollView
 
 class ViewController: UIViewController {
 
 	var scrollView: AutoKeyboardScrollView!
-	
 	var views = [String: UIView]()
 	
 	override func preferredStatusBarStyle() -> UIStatusBarStyle {
 		return UIStatusBarStyle.LightContent
 	}
 	
-	override func viewDidLoad() {
-		super.viewDidLoad()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+		view.backgroundColor = UIColor.whiteColor()
+		
 		setupViews()
 		setupConstraints()
-	}
+    }
 
 	func setupViews() {
 		scrollView = AutoKeyboardScrollView()
 		views["scrollView"] = scrollView
 		
-		scrollView.backgroundColor = UIColor.brownColor()
+		scrollView.backgroundColor = UIColor(red:0.31, green:0.66, blue:0.42, alpha:1)
 		scrollView.userInteractionEnabled = true
 		scrollView.bounces = true
 		scrollView.scrollEnabled = true
@@ -65,12 +67,12 @@ class ViewController: UIViewController {
 			addWidthCenterXConstraintsForView(views["textField\(i)"]!, width: 200)
 		}
 		
-	
+		
 		// Constraints for dummy subview and textfield
 		addWidthCenterXConstraintsForView(views["dummyView"]!, width: 280)
 		constraints += NSLayoutConstraint.constraintsWithVisualFormat("H:|-[textField8]-|", options: NSLayoutFormatOptions(0), metrics: nil, views: views) as! [NSLayoutConstraint]
 		constraints += NSLayoutConstraint.constraintsWithVisualFormat("V:|-[textField8]-|", options: NSLayoutFormatOptions(0), metrics: nil, views: views) as! [NSLayoutConstraint]
-
+		
 		constraints += NSLayoutConstraint.constraintsWithVisualFormat("V:|-(50)-[textField0(30)]-(20)-[textField1(30)]-(20)-[textField2(30)]-(20)-[textField3(30)]-(20)-[textField4(30)]-(20)-[textField5(30)]-(20)-[textField6(30)]-(20)-[textField7(30)]-(20)-[dummyView(50)]-(150)-|", options: NSLayoutFormatOptions(0), metrics: nil, views: views) as! [NSLayoutConstraint]
 		
 		NSLayoutConstraint.activateConstraints(constraints)
@@ -95,4 +97,3 @@ class ViewController: UIViewController {
 		view.superview!.addConstraint(NSLayoutConstraint(item: view, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: view.superview!, attribute: NSLayoutAttribute.CenterX, multiplier: 1, constant: 0))
 	}
 }
-

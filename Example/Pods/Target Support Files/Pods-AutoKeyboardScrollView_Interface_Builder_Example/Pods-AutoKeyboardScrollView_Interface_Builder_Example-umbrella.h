@@ -1,0 +1,6 @@
+#import <UIKit/UIKit.h>
+
+
+FOUNDATION_EXPORT double Pods_AutoKeyboardScrollView_Interface_Builder_ExampleVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_AutoKeyboardScrollView_Interface_Builder_ExampleVersionString[];
+

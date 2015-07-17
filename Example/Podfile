@@ -1,0 +1,18 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'AutoKeyboardScrollView_Example', :exclusive => true do
+  pod "AutoKeyboardScrollView", :path => "../"
+end
+
+target 'AutoKeyboardScrollView_Tests', :exclusive => true do
+  pod "AutoKeyboardScrollView", :path => "../"
+end
+
+target 'AutoKeyboardScrollView_Interface_Builder_Example', :exclusive => true do
+  pod "AutoKeyboardScrollView", :path => "../"
+end
+
+target 'AutoKeyboardScrollView_Interface_Builder_Example_Tests', :exclusive => true do
+  pod "AutoKeyboardScrollView", :path => "../"
+end
