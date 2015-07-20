@@ -74,4 +74,4 @@ Honghao Zhang (张宏昊) <zhh358@gmail.com>
 
 ## License
 
-AutoKeyboardScrollView is available under the MIT license. See the LICENSE file for more info.
+AutoKeyboardScrollView is available under the MIT license. See the [LICENSE](https://github.com/honghaoz/AutoKeyboardScrollView/blob/master/LICENSE) file for more info.
