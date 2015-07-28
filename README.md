@@ -75,3 +75,7 @@ Honghao Zhang (张宏昊) <zhh358@gmail.com>
 ## License
 
 AutoKeyboardScrollView is available under the MIT license. See the [LICENSE](https://github.com/honghaoz/AutoKeyboardScrollView/blob/master/LICENSE) file for more info.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/honghaoz/autokeyboardscrollview/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
