@@ -28,12 +28,12 @@ To keep your code DRY and make your life with iOS development easier.
 AutoKeyboardScrollView is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your Podfile:
 
 ```ruby
-pod "AutoKeyboardScrollView"
+pod "AutoKeyboardScrollView", '~> 1.3'
 ```
 
 ### Manually
 
-Just drag [`AutoKeyboardScrollView.swift`](https://raw.githubusercontent.com/honghaoz/AutoKeyboardScrollView/master/Pod/Classes/AutoKeyboardScrollView.swift) (Located in `./Pod/Classes`, right click and **Download Linked File**) into your project and use it directly.
+Just drag [`AutoKeyboardScrollView.swift`](https://raw.githubusercontent.com/honghaoz/AutoKeyboardScrollView/master/Source/AutoKeyboardScrollView.swift) (Located in `./Source`, right click and **Download Linked File**) into your project and use it directly.
 
 ## Usage
 Just use `AutoKeyboardScrollView` as parent view of textFields, or views contain textFields. Add subViews on `autoKeyboardScrollView.contentView` (Be sure to add subViews on `.contentView`), then it just works!
@@ -59,14 +59,14 @@ AutoKeyboardScrollView will automatically detect textFields on newly added subVi
 #### Work with Interface Builder
 Create a wrapper view in IB, then add it as a subview on `autoKeyboardScrollView.contentView`. 
 
-See example project and select target:
+See example project and select target *InterfaceBuilderExample*:
 
 ![targets](https://raw.githubusercontent.com/honghaoz/AutoKeyboardScrollView/master/Example/select_targets.png)
 
 ## Requirements
 Works with Auto Layout, not tested on frame based code.
 
-Support iOS 8 and above. Not tested on iOS 6 and iOS 7, since Auto Layout came from iOS6, should be fine.
+Support iOS 7 and above. Not tested on iOS 6, since Auto Layout came from iOS6, should be fine.
 
 ## Author
 
