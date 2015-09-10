@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "AutoKeyboardScrollView"
-  s.version          = "1.2"
+  s.version          = "1.3"
   s.summary          = "AutoKeyboardScrollView moves text fileds up when keyboard appears"
   s.description      = <<-DESC
                        AutoKeyboardScrollView is an UIScrollView subclass which makes showing and dismissing keyboard for UITextFields much easier. It works with Auto Layout
@@ -15,10 +15,8 @@ Pod::Spec.new do |s|
   s.platform     	 = :ios, '8.0'
   s.requires_arc 	 = true
 
-  s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'AutoKeyboardScrollView' => ['Pod/Assets/*.png']
-  }
+  s.source_files = 'Source/*'
 
   s.frameworks = 'UIKit'
+  
 end

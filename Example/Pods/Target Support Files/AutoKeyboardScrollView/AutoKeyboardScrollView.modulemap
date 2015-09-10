@@ -1,0 +1,6 @@
+framework module AutoKeyboardScrollView {
+  umbrella header "AutoKeyboardScrollView-umbrella.h"
+
+  export *
+  module * { export * }
+}

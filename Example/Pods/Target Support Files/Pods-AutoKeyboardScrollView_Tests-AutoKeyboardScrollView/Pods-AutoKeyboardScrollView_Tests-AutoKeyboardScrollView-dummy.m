@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_AutoKeyboardScrollView_Tests_AutoKeyboardScrollView : NSObject
-@end
-@implementation PodsDummy_Pods_AutoKeyboardScrollView_Tests_AutoKeyboardScrollView
-@end
