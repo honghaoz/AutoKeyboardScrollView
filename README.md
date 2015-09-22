@@ -22,13 +22,18 @@ It's kind of annoying to handle scrolling on UIScrollView and it's trivial to wr
 
 To keep your code DRY and make your life with iOS development easier.
 
+## Requirements
+
+- iOS 8.0+ / Mac OS X 10.9+
+- Xcode 7.0
+
 ## Installation
 
 ### CocoaPods
 AutoKeyboardScrollView is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your Podfile:
 
 ```ruby
-pod "AutoKeyboardScrollView", '~> 1.3'
+pod "AutoKeyboardScrollView", '~> 1.4'
 ```
 
 ### Manually
