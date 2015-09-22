@@ -8,9 +8,12 @@
 
 import UIKit
 import XCTest
+import AutoKeyboardScrollView
 
 class ProgrammaticExampleTests: XCTestCase {
-    
+	
+	let scrollView = AutoKeyboardScrollView()
+	
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -21,9 +24,18 @@ class ProgrammaticExampleTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+    func testAddingToSubview() {
+		let view = UIView()
+		
+		scrollView.translatesAutoresizingMaskIntoConstraints = false
+		scrollView.backgroundColor = UIColor(red:0.31, green:0.66, blue:0.42, alpha:1)
+		scrollView.userInteractionEnabled = true
+		scrollView.bounces = true
+		scrollView.scrollEnabled = true
+		
+		scrollView.textFieldMargin = 18
+		
+		view.addSubview(scrollView)
     }
     
     func testPerformanceExample() {

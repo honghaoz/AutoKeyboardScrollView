@@ -27,13 +27,13 @@ class ViewController: UIViewController {
 	}
 	
 	func setupViews() {
-		scrollView.setTranslatesAutoresizingMaskIntoConstraints(false)
+		scrollView.translatesAutoresizingMaskIntoConstraints = false
 		view.addSubview(scrollView)
 		
 		// Remove from super to remove all self constraints
 		wrapperView.removeFromSuperview()
 		
-		wrapperView.setTranslatesAutoresizingMaskIntoConstraints(false)
+		wrapperView.translatesAutoresizingMaskIntoConstraints = false
 		// Be sure to add subviews on contentView
 		scrollView.contentView.addSubview(wrapperView)
 		
@@ -48,11 +48,11 @@ class ViewController: UIViewController {
 		views["wrapperView"] = wrapperView
 		
 		var constraints = [NSLayoutConstraint]()
-		constraints += NSLayoutConstraint.constraintsWithVisualFormat("H:|[scrollView]|", options: NSLayoutFormatOptions(0), metrics: nil, views: views) as! [NSLayoutConstraint]
-		constraints +=  NSLayoutConstraint.constraintsWithVisualFormat("V:|[scrollView]|", options: NSLayoutFormatOptions(0), metrics: nil, views: views) as! [NSLayoutConstraint]
+		constraints += NSLayoutConstraint.constraintsWithVisualFormat("H:|[scrollView]|", options: [], metrics: nil, views: views)
+		constraints +=  NSLayoutConstraint.constraintsWithVisualFormat("V:|[scrollView]|", options: [], metrics: nil, views: views)
 		
-		constraints += NSLayoutConstraint.constraintsWithVisualFormat("H:|[wrapperView]|", options: NSLayoutFormatOptions(0), metrics: nil, views: views) as! [NSLayoutConstraint]
-		constraints +=  NSLayoutConstraint.constraintsWithVisualFormat("V:|[wrapperView]|", options: NSLayoutFormatOptions(0), metrics: nil, views: views) as! [NSLayoutConstraint]
+		constraints += NSLayoutConstraint.constraintsWithVisualFormat("H:|[wrapperView]|", options: [], metrics: nil, views: views)
+		constraints +=  NSLayoutConstraint.constraintsWithVisualFormat("V:|[wrapperView]|", options: [], metrics: nil, views: views)
 		
 		NSLayoutConstraint.activateConstraints(constraints)
 	}

@@ -48,8 +48,29 @@ public class AutoKeyboardScrollView: UIScrollView {
             handleTextField(field)
         }
     }
-    
-    /// Top and Bottom margin for textFiled, this will give an empty spacing between active textField and keyboard
+	
+	/**
+	Manually remove textField to scrollView and let scrollView handle it
+	
+	:param: textField textField in subView tree of receiver
+	*/
+	public func removeTextField(textField: UITextField) {
+		(self.contentView as! ContentView).removeTextField(textField)
+	}
+	
+	/**
+	Manually remove a bunch of textFields to scrollView and let scrollView handle them
+	This is a convenience method
+	
+	:param: textFields Array of textFields in subView tree of receiver
+	*/
+	public func removeTextFields(textFields: [UITextField]) {
+		for field in textFields {
+			removeTextField(field)
+		}
+	}
+	
+    /// Top and Bottom margin for textField, this will give an empty spacing between active textField and keyboard
     public var textFieldMargin: CGFloat = 20
     
     /// contentView's width equals to scrollView
@@ -119,14 +140,12 @@ public class AutoKeyboardScrollView: UIScrollView {
 			}
 			
 			for subview in view.subviews {
-				if let subview = subview as? UIView {
-					checkSubviewsRecursively(subview)
-				}
+				checkSubviewsRecursively(subview)
 			}
 		}
 		
 		/**
-		Add the text filed to managed textFields and setup editing actions for it
+		Add the text field to managed textFields and setup editing actions for it
 		
 		:param: textField A target text field
 		*/
@@ -136,50 +155,62 @@ public class AutoKeyboardScrollView: UIScrollView {
         }
 		
 		/**
-		Setup text filed editing actions for a text filed
+		Setup text field editing actions for a text field
 		
 		:param: textField A target text field
 		*/
         private func setupEditingActionsForTextField(textField: UITextField) {
             if textField.actionsForTarget(self.superview!, forControlEvent: .EditingDidBegin) == nil {
-                textField.addTarget(self.superview!, action: "_textFiledEditingDidBegin:", forControlEvents: .EditingDidBegin)
+                textField.addTarget(self.superview!, action: "_textFieldEditingDidBegin:", forControlEvents: .EditingDidBegin)
             }
             
             if textField.actionsForTarget(self.superview!, forControlEvent: .EditingChanged) == nil {
-                textField.addTarget(self.superview!, action: "_textFiledEditingChanged:", forControlEvents: .EditingChanged)
+                textField.addTarget(self.superview!, action: "_textFieldEditingChanged:", forControlEvents: .EditingChanged)
             }
             
             if textField.actionsForTarget(self.superview!, forControlEvent: .EditingDidEnd) == nil {
-                textField.addTarget(self.superview!, action: "_textFiledEditingDidEnd:", forControlEvents: .EditingDidEnd)
+                textField.addTarget(self.superview!, action: "_textFieldEditingDidEnd:", forControlEvents: .EditingDidEnd)
             }
             
             if textField.actionsForTarget(self.superview!, forControlEvent: .EditingDidEndOnExit) == nil {
-                textField.addTarget(self.superview!, action: "_textFiledEditingDidEndOnExit:", forControlEvents: .EditingDidEndOnExit)
+                textField.addTarget(self.superview!, action: "_textFieldEditingDidEndOnExit:", forControlEvents: .EditingDidEndOnExit)
             }
         }
 		
-//		private func removeTextField(textField: UITextField) {
-//			textFields.(textField)
-//			setupEditingActionsForTextField(textField)
-//		}
+		/**
+		Remove the text field from managed textFields and remove editing actions for it
 		
-//		private func removeEditingActionsForTextField(textField: UITextField) {
-//			if textField.actionsForTarget(self.superview!, forControlEvent: .EditingDidBegin) != nil {
-//				textField.removeTarget(self.superview!, action: "_textFiledEditingDidBegin:", forControlEvents: .EditingDidBegin)
-//			}
-//			
-//			if textField.actionsForTarget(self.superview!, forControlEvent: .EditingChanged) != nil {
-//				textField.removeTarget(self.superview!, action: "_textFiledEditingChanged:", forControlEvents: .EditingChanged)
-//			}
-//			
-//			if textField.actionsForTarget(self.superview!, forControlEvent: .EditingDidEnd) != nil {
-//				textField.removeTarget(self.superview!, action: "_textFiledEditingDidEnd:", forControlEvents: .EditingDidEnd)
-//			}
-//			
-//			if textField.actionsForTarget(self.superview!, forControlEvent: .EditingDidEndOnExit) != nil {
-//				textField.removeTarget(self.superview!, action: "_textFiledEditingDidEndOnExit:", forControlEvents: .EditingDidEndOnExit)
-//			}
-//		}
+		:param: textField A target text field
+		*/
+		private func removeTextField(textField: UITextField) {
+			if let index = textFields.indexOf(textField) {
+				textFields.removeAtIndex(index)
+			}
+			removeEditingActionsForTextField(textField)
+		}
+		
+		/**
+		Remove text field editing actions for a text field
+		
+		:param: textField A target text field
+		*/
+		private func removeEditingActionsForTextField(textField: UITextField) {
+			if textField.actionsForTarget(self.superview!, forControlEvent: .EditingDidBegin) != nil {
+				textField.removeTarget(self.superview!, action: "_textFieldEditingDidBegin:", forControlEvents: .EditingDidBegin)
+			}
+			
+			if textField.actionsForTarget(self.superview!, forControlEvent: .EditingChanged) != nil {
+				textField.removeTarget(self.superview!, action: "_textFieldEditingChanged:", forControlEvents: .EditingChanged)
+			}
+			
+			if textField.actionsForTarget(self.superview!, forControlEvent: .EditingDidEnd) != nil {
+				textField.removeTarget(self.superview!, action: "_textFieldEditingDidEnd:", forControlEvents: .EditingDidEnd)
+			}
+			
+			if textField.actionsForTarget(self.superview!, forControlEvent: .EditingDidEndOnExit) != nil {
+				textField.removeTarget(self.superview!, action: "_textFieldEditingDidEndOnExit:", forControlEvents: .EditingDidEndOnExit)
+			}
+		}
     }
 	
     private var contentViewEqualWidthConstraint: NSLayoutConstraint!
@@ -208,7 +239,7 @@ public class AutoKeyboardScrollView: UIScrollView {
         commonInit()
     }
     
-    required public init(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()
     }
@@ -241,7 +272,7 @@ public class AutoKeyboardScrollView: UIScrollView {
     
     private func setupContentView() {
         contentView = ContentView()
-        contentView.setTranslatesAutoresizingMaskIntoConstraints(false)
+        contentView.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(contentView)
 		
         let top = NSLayoutConstraint(item: contentView, attribute: .Top, relatedBy: .Equal, toItem: self, attribute: .Top, multiplier: 1.0, constant: 0.0)
@@ -290,28 +321,28 @@ extension AutoKeyboardScrollView {
 
 // MARK: TextFields Actions
 extension AutoKeyboardScrollView {
-	@objc(_textFiledEditingDidBegin:)
-    private func _textFiledEditingDidBegin(sender: AnyObject) {
+	@objc(_textFieldEditingDidBegin:)
+    private func _textFieldEditingDidBegin(sender: AnyObject) {
         activeTextField = sender as? UITextField
         if self.keyboardFrame != nil {
             makeActiveTextFieldVisible(self.keyboardFrame)
         }
     }
 	
-	@objc(_textFiledEditingChanged:)
-    private func _textFiledEditingChanged(sender: AnyObject) {
+	@objc(_textFieldEditingChanged:)
+    private func _textFieldEditingChanged(sender: AnyObject) {
         if self.keyboardFrame != nil {
             makeActiveTextFieldVisible(self.keyboardFrame)
         }
     }
 	
-	@objc(_textFiledEditingDidEnd:)
-    private func _textFiledEditingDidEnd(sender: AnyObject) {
+	@objc(_textFieldEditingDidEnd:)
+    private func _textFieldEditingDidEnd(sender: AnyObject) {
         // Empty implementation gives the ability of dismissing keyboard on tapping return
     }
 	
-	@objc(_textFiledEditingDidEndOnExit:)
-    private func _textFiledEditingDidEndOnExit(sender: AnyObject) {
+	@objc(_textFieldEditingDidEndOnExit:)
+    private func _textFieldEditingDidEndOnExit(sender: AnyObject) {
         // Empty implementation gives the ability of dismissing keyboard on tapping return
     }
 }

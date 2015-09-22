@@ -28,7 +28,7 @@ class ViewController: UIViewController {
 	private func setupViews() {
 		views["scrollView"] = scrollView
 		
-		scrollView.setTranslatesAutoresizingMaskIntoConstraints(false)
+		scrollView.translatesAutoresizingMaskIntoConstraints = false
 		scrollView.backgroundColor = UIColor(red:0.31, green:0.66, blue:0.42, alpha:1)
 		scrollView.userInteractionEnabled = true
 		scrollView.bounces = true
@@ -46,7 +46,7 @@ class ViewController: UIViewController {
 		// A text field on a subview
 		let dummyView = UIView()
 		dummyView.backgroundColor = UIColor(white: 1.0, alpha: 0.4)
-		dummyView.setTranslatesAutoresizingMaskIntoConstraints(false)
+		dummyView.translatesAutoresizingMaskIntoConstraints = false
 		views["dummyView"] = dummyView
 		
 		let textField8 = newTextField(8)
@@ -59,8 +59,8 @@ class ViewController: UIViewController {
 		var constraints = [NSLayoutConstraint]()
 		
 		// Constraints for scorllView
-		constraints += NSLayoutConstraint.constraintsWithVisualFormat("H:|[scrollView]|", options: NSLayoutFormatOptions(0), metrics: nil, views: views) as! [NSLayoutConstraint]
-		constraints += NSLayoutConstraint.constraintsWithVisualFormat("V:|[scrollView]|", options: NSLayoutFormatOptions(0), metrics: nil, views: views) as! [NSLayoutConstraint]
+		constraints += NSLayoutConstraint.constraintsWithVisualFormat("H:|[scrollView]|", options: [], metrics: nil, views: views)
+		constraints += NSLayoutConstraint.constraintsWithVisualFormat("V:|[scrollView]|", options: [], metrics: nil, views: views)
 		
 		// Center width constraints for text fields
 		for i in 0 ..< 8 {
@@ -70,10 +70,10 @@ class ViewController: UIViewController {
 		
 		// Constraints for dummy subview and textfield
 		addWidthCenterXConstraintsForView(views["dummyView"]!, width: 280)
-		constraints += NSLayoutConstraint.constraintsWithVisualFormat("H:|-[textField8]-|", options: NSLayoutFormatOptions(0), metrics: nil, views: views) as! [NSLayoutConstraint]
-		constraints += NSLayoutConstraint.constraintsWithVisualFormat("V:|-[textField8]-|", options: NSLayoutFormatOptions(0), metrics: nil, views: views) as! [NSLayoutConstraint]
+		constraints += NSLayoutConstraint.constraintsWithVisualFormat("H:|-[textField8]-|", options: [], metrics: nil, views: views)
+		constraints += NSLayoutConstraint.constraintsWithVisualFormat("V:|-[textField8]-|", options: [], metrics: nil, views: views)
 		
-		constraints += NSLayoutConstraint.constraintsWithVisualFormat("V:|-(100)-[textField0(30)]-(20)-[textField1(30)]-(20)-[textField2(30)]-(20)-[textField3(30)]-(20)-[textField4(30)]-(20)-[textField5(30)]-(20)-[textField6(30)]-(20)-[textField7(30)]-(20)-[dummyView(50)]-(150)-|", options: NSLayoutFormatOptions(0), metrics: nil, views: views) as! [NSLayoutConstraint]
+		constraints += NSLayoutConstraint.constraintsWithVisualFormat("V:|-(100)-[textField0(30)]-(20)-[textField1(30)]-(20)-[textField2(30)]-(20)-[textField3(30)]-(20)-[textField4(30)]-(20)-[textField5(30)]-(20)-[textField6(30)]-(20)-[textField7(30)]-(20)-[dummyView(50)]-(150)-|", options: [], metrics: nil, views: views)
 		
 		NSLayoutConstraint.activateConstraints(constraints)
 	}
@@ -82,7 +82,7 @@ class ViewController: UIViewController {
 	// MARK: - Helpers
 	private func newTextField(id: Int) -> UITextField {
 		let textField = UITextField()
-		textField.setTranslatesAutoresizingMaskIntoConstraints(false)
+		textField.translatesAutoresizingMaskIntoConstraints = false
 		textField.placeholder = "Type here..."
 		textField.textAlignment = NSTextAlignment.Center
 		textField.backgroundColor = UIColor.whiteColor()
