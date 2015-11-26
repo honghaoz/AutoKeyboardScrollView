@@ -262,6 +262,13 @@ public class AutoKeyboardScrollView: UIScrollView {
         _expectedScrollRect = rect
         scrollRectToVisible(rect, animated: animated)
     }
+	
+	public override func addSubview(view: UIView) {
+		if (view is ContentView == false) && (view is UIImageView == false && view.alpha == 0) {
+			print("warning: adding view on AutoKeyboardScrollView detected, you should add view on .contentView")
+		}
+		super.addSubview(view)
+	}
     
     // MARK: Setups
     private func commonInit() {
