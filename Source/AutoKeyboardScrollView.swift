@@ -350,7 +350,8 @@ extension AutoKeyboardScrollView {
 	
 	@objc(_textFieldEditingDidEndOnExit:)
     private func _textFieldEditingDidEndOnExit(sender: AnyObject) {
-        // Empty implementation gives the ability of dismissing keyboard on tapping return
+        // This method gives the ability of dismissing keyboard on tapping return
+        activeTextField = nil
     }
 }
 
