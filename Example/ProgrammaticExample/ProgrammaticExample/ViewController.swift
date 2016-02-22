@@ -53,6 +53,7 @@ class ViewController: UIViewController {
 		textField8.placeholder = "Text filed on a deeper subview"
 		dummyView.addSubview(textField8)
 		scrollView.contentView.addSubview(dummyView)
+        scrollView.setTextMargin(100, forTextField: textField8)
 	}
 	
 	private func setupConstraints() {

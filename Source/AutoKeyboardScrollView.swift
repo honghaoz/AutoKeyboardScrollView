@@ -69,6 +69,17 @@ public class AutoKeyboardScrollView: UIScrollView {
 			removeTextField(field)
 		}
 	}
+    
+    /**
+     Set top and bottom margin for specific textField.
+     This will give an empty spacing between active textField and keyboard
+     
+     - parameter margin:    margin
+     - parameter textField: textField
+     */
+    public func setTextMargin(margin: CGFloat, forTextField textField: UITextField) {
+        (contentView as! ContentView).setTextMargin(margin, forTextField: textField)
+    }
 	
     /// Top and Bottom margin for textField, this will give an empty spacing between active textField and keyboard
     public var textFieldMargin: CGFloat = 20
@@ -113,7 +124,8 @@ public class AutoKeyboardScrollView: UIScrollView {
     // MARK: - Private
     private class ContentView: UIView {
         var textFields = [UITextField]()
-		
+        var textFieldsToMargin = [UITextField : CGFloat]()
+
 		/**
 		addSubView: will check whether there's textField on this view, be sure to add textField before adding its container View
 		
@@ -190,6 +202,7 @@ public class AutoKeyboardScrollView: UIScrollView {
 		private func removeTextField(textField: UITextField) {
 			if let index = textFields.indexOf(textField) {
 				textFields.removeAtIndex(index)
+                textFieldsToMargin.removeValueForKey(textField)
 			}
 			removeEditingActionsForTextField(textField)
 		}
@@ -221,6 +234,15 @@ public class AutoKeyboardScrollView: UIScrollView {
 				textField.removeTarget(scrollView, action: "_textFieldEditingDidEndOnExit:", forControlEvents: .EditingDidEndOnExit)
 			}
 		}
+        
+        private func setTextMargin(margin: CGFloat, forTextField textField: UITextField) {
+            guard textFields.contains(textField) else {
+                assertionFailure("textField: \(textField) is not handled")
+                return
+            }
+            
+            textFieldsToMargin[textField] = margin
+        }
     }
 	
     private var contentViewEqualWidthConstraint: NSLayoutConstraint!
@@ -446,6 +468,7 @@ extension AutoKeyboardScrollView {
         var targetFrame = flipLandscapeFrameForIOS7(activeTextField.convertRect(activeTextField.bounds, toView: self))
         
         // Add top & bottom margins for target frame
+        let textFieldMargin = (contentView as! ContentView).textFieldsToMargin[activeTextField] ?? self.textFieldMargin
         targetFrame.origin.y -= textFieldMargin
         targetFrame.size.height += textFieldMargin * 2
         
