@@ -503,8 +503,7 @@ extension AutoKeyboardScrollView {
         return (notification.userInfo![UIKeyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue as NSTimeInterval!
     }
     
-    private func isIOS7() -> Bool { return !isIOS8() }
-    private func isIOS8() -> Bool { return floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_7_1 }
+    private func isIOS7() -> Bool { return floor(NSFoundationVersionNumber) <= floor(NSFoundationVersionNumber_iOS_7_1) }
     
     private func isLandscapeMode() -> Bool {
         return UIInterfaceOrientationIsLandscape(UIApplication.sharedApplication().statusBarOrientation)
