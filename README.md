@@ -5,11 +5,11 @@
 [![License](https://img.shields.io/cocoapods/l/AutoKeyboardScrollView.svg?style=flat)](http://cocoapods.org/pods/AutoKeyboardScrollView)
 [![Platform](https://img.shields.io/cocoapods/p/AutoKeyboardScrollView.svg?style=flat)](http://cocoapods.org/pods/AutoKeyboardScrollView)
 
-AutoKeyboardScrollView is a smart UIScrollView which can: 
-- Scroll to proper position and make sure the active textField is visible when keyboard is showing 
-- Customize top and bottom margin for textField 
-- Dismiss keyboard when tap on scrollView 
-- Dismiss keyboard on tap "Return" 
+AutoKeyboardScrollView is a smart UIScrollView which can:
+- Scroll to proper position and make sure the active textField is visible when keyboard is showing
+- Customize top and bottom margin for textField
+- Dismiss keyboard when tap on scrollView
+- Dismiss keyboard on tap "Return"
 - New `contentView` which makes your life with Auto Layout easier
 
 ## Preview
@@ -33,7 +33,7 @@ To keep your code DRY and make your life with iOS development easier.
 AutoKeyboardScrollView is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your Podfile:
 
 ```ruby
-pod "AutoKeyboardScrollView", '~> 1.4'
+pod "AutoKeyboardScrollView", '~> 1.5'
 ```
 
 ### Manually
@@ -62,7 +62,7 @@ AutoKeyboardScrollView will be attached with a Tap gesture and let you dismiss k
 AutoKeyboardScrollView will automatically detect textFields on newly added subViews, and add UIControlEditing actions for these textField, it will let you dismiss keyboard when tap "Return".
 
 #### Work with Interface Builder
-Create a wrapper view in IB, then add it as a subview on `autoKeyboardScrollView.contentView`. 
+Create a wrapper view in IB, then add it as a subview on `autoKeyboardScrollView.contentView`.
 
 See example project and select target *InterfaceBuilderExample*:
 
