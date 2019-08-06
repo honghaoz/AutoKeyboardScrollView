@@ -7,206 +7,283 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04EA44AB8D6D36841F312334BAC520B2 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 125C58DD5DF03185AB9B4BBBD182CBA2 /* Pods-dummy.m */; };
-		2D0AA2D86A2B86FF86F941725E733458 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755D209C925EE4951CF8014FF40D50E6 /* UIKit.framework */; };
-		35AA474285FF2F68A02A717BA51FC200 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8FDFBAAC2754D9D5A47506FF779710 /* Foundation.framework */; };
-		69FC8B16BFCC6A7A9ECF63E687C8F7FC /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB9586FA5AEEAA32CC6A9331536D4ED3 /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		79F3DA9B879EC23435D87067BA412766 /* AutoKeyboardScrollView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD8D75DBF58B9854040D5ECF27FAB03 /* AutoKeyboardScrollView-dummy.m */; };
-		BC1A577009DD55F16D807A3CE25C6939 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8FDFBAAC2754D9D5A47506FF779710 /* Foundation.framework */; };
-		E69CCE4F51BAEA9D24EB1650698B9C30 /* AutoKeyboardScrollView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 31F9B71EBDC2D27A06F4507253F099D0 /* AutoKeyboardScrollView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F7F5ECCFF35FF2713AE6C2B414197876 /* AutoKeyboardScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BC1F552105E0D31FBE34BB73BAFA28 /* AutoKeyboardScrollView.swift */; };
+		0146AE240501BCFC737B357B1714369D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		241CDF0C644F241AFCA7E892044FBA77 /* Pods-InterfaceBuilderExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF47FAD5AF344937790AF4C52F60E5DD /* Pods-InterfaceBuilderExample-dummy.m */; };
+		2D548564F107DB3095B9819118105944 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		64B152B1B27348626B4629C8FF4B8351 /* Pods-ProgrammaticExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D77A93EC71609CC9F505FBC9BFF9DB4A /* Pods-ProgrammaticExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FA4401DC92BF6A8439D9E00DA39EA27 /* Pods-ProgrammaticExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9D46C8200D39DBBF062BCC862AA33E /* Pods-ProgrammaticExample-dummy.m */; };
+		BABFD3BC4DDA7FD66DF36B3719F83C66 /* AutoKeyboardScrollView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE06813A271410CBD749C73E8E116F7 /* AutoKeyboardScrollView-dummy.m */; };
+		BC96BE779FAA2D83D48677662B82D759 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		C50CB4036216E5D29CE0AB79F350FE42 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		CC1D43FE7BE2320774178E4C83101FE9 /* AutoKeyboardScrollView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 81F6C88035555D53052743BC139F01D6 /* AutoKeyboardScrollView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC316483E7B5B26A3B92F39D16E4B9C2 /* AutoKeyboardScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089EF6ED407F16C7D78DB5554FAA5F19 /* AutoKeyboardScrollView.swift */; };
+		D7536867A1475A858195C2ED562FB66B /* Pods-InterfaceBuilderExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D7B75F29B661AC475D95C21A25EE63A4 /* Pods-InterfaceBuilderExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1118890E415D459BFBB5BD9B880067BA /* PBXContainerItemProxy */ = {
+		65C1811FF41D217DE97B068E03715339 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 433198606F1A2F5A8BA2DF031D5ABFAA;
+			remoteGlobalIDString = C2BFE5BB8C89678849CA2D74FDB4110C;
+			remoteInfo = AutoKeyboardScrollView;
+		};
+		F73C4BECABBD00ECB4F1AFCB4EB91971 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2BFE5BB8C89678849CA2D74FDB4110C;
 			remoteInfo = AutoKeyboardScrollView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0070A97E2B8B3B96BAC5B6AB3163E9FD /* AutoKeyboardScrollView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AutoKeyboardScrollView-prefix.pch"; sourceTree = "<group>"; };
-		09BC1F552105E0D31FBE34BB73BAFA28 /* AutoKeyboardScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AutoKeyboardScrollView.swift; sourceTree = "<group>"; };
-		10DA564D653341DA79FA527C9FD5605F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		125C58DD5DF03185AB9B4BBBD182CBA2 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		31F9B71EBDC2D27A06F4507253F099D0 /* AutoKeyboardScrollView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AutoKeyboardScrollView-umbrella.h"; sourceTree = "<group>"; };
-		35A80F21D22E2B022C12739883EA33F8 /* AutoKeyboardScrollView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "AutoKeyboardScrollView-Private.xcconfig"; sourceTree = "<group>"; };
-		4637A6EA1B34E2290C0CD0FAE2F91BEC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		4A8FDFBAAC2754D9D5A47506FF779710 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		53A997883394D949BE0338EA4DE8A5B1 /* AutoKeyboardScrollView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AutoKeyboardScrollView.modulemap; sourceTree = "<group>"; };
-		755D209C925EE4951CF8014FF40D50E6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
-		87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		8FD8D75DBF58B9854040D5ECF27FAB03 /* AutoKeyboardScrollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AutoKeyboardScrollView-dummy.m"; sourceTree = "<group>"; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C0C76E8BE0429316E04C56CDE4CC3CB7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D65E7E8EA2FA2D7AA995DCE49219A7C3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DEC7340A00BF84A34673C7A51CAF788C /* AutoKeyboardScrollView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AutoKeyboardScrollView.xcconfig; sourceTree = "<group>"; };
-		E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
-		E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F67EB3199E20A2F81241CC63FDE5E361 /* AutoKeyboardScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AutoKeyboardScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB9586FA5AEEAA32CC6A9331536D4ED3 /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		060B8A4B5166E6CECEE2A52C6D1A5CA3 /* Pods-ProgrammaticExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ProgrammaticExample.modulemap"; sourceTree = "<group>"; };
+		089EF6ED407F16C7D78DB5554FAA5F19 /* AutoKeyboardScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoKeyboardScrollView.swift; path = Source/AutoKeyboardScrollView.swift; sourceTree = "<group>"; };
+		0DB2A4CB11901758F0B5853C21B61947 /* AutoKeyboardScrollView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AutoKeyboardScrollView.modulemap; sourceTree = "<group>"; };
+		171FBDF93A3AB33E4959057ACCB95363 /* Pods-InterfaceBuilderExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-InterfaceBuilderExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		20644B78B3CA9B3C88D74DFE7AAEBC19 /* Pods-ProgrammaticExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ProgrammaticExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2CE06813A271410CBD749C73E8E116F7 /* AutoKeyboardScrollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AutoKeyboardScrollView-dummy.m"; sourceTree = "<group>"; };
+		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5A2F40B85EA3D44737E7A30900B43B71 /* Pods-InterfaceBuilderExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InterfaceBuilderExample-frameworks.sh"; sourceTree = "<group>"; };
+		65B7F7327443B2E9B596AD6B00DFA240 /* AutoKeyboardScrollView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AutoKeyboardScrollView-Info.plist"; sourceTree = "<group>"; };
+		81F6C88035555D53052743BC139F01D6 /* AutoKeyboardScrollView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AutoKeyboardScrollView-umbrella.h"; sourceTree = "<group>"; };
+		84062D44F02A07BAF55E51302492C343 /* Pods-ProgrammaticExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ProgrammaticExample.release.xcconfig"; sourceTree = "<group>"; };
+		84D2CC71683A8A0317475E368177B860 /* AutoKeyboardScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AutoKeyboardScrollView.framework; path = AutoKeyboardScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		853C0E90DEEDF8D35CB9B7C724377AE2 /* Pods-ProgrammaticExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ProgrammaticExample.debug.xcconfig"; sourceTree = "<group>"; };
+		9365D0A2B62EEEF6120A38AE483DA1D3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		9BA91B54B9C9B808541D0B27346D4190 /* Pods-InterfaceBuilderExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-InterfaceBuilderExample.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0965B88757C9AD8FF63F6FFA517F9AE /* Pods-ProgrammaticExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ProgrammaticExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		A2ACB97C6B7FEA43C7F1CF6DF9D6B856 /* Pods_ProgrammaticExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ProgrammaticExample.framework; path = "Pods-ProgrammaticExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA906216F359CBD54579142959590FE0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		AB9D46C8200D39DBBF062BCC862AA33E /* Pods-ProgrammaticExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ProgrammaticExample-dummy.m"; sourceTree = "<group>"; };
+		B17B57C3A381F52234052C20607CD04B /* Pods-InterfaceBuilderExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InterfaceBuilderExample.release.xcconfig"; sourceTree = "<group>"; };
+		C618A7F7058E02014D56CE0EAC24B8EE /* Pods-ProgrammaticExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ProgrammaticExample-frameworks.sh"; sourceTree = "<group>"; };
+		CF47FAD5AF344937790AF4C52F60E5DD /* Pods-InterfaceBuilderExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InterfaceBuilderExample-dummy.m"; sourceTree = "<group>"; };
+		D1DBAEF388BC04AD831A16DFBB2B9FFC /* Pods_InterfaceBuilderExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_InterfaceBuilderExample.framework; path = "Pods-InterfaceBuilderExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D598665456B9CC1AE17D9C4974CD9AF0 /* Pods-ProgrammaticExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ProgrammaticExample-Info.plist"; sourceTree = "<group>"; };
+		D77A93EC71609CC9F505FBC9BFF9DB4A /* Pods-ProgrammaticExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ProgrammaticExample-umbrella.h"; sourceTree = "<group>"; };
+		D7B75F29B661AC475D95C21A25EE63A4 /* Pods-InterfaceBuilderExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-InterfaceBuilderExample-umbrella.h"; sourceTree = "<group>"; };
+		D93BDA0E4F3B0F0E0BE2DA06FD659812 /* Pods-InterfaceBuilderExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InterfaceBuilderExample-Info.plist"; sourceTree = "<group>"; };
+		DA2274C3CCAF638098CC2B04201F172B /* AutoKeyboardScrollView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AutoKeyboardScrollView.xcconfig; sourceTree = "<group>"; };
+		DC938537B3A1558C055DA96E4BE1E623 /* Pods-InterfaceBuilderExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InterfaceBuilderExample.debug.xcconfig"; sourceTree = "<group>"; };
+		DD4D3A51E63A45183283403E27854196 /* Pods-InterfaceBuilderExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InterfaceBuilderExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		EFB9E565796B3E280B2D27E6D1921A6E /* AutoKeyboardScrollView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AutoKeyboardScrollView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F2EDCB8722698AAE09A260E76DC1EBCF /* AutoKeyboardScrollView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AutoKeyboardScrollView-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A5E5CF1DE579BAE59DF2F8DE37C4F5B1 /* Frameworks */ = {
+		18D750769FF3F9840902CC1E98DA74A7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC1A577009DD55F16D807A3CE25C6939 /* Foundation.framework in Frameworks */,
-				2D0AA2D86A2B86FF86F941725E733458 /* UIKit.framework in Frameworks */,
+				BC96BE779FAA2D83D48677662B82D759 /* Foundation.framework in Frameworks */,
+				C50CB4036216E5D29CE0AB79F350FE42 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B66F77678F53010DDD3CF6DE5488CA1C /* Frameworks */ = {
+		E31D7275CF1374066F2C7A12F2DD215B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35AA474285FF2F68A02A717BA51FC200 /* Foundation.framework in Frameworks */,
+				2D548564F107DB3095B9819118105944 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5F21DD6FF35CBEFD1FDD5021462DC32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0146AE240501BCFC737B357B1714369D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		171AB7875548E0D8B24478ED5EB171B0 /* AutoKeyboardScrollView */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AA9FEE7D790E420AB2EA64A56C14F895 /* Source */,
-				3C76C5CB87F52A73F0AC3D89F7FD9231 /* Support Files */,
+				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1B1826E68393967425F3DB4777EA08D9 /* Pods-InterfaceBuilderExample */ = {
+			isa = PBXGroup;
+			children = (
+				9BA91B54B9C9B808541D0B27346D4190 /* Pods-InterfaceBuilderExample.modulemap */,
+				171FBDF93A3AB33E4959057ACCB95363 /* Pods-InterfaceBuilderExample-acknowledgements.markdown */,
+				DD4D3A51E63A45183283403E27854196 /* Pods-InterfaceBuilderExample-acknowledgements.plist */,
+				CF47FAD5AF344937790AF4C52F60E5DD /* Pods-InterfaceBuilderExample-dummy.m */,
+				5A2F40B85EA3D44737E7A30900B43B71 /* Pods-InterfaceBuilderExample-frameworks.sh */,
+				D93BDA0E4F3B0F0E0BE2DA06FD659812 /* Pods-InterfaceBuilderExample-Info.plist */,
+				D7B75F29B661AC475D95C21A25EE63A4 /* Pods-InterfaceBuilderExample-umbrella.h */,
+				DC938537B3A1558C055DA96E4BE1E623 /* Pods-InterfaceBuilderExample.debug.xcconfig */,
+				B17B57C3A381F52234052C20607CD04B /* Pods-InterfaceBuilderExample.release.xcconfig */,
+			);
+			name = "Pods-InterfaceBuilderExample";
+			path = "Target Support Files/Pods-InterfaceBuilderExample";
+			sourceTree = "<group>";
+		};
+		1CF54DDCED8D5A88319D081965DE4C17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84D2CC71683A8A0317475E368177B860 /* AutoKeyboardScrollView.framework */,
+				D1DBAEF388BC04AD831A16DFBB2B9FFC /* Pods_InterfaceBuilderExample.framework */,
+				A2ACB97C6B7FEA43C7F1CF6DF9D6B856 /* Pods_ProgrammaticExample.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32E70337217AB0FE4C1F83582F0B1482 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B1826E68393967425F3DB4777EA08D9 /* Pods-InterfaceBuilderExample */,
+				9521C990E1CAECB4C9B572474BADD56C /* Pods-ProgrammaticExample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8158A3B26693C892441A2B3890C5721D /* AutoKeyboardScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				089EF6ED407F16C7D78DB5554FAA5F19 /* AutoKeyboardScrollView.swift */,
+				E693278330D09D9696EA4058CB9F23EB /* Pod */,
+				E5375AF3BAD7BB4D6F6CDB38B19FB750 /* Support Files */,
 			);
 			name = AutoKeyboardScrollView;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		3C76C5CB87F52A73F0AC3D89F7FD9231 /* Support Files */ = {
+		9521C990E1CAECB4C9B572474BADD56C /* Pods-ProgrammaticExample */ = {
 			isa = PBXGroup;
 			children = (
-				53A997883394D949BE0338EA4DE8A5B1 /* AutoKeyboardScrollView.modulemap */,
-				DEC7340A00BF84A34673C7A51CAF788C /* AutoKeyboardScrollView.xcconfig */,
-				35A80F21D22E2B022C12739883EA33F8 /* AutoKeyboardScrollView-Private.xcconfig */,
-				8FD8D75DBF58B9854040D5ECF27FAB03 /* AutoKeyboardScrollView-dummy.m */,
-				0070A97E2B8B3B96BAC5B6AB3163E9FD /* AutoKeyboardScrollView-prefix.pch */,
-				31F9B71EBDC2D27A06F4507253F099D0 /* AutoKeyboardScrollView-umbrella.h */,
-				D65E7E8EA2FA2D7AA995DCE49219A7C3 /* Info.plist */,
+				060B8A4B5166E6CECEE2A52C6D1A5CA3 /* Pods-ProgrammaticExample.modulemap */,
+				20644B78B3CA9B3C88D74DFE7AAEBC19 /* Pods-ProgrammaticExample-acknowledgements.markdown */,
+				A0965B88757C9AD8FF63F6FFA517F9AE /* Pods-ProgrammaticExample-acknowledgements.plist */,
+				AB9D46C8200D39DBBF062BCC862AA33E /* Pods-ProgrammaticExample-dummy.m */,
+				C618A7F7058E02014D56CE0EAC24B8EE /* Pods-ProgrammaticExample-frameworks.sh */,
+				D598665456B9CC1AE17D9C4974CD9AF0 /* Pods-ProgrammaticExample-Info.plist */,
+				D77A93EC71609CC9F505FBC9BFF9DB4A /* Pods-ProgrammaticExample-umbrella.h */,
+				853C0E90DEEDF8D35CB9B7C724377AE2 /* Pods-ProgrammaticExample.debug.xcconfig */,
+				84062D44F02A07BAF55E51302492C343 /* Pods-ProgrammaticExample.release.xcconfig */,
+			);
+			name = "Pods-ProgrammaticExample";
+			path = "Target Support Files/Pods-ProgrammaticExample";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				EF059607F763A16B2250DC3D82714FA6 /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				1CF54DDCED8D5A88319D081965DE4C17 /* Products */,
+				32E70337217AB0FE4C1F83582F0B1482 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
+				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E5375AF3BAD7BB4D6F6CDB38B19FB750 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0DB2A4CB11901758F0B5853C21B61947 /* AutoKeyboardScrollView.modulemap */,
+				DA2274C3CCAF638098CC2B04201F172B /* AutoKeyboardScrollView.xcconfig */,
+				2CE06813A271410CBD749C73E8E116F7 /* AutoKeyboardScrollView-dummy.m */,
+				65B7F7327443B2E9B596AD6B00DFA240 /* AutoKeyboardScrollView-Info.plist */,
+				F2EDCB8722698AAE09A260E76DC1EBCF /* AutoKeyboardScrollView-prefix.pch */,
+				81F6C88035555D53052743BC139F01D6 /* AutoKeyboardScrollView-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/AutoKeyboardScrollView";
 			sourceTree = "<group>";
 		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+		E693278330D09D9696EA4058CB9F23EB /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				D0FB9306D21AF23A056944AE037CBFFF /* iOS */,
+				EFB9E565796B3E280B2D27E6D1921A6E /* AutoKeyboardScrollView.podspec */,
+				AA906216F359CBD54579142959590FE0 /* LICENSE */,
+				9365D0A2B62EEEF6120A38AE483DA1D3 /* README.md */,
 			);
-			name = Frameworks;
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		75D98FF52E597A11900E131B6C4E1ADA /* Pods */ = {
+		EF059607F763A16B2250DC3D82714FA6 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */,
-				79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */,
-				D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */,
-				87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */,
-				125C58DD5DF03185AB9B4BBBD182CBA2 /* Pods-dummy.m */,
-				E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */,
-				CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */,
-				FB9586FA5AEEAA32CC6A9331536D4ED3 /* Pods-umbrella.h */,
-				4637A6EA1B34E2290C0CD0FAE2F91BEC /* Pods.debug.xcconfig */,
-				C0C76E8BE0429316E04C56CDE4CC3CB7 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			path = "Target Support Files/Pods";
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				984F77E1D82F9AFD4685D8CCFDCAEC83 /* Development Pods */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
-				B7B80995527643776607AFFA75B91E24 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		984F77E1D82F9AFD4685D8CCFDCAEC83 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				171AB7875548E0D8B24478ED5EB171B0 /* AutoKeyboardScrollView */,
+				8158A3B26693C892441A2B3890C5721D /* AutoKeyboardScrollView */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		AA9FEE7D790E420AB2EA64A56C14F895 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				09BC1F552105E0D31FBE34BB73BAFA28 /* AutoKeyboardScrollView.swift */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		B7B80995527643776607AFFA75B91E24 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				75D98FF52E597A11900E131B6C4E1ADA /* Pods */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F67EB3199E20A2F81241CC63FDE5E361 /* AutoKeyboardScrollView.framework */,
-				10DA564D653341DA79FA527C9FD5605F /* Pods.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D0FB9306D21AF23A056944AE037CBFFF /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				4A8FDFBAAC2754D9D5A47506FF779710 /* Foundation.framework */,
-				755D209C925EE4951CF8014FF40D50E6 /* UIKit.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		16EECFDB32E6FC0207AB2C51E46CD161 /* Headers */ = {
+		887EF4B23B66B9F5F6A4632399C394EB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69FC8B16BFCC6A7A9ECF63E687C8F7FC /* Pods-umbrella.h in Headers */,
+				64B152B1B27348626B4629C8FF4B8351 /* Pods-ProgrammaticExample-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E6D18452CE98E10512A559FFD8446898 /* Headers */ = {
+		97F8F24EB0AC8DA1433234E0C3F8577B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E69CCE4F51BAEA9D24EB1650698B9C30 /* AutoKeyboardScrollView-umbrella.h in Headers */,
+				D7536867A1475A858195C2ED562FB66B /* Pods-InterfaceBuilderExample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF4FCD44311FD134252041A02B130BAA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC1D43FE7BE2320774178E4C83101FE9 /* AutoKeyboardScrollView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		433198606F1A2F5A8BA2DF031D5ABFAA /* AutoKeyboardScrollView */ = {
+		73F445AEF95CED49B83EEE6FC97A20B9 /* Pods-InterfaceBuilderExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ADAEC6B5267966B22C8790F127D28821 /* Build configuration list for PBXNativeTarget "AutoKeyboardScrollView" */;
+			buildConfigurationList = 3DD68F107F5E418F302FB523B3A68E55 /* Build configuration list for PBXNativeTarget "Pods-InterfaceBuilderExample" */;
 			buildPhases = (
-				2A7FCDC77888DEEC925A6D8E03882E84 /* Sources */,
-				A5E5CF1DE579BAE59DF2F8DE37C4F5B1 /* Frameworks */,
-				E6D18452CE98E10512A559FFD8446898 /* Headers */,
+				97F8F24EB0AC8DA1433234E0C3F8577B /* Headers */,
+				F717A0D9B95B85603BABD58B770759FD /* Sources */,
+				E31D7275CF1374066F2C7A12F2DD215B /* Frameworks */,
+				E746D49C05FF02DB9F7A7C8A9B47C0CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC0AADE18AFFFC7C8978173532B40928 /* PBXTargetDependency */,
+			);
+			name = "Pods-InterfaceBuilderExample";
+			productName = "Pods-InterfaceBuilderExample";
+			productReference = D1DBAEF388BC04AD831A16DFBB2B9FFC /* Pods_InterfaceBuilderExample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C2BFE5BB8C89678849CA2D74FDB4110C /* AutoKeyboardScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78ADE33A8CAB018DAB465D4F6EFA6B2B /* Build configuration list for PBXNativeTarget "AutoKeyboardScrollView" */;
+			buildPhases = (
+				CF4FCD44311FD134252041A02B130BAA /* Headers */,
+				B1DB6CCC32BDE650B7F48DA6EB76B232 /* Sources */,
+				18D750769FF3F9840902CC1E98DA74A7 /* Frameworks */,
+				19F22E8017A3DC10E46939D89FFD2664 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -214,302 +291,485 @@
 			);
 			name = AutoKeyboardScrollView;
 			productName = AutoKeyboardScrollView;
-			productReference = F67EB3199E20A2F81241CC63FDE5E361 /* AutoKeyboardScrollView.framework */;
+			productReference = 84D2CC71683A8A0317475E368177B860 /* AutoKeyboardScrollView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4E0081623F481DF3DAA9312772FE55A7 /* Pods */ = {
+		FC0E752F7470C28CB78584D095C1F54F /* Pods-ProgrammaticExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 288D74C3EEDE3C36AA48DDD08971BC03 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 6787033E0A27E5F233F8415B3CBA147B /* Build configuration list for PBXNativeTarget "Pods-ProgrammaticExample" */;
 			buildPhases = (
-				B199C22BF192220CDF42A1A0AB7CA53C /* Sources */,
-				B66F77678F53010DDD3CF6DE5488CA1C /* Frameworks */,
-				16EECFDB32E6FC0207AB2C51E46CD161 /* Headers */,
+				887EF4B23B66B9F5F6A4632399C394EB /* Headers */,
+				0C0F21988F8F3CC734DCF8CD372305F0 /* Sources */,
+				F5F21DD6FF35CBEFD1FDD5021462DC32 /* Frameworks */,
+				6B5B9D677CEE8D29FAE0A4AED4C92325 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1A544A9577EE41D24629E580F18E0D86 /* PBXTargetDependency */,
+				A1A8BACA6E96F206A44DC8A78368DF17 /* PBXTargetDependency */,
 			);
-			name = Pods;
-			productName = Pods;
-			productReference = 10DA564D653341DA79FA527C9FD5605F /* Pods.framework */;
+			name = "Pods-ProgrammaticExample";
+			productName = "Pods-ProgrammaticExample";
+			productReference = A2ACB97C6B7FEA43C7F1CF6DF9D6B856 /* Pods_ProgrammaticExample.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 1CF54DDCED8D5A88319D081965DE4C17 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				433198606F1A2F5A8BA2DF031D5ABFAA /* AutoKeyboardScrollView */,
-				4E0081623F481DF3DAA9312772FE55A7 /* Pods */,
+				C2BFE5BB8C89678849CA2D74FDB4110C /* AutoKeyboardScrollView */,
+				73F445AEF95CED49B83EEE6FC97A20B9 /* Pods-InterfaceBuilderExample */,
+				FC0E752F7470C28CB78584D095C1F54F /* Pods-ProgrammaticExample */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		2A7FCDC77888DEEC925A6D8E03882E84 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		19F22E8017A3DC10E46939D89FFD2664 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79F3DA9B879EC23435D87067BA412766 /* AutoKeyboardScrollView-dummy.m in Sources */,
-				F7F5ECCFF35FF2713AE6C2B414197876 /* AutoKeyboardScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B199C22BF192220CDF42A1A0AB7CA53C /* Sources */ = {
+		6B5B9D677CEE8D29FAE0A4AED4C92325 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E746D49C05FF02DB9F7A7C8A9B47C0CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C0F21988F8F3CC734DCF8CD372305F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04EA44AB8D6D36841F312334BAC520B2 /* Pods-dummy.m in Sources */,
+				7FA4401DC92BF6A8439D9E00DA39EA27 /* Pods-ProgrammaticExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1DB6CCC32BDE650B7F48DA6EB76B232 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BABFD3BC4DDA7FD66DF36B3719F83C66 /* AutoKeyboardScrollView-dummy.m in Sources */,
+				CC316483E7B5B26A3B92F39D16E4B9C2 /* AutoKeyboardScrollView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F717A0D9B95B85603BABD58B770759FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				241CDF0C644F241AFCA7E892044FBA77 /* Pods-InterfaceBuilderExample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1A544A9577EE41D24629E580F18E0D86 /* PBXTargetDependency */ = {
+		A1A8BACA6E96F206A44DC8A78368DF17 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AutoKeyboardScrollView;
-			target = 433198606F1A2F5A8BA2DF031D5ABFAA /* AutoKeyboardScrollView */;
-			targetProxy = 1118890E415D459BFBB5BD9B880067BA /* PBXContainerItemProxy */;
+			target = C2BFE5BB8C89678849CA2D74FDB4110C /* AutoKeyboardScrollView */;
+			targetProxy = F73C4BECABBD00ECB4F1AFCB4EB91971 /* PBXContainerItemProxy */;
+		};
+		EC0AADE18AFFFC7C8978173532B40928 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AutoKeyboardScrollView;
+			target = C2BFE5BB8C89678849CA2D74FDB4110C /* AutoKeyboardScrollView */;
+			targetProxy = 65C1811FF41D217DE97B068E03715339 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		296DFC4A87F7A0579E26088962ED22F0 /* Release */ = {
+		4A9ABFA405C4B53FDFA3B452A12570C6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35A80F21D22E2B022C12739883EA33F8 /* AutoKeyboardScrollView-Private.xcconfig */;
+			baseConfigurationReference = 84062D44F02A07BAF55E51302492C343 /* Pods-ProgrammaticExample.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.3.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AutoKeyboardScrollView/AutoKeyboardScrollView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AutoKeyboardScrollView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AutoKeyboardScrollView/AutoKeyboardScrollView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = AutoKeyboardScrollView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		3D87A60F847D951DDB4AE6427BF1E568 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35A80F21D22E2B022C12739883EA33F8 /* AutoKeyboardScrollView-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.3.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AutoKeyboardScrollView/AutoKeyboardScrollView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AutoKeyboardScrollView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AutoKeyboardScrollView/AutoKeyboardScrollView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = AutoKeyboardScrollView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4C992EE41F7C474438072FDD60C9C6D0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4637A6EA1B34E2290C0CD0FAE2F91BEC /* Pods.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ProgrammaticExample/Pods-ProgrammaticExample-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ProgrammaticExample/Pods-ProgrammaticExample.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8F26548321386A6CE8F15F040235889B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0C76E8BE0429316E04C56CDE4CC3CB7 /* Pods.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
+					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				ONLY_ACTIVE_ARCH = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		5E69CD4075DC5E02A381DD526A486CA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B17B57C3A381F52234052C20607CD04B /* Pods-InterfaceBuilderExample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-InterfaceBuilderExample/Pods-InterfaceBuilderExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-InterfaceBuilderExample/Pods-InterfaceBuilderExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		69228185FE0620C4CCC30FA66496E61F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA2274C3CCAF638098CC2B04201F172B /* AutoKeyboardScrollView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AutoKeyboardScrollView/AutoKeyboardScrollView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AutoKeyboardScrollView/AutoKeyboardScrollView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AutoKeyboardScrollView/AutoKeyboardScrollView.modulemap";
+				PRODUCT_MODULE_NAME = AutoKeyboardScrollView;
+				PRODUCT_NAME = AutoKeyboardScrollView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+		AA2B7BF2CFA909CE92FEEFD1DA00FF05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 853C0E90DEEDF8D35CB9B7C724377AE2 /* Pods-ProgrammaticExample.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ProgrammaticExample/Pods-ProgrammaticExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ProgrammaticExample/Pods-ProgrammaticExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BD3113A28FC29DE60EE1E22AEE2D41D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA2274C3CCAF638098CC2B04201F172B /* AutoKeyboardScrollView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AutoKeyboardScrollView/AutoKeyboardScrollView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AutoKeyboardScrollView/AutoKeyboardScrollView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AutoKeyboardScrollView/AutoKeyboardScrollView.modulemap";
+				PRODUCT_MODULE_NAME = AutoKeyboardScrollView;
+				PRODUCT_NAME = AutoKeyboardScrollView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		C3D4A15C8E4F4C6E266CBF72B75A01A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC938537B3A1558C055DA96E4BE1E623 /* Pods-InterfaceBuilderExample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-InterfaceBuilderExample/Pods-InterfaceBuilderExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-InterfaceBuilderExample/Pods-InterfaceBuilderExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		288D74C3EEDE3C36AA48DDD08971BC03 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		3DD68F107F5E418F302FB523B3A68E55 /* Build configuration list for PBXNativeTarget "Pods-InterfaceBuilderExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C992EE41F7C474438072FDD60C9C6D0 /* Debug */,
-				8F26548321386A6CE8F15F040235889B /* Release */,
+				C3D4A15C8E4F4C6E266CBF72B75A01A7 /* Debug */,
+				5E69CD4075DC5E02A381DD526A486CA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
-				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADAEC6B5267966B22C8790F127D28821 /* Build configuration list for PBXNativeTarget "AutoKeyboardScrollView" */ = {
+		6787033E0A27E5F233F8415B3CBA147B /* Build configuration list for PBXNativeTarget "Pods-ProgrammaticExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3D87A60F847D951DDB4AE6427BF1E568 /* Debug */,
-				296DFC4A87F7A0579E26088962ED22F0 /* Release */,
+				AA2B7BF2CFA909CE92FEEFD1DA00FF05 /* Debug */,
+				4A9ABFA405C4B53FDFA3B452A12570C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78ADE33A8CAB018DAB465D4F6EFA6B2B /* Build configuration list for PBXNativeTarget "AutoKeyboardScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69228185FE0620C4CCC30FA66496E61F /* Debug */,
+				BD3113A28FC29DE60EE1E22AEE2D41D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

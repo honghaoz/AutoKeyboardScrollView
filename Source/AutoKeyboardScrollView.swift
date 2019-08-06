@@ -33,7 +33,7 @@ public class AutoKeyboardScrollView: UIScrollView {
     
     :param: textField textField in subView tree of receiver
     */
-    public func handleTextField(textField: UITextField) {
+    public func handleTextField(_ textField: UITextField) {
         (self.contentView as! ContentView).addTextField(textField)
     }
     
@@ -43,7 +43,7 @@ public class AutoKeyboardScrollView: UIScrollView {
     
     :param: textFields Array of textFields in subView tree of receiver
     */
-    public func handleTextFields(textFields: [UITextField]) {
+    public func handleTextFields(_ textFields: [UITextField]) {
         for field in textFields {
             handleTextField(field)
         }
@@ -54,7 +54,7 @@ public class AutoKeyboardScrollView: UIScrollView {
 	
 	:param: textField textField in subView tree of receiver
 	*/
-	public func removeTextField(textField: UITextField) {
+	public func removeTextField(_ textField: UITextField) {
 		(self.contentView as! ContentView).removeTextField(textField)
 	}
 	
@@ -64,7 +64,7 @@ public class AutoKeyboardScrollView: UIScrollView {
 	
 	:param: textFields Array of textFields in subView tree of receiver
 	*/
-	public func removeTextFields(textFields: [UITextField]) {
+	public func removeTextFields(_ textFields: [UITextField]) {
 		for field in textFields {
 			removeTextField(field)
 		}
@@ -77,7 +77,7 @@ public class AutoKeyboardScrollView: UIScrollView {
      - parameter margin:    margin
      - parameter textField: textField
      */
-    public func setTextMargin(margin: CGFloat, forTextField textField: UITextField) {
+    public func setTextMargin(_ margin: CGFloat, forTextField textField: UITextField) {
         (contentView as! ContentView).setTextMargin(margin, forTextField: textField)
     }
 	
@@ -89,11 +89,11 @@ public class AutoKeyboardScrollView: UIScrollView {
         didSet {
             self.removeConstraint(contentViewEqualWidthConstraint)
 			
-            contentViewEqualWidthConstraint = contentViewConstraintEqual(.Width)
+            contentViewEqualWidthConstraint = contentViewConstraintEqual(.width)
             if contentViewWidthEqualsToScrollView {
-                contentViewEqualWidthConstraint.priority = 1000
+                contentViewEqualWidthConstraint.priority = UILayoutPriority.required
             } else {
-                contentViewEqualWidthConstraint.priority = 10
+                contentViewEqualWidthConstraint.priority = UILayoutPriority(rawValue: 10)
             }
 			
             self.addConstraint(contentViewEqualWidthConstraint)
@@ -105,11 +105,11 @@ public class AutoKeyboardScrollView: UIScrollView {
         didSet {
             self.removeConstraint(contentViewEqualHeightConstraint)
 			
-            contentViewEqualHeightConstraint = contentViewConstraintEqual(.Height)
+            contentViewEqualHeightConstraint = contentViewConstraintEqual(.height)
             if contentViewHeightEqualsToScrollView {
-                contentViewEqualHeightConstraint.priority = 1000
+                contentViewEqualHeightConstraint.priority = UILayoutPriority.required
             } else {
-                contentViewEqualHeightConstraint.priority = 10
+                contentViewEqualHeightConstraint.priority = UILayoutPriority(rawValue: 10)
             }
 			
             self.addConstraint(contentViewEqualHeightConstraint)
@@ -122,128 +122,6 @@ public class AutoKeyboardScrollView: UIScrollView {
 	public var contentView: UIView!
 	
     // MARK: - Private
-    private class ContentView: UIView {
-        var textFields = [UITextField]()
-        var textFieldsToMargin = [UITextField : CGFloat]()
-
-		/**
-		addSubView: will check whether there's textField on this view, be sure to add textField before adding its container View
-		
-		:param: view A subview
-		*/
-        override func addSubview(view: UIView) {
-            super.addSubview(view)
-            checkSubviewsRecursively(view)
-        }
-
-		/**
-		Add all textFields from the subviews of the view into managed textFields and setup editing actions for them
-		
-		:param: view A target text field
-		*/
-		private func checkSubviewsRecursively(view: UIView) {
-			if let textField = view as? UITextField {
-				addTextField(textField)
-			}
-			
-			// Base case
-			if view.subviews.count == 0 {
-				return
-			}
-			
-			for subview in view.subviews {
-				checkSubviewsRecursively(subview)
-			}
-		}
-		
-		/**
-		Add the text field to managed textFields and setup editing actions for it
-		
-		:param: textField A target text field
-		*/
-        private func addTextField(textField: UITextField) {
-            textFields.append(textField)
-            setupEditingActionsForTextField(textField)
-        }
-		
-		/**
-		Setup text field editing actions for a text field
-		
-		:param: textField A target text field
-		*/
-        private func setupEditingActionsForTextField(textField: UITextField) {
-			guard let scrollView = superview as? UIScrollView else {
-				print("Error: contentView's superview is not scrollView")
-				return
-			}
-			
-            if textField.actionsForTarget(scrollView, forControlEvent: .EditingDidBegin) == nil {
-                textField.addTarget(scrollView, action: "_textFieldEditingDidBegin:", forControlEvents: .EditingDidBegin)
-            }
-            
-            if textField.actionsForTarget(scrollView, forControlEvent: .EditingChanged) == nil {
-                textField.addTarget(scrollView, action: "_textFieldEditingChanged:", forControlEvents: .EditingChanged)
-            }
-            
-            if textField.actionsForTarget(scrollView, forControlEvent: .EditingDidEnd) == nil {
-                textField.addTarget(scrollView, action: "_textFieldEditingDidEnd:", forControlEvents: .EditingDidEnd)
-            }
-            
-            if textField.actionsForTarget(scrollView, forControlEvent: .EditingDidEndOnExit) == nil {
-                textField.addTarget(scrollView, action: "_textFieldEditingDidEndOnExit:", forControlEvents: .EditingDidEndOnExit)
-            }
-        }
-		
-		/**
-		Remove the text field from managed textFields and remove editing actions for it
-		
-		:param: textField A target text field
-		*/
-		private func removeTextField(textField: UITextField) {
-			if let index = textFields.indexOf(textField) {
-				textFields.removeAtIndex(index)
-                textFieldsToMargin.removeValueForKey(textField)
-			}
-			removeEditingActionsForTextField(textField)
-		}
-		
-		/**
-		Remove text field editing actions for a text field
-		
-		:param: textField A target text field
-		*/
-		private func removeEditingActionsForTextField(textField: UITextField) {
-			guard let scrollView = superview as? UIScrollView else {
-				print("Error: contentView's superview is not scrollView")
-				return
-			}
-			
-			if textField.actionsForTarget(scrollView, forControlEvent: .EditingDidBegin) != nil {
-				textField.removeTarget(scrollView, action: "_textFieldEditingDidBegin:", forControlEvents: .EditingDidBegin)
-			}
-			
-			if textField.actionsForTarget(scrollView, forControlEvent: .EditingChanged) != nil {
-				textField.removeTarget(scrollView, action: "_textFieldEditingChanged:", forControlEvents: .EditingChanged)
-			}
-			
-			if textField.actionsForTarget(scrollView, forControlEvent: .EditingDidEnd) != nil {
-				textField.removeTarget(scrollView, action: "_textFieldEditingDidEnd:", forControlEvents: .EditingDidEnd)
-			}
-			
-			if textField.actionsForTarget(scrollView, forControlEvent: .EditingDidEndOnExit) != nil {
-				textField.removeTarget(scrollView, action: "_textFieldEditingDidEndOnExit:", forControlEvents: .EditingDidEndOnExit)
-			}
-		}
-        
-        private func setTextMargin(margin: CGFloat, forTextField textField: UITextField) {
-            guard textFields.contains(textField) else {
-                assertionFailure("textField: \(textField) is not handled")
-                return
-            }
-            
-            textFieldsToMargin[textField] = margin
-        }
-    }
 	
     private var contentViewEqualWidthConstraint: NSLayoutConstraint!
     private var contentViewEqualHeightConstraint: NSLayoutConstraint!
@@ -254,7 +132,7 @@ public class AutoKeyboardScrollView: UIScrollView {
     
     // Keep values from UIKeyboardNotification
     private var keyboardFrame: CGRect!
-    private var keyboardAnimationDuration: NSTimeInterval!
+    private var keyboardAnimationDuration: TimeInterval!
     
     // TextFields on subtrees for scrollView
     private var textFields: [UITextField] {
@@ -279,23 +157,23 @@ public class AutoKeyboardScrollView: UIScrollView {
     // MARK: Disable undesired scroll behavior of default UIScrollView
     // To Avoid undesired scroll behavior of default UIScrollView, call zhScrollRectToVisible::
     // Reference: http://stackoverflow.com/a/12640831/3164091
-    override public func scrollRectToVisible(rect: CGRect, animated: Bool) {
+    public override func scrollRectToVisible(_ rect: CGRect, animated: Bool) {
         if _expectedScrollRect == nil {
             super.scrollRectToVisible(rect, animated: animated)
             return
         }
-        if CGRectEqualToRect(rect, _expectedScrollRect) {
+        if rect.equalTo(_expectedScrollRect) {
             super.scrollRectToVisible(rect, animated: animated)
         }
     }
     
     private var _expectedScrollRect: CGRect!
-    private func zhScrollRectToVisible(rect: CGRect, animated: Bool) {
+    private func zhScrollRectToVisible(_ rect: CGRect, animated: Bool) {
         _expectedScrollRect = rect
         scrollRectToVisible(rect, animated: animated)
     }
 	
-	public override func addSubview(view: UIView) {
+    public override func addSubview(_ view: UIView) {
 		if (view is ContentView == false) && (view is UIImageView == false && view.alpha == 0) {
 			print("warning: adding view on AutoKeyboardScrollView detected, you should add view on .contentView")
 		}
@@ -314,29 +192,29 @@ public class AutoKeyboardScrollView: UIScrollView {
         contentView.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(contentView)
 		
-        let top = NSLayoutConstraint(item: contentView, attribute: .Top, relatedBy: .Equal, toItem: self, attribute: .Top, multiplier: 1.0, constant: 0.0)
-        let left = NSLayoutConstraint(item: contentView, attribute: .Leading, relatedBy: .Equal, toItem: self, attribute: .Leading, multiplier: 1.0, constant: 0.0)
-        let bottom = NSLayoutConstraint(item: contentView, attribute: .Bottom, relatedBy: .Equal, toItem: self, attribute: .Bottom, multiplier: 1.0, constant: 0.0)
-        let right = NSLayoutConstraint(item: contentView, attribute: .Trailing, relatedBy: .Equal, toItem: self, attribute: .Trailing, multiplier: 1.0, constant: 0.0)
+        let top = NSLayoutConstraint(item: contentView!, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1.0, constant: 0.0)
+        let left = NSLayoutConstraint(item: contentView!, attribute: .leading, relatedBy: .equal, toItem: self, attribute: .leading, multiplier: 1.0, constant: 0.0)
+        let bottom = NSLayoutConstraint(item: contentView!, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1.0, constant: 0.0)
+        let right = NSLayoutConstraint(item: contentView!, attribute: .trailing, relatedBy: .equal, toItem: self, attribute: .trailing, multiplier: 1.0, constant: 0.0)
         
         // Width and height constraints with a lower priority
-        contentViewEqualWidthConstraint = contentViewConstraintEqual(.Width)
+        contentViewEqualWidthConstraint = contentViewConstraintEqual(.width)
         // If equal width is not required, set its priority to a low value
         if contentViewWidthEqualsToScrollView == false {
             // Set its priority to be a very low value, to avoid conflicts
-            contentViewEqualWidthConstraint.priority = 10
+            contentViewEqualWidthConstraint.priority = UILayoutPriority(rawValue: 10)
         }
 		
-        contentViewEqualHeightConstraint = contentViewConstraintEqual(.Height)
+        contentViewEqualHeightConstraint = contentViewConstraintEqual(.height)
         if contentViewHeightEqualsToScrollView == false {
-            contentViewEqualHeightConstraint.priority = 10
+            contentViewEqualHeightConstraint.priority = UILayoutPriority(rawValue: 10)
         }
 		
         self.addConstraints([top, left, bottom, right, contentViewEqualWidthConstraint, contentViewEqualHeightConstraint])
     }
     
-    private func contentViewConstraintEqual(attr: NSLayoutAttribute) -> NSLayoutConstraint {
-        return NSLayoutConstraint(item: contentView, attribute: attr, relatedBy: .GreaterThanOrEqual, toItem: self, attribute: attr, multiplier: 1.0, constant: 0.0)
+    private func contentViewConstraintEqual(_ attr: NSLayoutConstraint.Attribute) -> NSLayoutConstraint {
+        return NSLayoutConstraint(item: contentView!, attribute: attr, relatedBy: .greaterThanOrEqual, toItem: self, attribute: attr, multiplier: 1.0, constant: 0.0)
     }
     
     deinit {
@@ -347,41 +225,37 @@ public class AutoKeyboardScrollView: UIScrollView {
 // MARK: TapGesture - Tap to dismiss
 extension AutoKeyboardScrollView {
     private func setupGestures() {
-        let tapGesture = UITapGestureRecognizer(target: self, action: "scrollViewTapped:")
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(_scrollViewTapped(gesture:)))
         tapGesture.cancelsTouchesInView = false
         self.addGestureRecognizer(tapGesture)
     }
 	
-	@objc(scrollViewTapped:)
+	@objc
     private func _scrollViewTapped(gesture: UITapGestureRecognizer) {
         activeTextField?.resignFirstResponder()
     }
 }
 
 // MARK: TextFields Actions
-extension AutoKeyboardScrollView {
-	@objc(_textFieldEditingDidBegin:)
-    private func _textFieldEditingDidBegin(sender: AnyObject) {
+fileprivate extension AutoKeyboardScrollView {
+	@objc func _textFieldEditingDidBegin(_ sender: AnyObject) {
         activeTextField = sender as? UITextField
         if self.keyboardFrame != nil {
             makeActiveTextFieldVisible(self.keyboardFrame)
         }
     }
 	
-	@objc(_textFieldEditingChanged:)
-    private func _textFieldEditingChanged(sender: AnyObject) {
+	@objc func _textFieldEditingChanged(_ sender: AnyObject) {
         if self.keyboardFrame != nil {
             makeActiveTextFieldVisible(self.keyboardFrame)
         }
     }
 	
-	@objc(_textFieldEditingDidEnd:)
-    private func _textFieldEditingDidEnd(sender: AnyObject) {
+	@objc func _textFieldEditingDidEnd(_ sender: AnyObject) {
 		activeTextField = nil
     }
 	
-	@objc(_textFieldEditingDidEndOnExit:)
-    private func _textFieldEditingDidEndOnExit(sender: AnyObject) {
+	@objc func _textFieldEditingDidEndOnExit(_ sender: AnyObject) {
         // This method gives the ability of dismissing keyboard on tapping return
     }
 }
@@ -391,18 +265,18 @@ extension AutoKeyboardScrollView {
     private func registerNotifications() {
         // Reason for only registering UIKeyboardWillChangeFrameNotification
         // Since UIKeyboardWillChangeFrameNotification will be posted before willShow and willBeHidden, to avoid duplicated animations, detecting keyboard behaviors only from this notification
-        NSNotificationCenter.defaultCenter().addObserver(
+        NotificationCenter.default.addObserver(
             self,
-            selector: "keyboardWillChange:",
-            name: UIKeyboardWillChangeFrameNotification,
+            selector: #selector(keyboardWillChange(notification:)),
+            name: UIResponder.keyboardWillChangeFrameNotification,
             object: nil)
     }
     
     private func unregisterNotifications() {
-        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillChangeFrameNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
     }
 	
-	@objc(keyboardWillChange:)
+	@objc
     private func keyboardWillChange(notification: NSNotification) {
         // Init keyboardAnimationDuration
         keyboardAnimationDuration = keyboardDismissingDuration(notification)
@@ -419,9 +293,9 @@ extension AutoKeyboardScrollView {
             makeActiveTextFieldVisible(endFrame)
         } else if isKeyboardWillHide(notification) {
             // Animated to restore to original state
-            UIView.animateWithDuration(keyboardDismissingDuration(notification), animations: { () -> Void in
-                self.contentInset = self.originalContentInset ?? UIEdgeInsetsZero
-                self.contentOffset = self.originalContentOffset ?? CGPointZero
+            UIView.animate(withDuration: keyboardDismissingDuration(notification), animations: { () -> Void in
+                self.contentInset = self.originalContentInset ?? UIEdgeInsets.zero
+                self.contentOffset = self.originalContentOffset ?? CGPoint.zero
                 }, completion: { (completed) -> Void in
                     self.keyboardFrame = nil
             })
@@ -439,33 +313,33 @@ extension AutoKeyboardScrollView {
     
     :param: keyboardRect Current keyboard frame
     */
-    private func makeActiveTextFieldVisible(var keyboardRect: CGRect) {
+    private func makeActiveTextFieldVisible(_ keyboardRect: CGRect) {
 		guard let activeTextField = activeTextField else {
 			print("Warning: activeTextField is nil")
 			return
 		}
 		
         // flipLandscapeFrameForIOS7 only changes CGRect for landscape on iOS7
-        keyboardRect = flipLandscapeFrameForIOS7(keyboardRect)
+        let keyboardRect = flipLandscapeFrameForIOS7(keyboardRect)
         
         // VisibleScrollViewFrame
-        var visibleScrollFrame = convertRect(bounds, toView: nil)
+        var visibleScrollFrame = convert(bounds, to: nil)
         visibleScrollFrame = flipLandscapeFrameForIOS7(visibleScrollFrame)
         
         // If keyboard covers part of visibleScrollFrame, cut off visibleScrollFrame and update scrollView's contentInset
-		let bottomOfScrollView = CGRectGetMaxY(visibleScrollFrame)
+		let bottomOfScrollView = visibleScrollFrame.maxY
         if bottomOfScrollView > keyboardRect.origin.y {
             let cutHeight = bottomOfScrollView - keyboardRect.origin.y
             visibleScrollFrame.size.height -= cutHeight
             
             // Animated change self.contentInset
-			UIView.animateWithDuration(keyboardAnimationDuration, animations: { () -> Void in
-				self.contentInset = UIEdgeInsetsMake(self.contentInset.top, self.contentInset.left, cutHeight, self.contentInset.right)
+            UIView.animate(withDuration: keyboardAnimationDuration, animations: { () -> Void in
+                self.contentInset = UIEdgeInsets(top: self.contentInset.top, left: self.contentInset.left, bottom: cutHeight, right: self.contentInset.right)
 				}, completion: nil)
         }
 		
         // Enlarge the targetFrame, give top and bottom some points margin
-        var targetFrame = flipLandscapeFrameForIOS7(activeTextField.convertRect(activeTextField.bounds, toView: self))
+        var targetFrame = flipLandscapeFrameForIOS7(activeTextField.convert(activeTextField.bounds, to: self))
         
         // Add top & bottom margins for target frame
         let textFieldMargin = (contentView as! ContentView).textFieldsToMargin[activeTextField] ?? self.textFieldMargin
@@ -478,35 +352,37 @@ extension AutoKeyboardScrollView {
     
     // Helper functions
     private func screenHeight() -> CGFloat {
-        return UIScreen.mainScreen().bounds.height
+        return UIScreen.main.bounds.height
     }
     
-    private func keyboardBeginFrame(notification: NSNotification) -> CGRect {
-        return (notification.userInfo![UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() as CGRect!
+    private func keyboardBeginFrame(_ notification: NSNotification) -> CGRect {
+        return (notification.userInfo![UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)!.cgRectValue
     }
     
-    private func keyboardEndFrame(notification: NSNotification) -> CGRect {
-        return (notification.userInfo![UIKeyboardFrameEndUserInfoKey] as? NSValue)?.CGRectValue() as CGRect!
+    private func keyboardEndFrame(_ notification: NSNotification) -> CGRect {
+        return (notification.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)!.cgRectValue
     }
     
-    private func isKeyboardWillShow(notification: NSNotification) -> Bool {
+    private func isKeyboardWillShow(_ notification: NSNotification) -> Bool {
         let beginFrame = keyboardBeginFrame(notification)
         return (abs(beginFrame.origin.y - screenHeight()) < 0.1)
     }
     
-    private func isKeyboardWillHide(notification: NSNotification) -> Bool {
+    private func isKeyboardWillHide(_ notification: NSNotification) -> Bool {
         let endFrame = keyboardEndFrame(notification)
         return (abs(endFrame.origin.y - screenHeight()) < 0.1)
     }
     
-    private func keyboardDismissingDuration(notification: NSNotification) -> NSTimeInterval {
-        return (notification.userInfo![UIKeyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue as NSTimeInterval!
+    private func keyboardDismissingDuration(_ notification: NSNotification) -> TimeInterval {
+        return (notification.userInfo![UIResponder.keyboardAnimationDurationUserInfoKey] as? NSNumber)!.doubleValue
     }
     
     private func isIOS7() -> Bool { return floor(NSFoundationVersionNumber) <= floor(NSFoundationVersionNumber_iOS_7_1) }
     
     private func isLandscapeMode() -> Bool {
-        return UIInterfaceOrientationIsLandscape(UIApplication.sharedApplication().statusBarOrientation)
+        // Verify this in landscape mode.
+        // return UIInterfaceOrientationIsLandscape(UIApplication.shared.statusBarOrientation)
+        return UIApplication.shared.statusBarOrientation == .landscapeLeft || UIApplication.shared.statusBarOrientation == .landscapeRight
     }
     
     /**
@@ -517,12 +393,135 @@ extension AutoKeyboardScrollView {
     
     :returns: Flipped CGRect
     */
-    private func flipLandscapeFrameForIOS7(frame: CGRect) -> CGRect {
+    private func flipLandscapeFrameForIOS7(_ frame: CGRect) -> CGRect {
         if isIOS7() && isLandscapeMode() {
-			let newFrame = CGRectMake(frame.origin.y, frame.origin.x, frame.size.height, frame.size.width)
+			let newFrame = CGRect(x: frame.origin.y, y: frame.origin.y, width: frame.size.height, height: frame.size.height)
 			return newFrame
         } else {
 			return frame
         }
+    }
+}
+
+private class ContentView: UIView {
+    var textFields = [UITextField]()
+    var textFieldsToMargin = [UITextField : CGFloat]()
+
+    /**
+     addSubView: will check whether there's textField on this view, be sure to add textField before adding its container View
+
+     :param: view A subview
+     */
+    override func addSubview(_ view: UIView) {
+        super.addSubview(view)
+        checkSubviewsRecursively(view)
+    }
+
+    /**
+     Add all textFields from the subviews of the view into managed textFields and setup editing actions for them
+
+     :param: view A target text field
+     */
+    private func checkSubviewsRecursively(_ view: UIView) {
+        if let textField = view as? UITextField {
+            addTextField(textField)
+        }
+
+        // Base case
+        if view.subviews.count == 0 {
+            return
+        }
+
+        for subview in view.subviews {
+            checkSubviewsRecursively(subview)
+        }
+    }
+
+    /**
+     Add the text field to managed textFields and setup editing actions for it
+
+     :param: textField A target text field
+     */
+    func addTextField(_ textField: UITextField) {
+        textFields.append(textField)
+        setupEditingActionsForTextField(textField)
+    }
+
+    /**
+     Setup text field editing actions for a text field
+
+     :param: textField A target text field
+     */
+    private func setupEditingActionsForTextField(_ textField: UITextField) {
+        guard let scrollView = superview as? UIScrollView else {
+            print("Error: contentView's superview is not scrollView")
+            return
+        }
+
+        if textField.actions(forTarget: scrollView, forControlEvent: .editingDidBegin) == nil {
+            textField.addTarget(scrollView, action: #selector(AutoKeyboardScrollView._textFieldEditingDidBegin(_:)), for: .editingDidBegin)
+        }
+
+        if textField.actions(forTarget: scrollView, forControlEvent: .editingChanged) == nil {
+            textField.addTarget(scrollView, action: #selector(AutoKeyboardScrollView._textFieldEditingChanged(_:)), for: .editingChanged)
+        }
+
+        if textField.actions(forTarget: scrollView, forControlEvent: .editingDidEnd) == nil {
+            textField.addTarget(scrollView, action: #selector(AutoKeyboardScrollView._textFieldEditingDidEnd(_:)), for: .editingDidEnd)
+        }
+
+        if textField.actions(forTarget: scrollView, forControlEvent: .editingDidEndOnExit) == nil {
+            textField.addTarget(scrollView, action: #selector(AutoKeyboardScrollView._textFieldEditingDidEndOnExit(_:)), for: .editingDidEndOnExit)
+        }
+    }
+
+    /**
+     Remove the text field from managed textFields and remove editing actions for it
+
+     :param: textField A target text field
+     */
+    func removeTextField(_ textField: UITextField) {
+        if let index = textFields.firstIndex(of: textField) {
+            textFields.remove(at: index)
+            textFieldsToMargin.removeValue(forKey: textField)
+        }
+        removeEditingActionsForTextField(textField)
+    }
+
+    /**
+     Remove text field editing actions for a text field
+
+     :param: textField A target text field
+     */
+    func removeEditingActionsForTextField(_ textField: UITextField) {
+        guard let scrollView = superview as? UIScrollView else {
+            print("Error: contentView's superview is not scrollView")
+            return
+        }
+
+        if textField.actions(forTarget: scrollView, forControlEvent: .editingDidBegin) != nil {
+            textField.removeTarget(scrollView, action: #selector(AutoKeyboardScrollView._textFieldEditingDidBegin(_:)), for: .editingDidBegin)
+        }
+
+        if textField.actions(forTarget: scrollView, forControlEvent: .editingChanged) != nil {
+            textField.removeTarget(scrollView, action: #selector(AutoKeyboardScrollView._textFieldEditingChanged(_:)), for: .editingChanged)
+        }
+
+        if textField.actions(forTarget: scrollView, forControlEvent: .editingDidEnd) != nil {
+            textField.removeTarget(scrollView, action: #selector(AutoKeyboardScrollView._textFieldEditingDidEnd(_:)), for: .editingDidEnd)
+        }
+
+        if textField.actions(forTarget: scrollView, forControlEvent: .editingDidEndOnExit) != nil {
+            textField.removeTarget(scrollView, action: #selector(AutoKeyboardScrollView._textFieldEditingDidEndOnExit(_:)), for: .editingDidEndOnExit)
+        }
+    }
+
+    func setTextMargin(_ margin: CGFloat, forTextField textField: UITextField) {
+        guard textFields.contains(textField) else {
+            assertionFailure("textField: \(textField) is not handled")
+            return
+        }
+
+        textFieldsToMargin[textField] = margin
     }
 }

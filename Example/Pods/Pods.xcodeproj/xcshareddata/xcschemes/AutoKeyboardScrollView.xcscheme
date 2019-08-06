@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "1030"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "433198606F1A2F5A8BA2DF031D5ABFAA"
+               BlueprintIdentifier = "C2BFE5BB8C89678849CA2D74FDB4110C"
                BuildableName = "AutoKeyboardScrollView.framework"
                BlueprintName = "AutoKeyboardScrollView"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "433198606F1A2F5A8BA2DF031D5ABFAA"
+            BlueprintIdentifier = "C2BFE5BB8C89678849CA2D74FDB4110C"
             BuildableName = "AutoKeyboardScrollView.framework"
             BlueprintName = "AutoKeyboardScrollView"
             ReferencedContainer = "container:Pods.xcodeproj">

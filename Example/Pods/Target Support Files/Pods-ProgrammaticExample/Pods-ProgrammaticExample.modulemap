@@ -1,0 +1,6 @@
+framework module Pods_ProgrammaticExample {
+  umbrella header "Pods-ProgrammaticExample-umbrella.h"
+
+  export *
+  module * { export * }
+}

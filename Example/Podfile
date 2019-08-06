@@ -1,10 +1,17 @@
-source 'https://github.com/CocoaPods/Specs.git'
-use_frameworks!
-
 platform :ios, '8.0'
-workspace 'AutoKeyboardScrollView'
 
-xcodeproj 'InterfaceBuilderExample/InterfaceBuilderExample.xcodeproj'
-xcodeproj 'ProgrammaticExample/ProgrammaticExample.xcodeproj'
+target 'InterfaceBuilderExample' do
+    workspace 'AutoKeyboardScrollView'
+    project 'InterfaceBuilderExample/InterfaceBuilderExample'
 
-pod 'AutoKeyboardScrollView', :path => '../'
+    use_frameworks!
+    pod 'AutoKeyboardScrollView', :path => '../'
+end
+
+target 'ProgrammaticExample' do
+    workspace 'AutoKeyboardScrollView'
+    project 'ProgrammaticExample/ProgrammaticExample'
+
+    use_frameworks!
+    pod 'AutoKeyboardScrollView', :path => '../'
+end

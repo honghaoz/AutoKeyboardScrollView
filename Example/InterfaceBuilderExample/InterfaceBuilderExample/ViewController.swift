@@ -14,9 +14,9 @@ class ViewController: UIViewController {
 	@IBOutlet weak var wrapperView: UIView!
 	var scrollView = AutoKeyboardScrollView()
 	var views = [String: UIView]()
-	
-	override func preferredStatusBarStyle() -> UIStatusBarStyle {
-		return .LightContent
+
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+		return .lightContent
 	}
 	
 	override func viewDidLoad() {
@@ -38,9 +38,9 @@ class ViewController: UIViewController {
 		scrollView.contentView.addSubview(wrapperView)
 		
 		scrollView.backgroundColor = wrapperView.backgroundColor
-		scrollView.userInteractionEnabled = true
+        scrollView.isUserInteractionEnabled = true
 		scrollView.bounces = true
-		scrollView.scrollEnabled = true
+        scrollView.isScrollEnabled = true
 	}
 	
 	func setupConstraints() {
@@ -48,12 +48,12 @@ class ViewController: UIViewController {
 		views["wrapperView"] = wrapperView
 		
 		var constraints = [NSLayoutConstraint]()
-		constraints += NSLayoutConstraint.constraintsWithVisualFormat("H:|[scrollView]|", options: [], metrics: nil, views: views)
-		constraints +=  NSLayoutConstraint.constraintsWithVisualFormat("V:|[scrollView]|", options: [], metrics: nil, views: views)
+        constraints += NSLayoutConstraint.constraints(withVisualFormat: "H:|[scrollView]|", options: [], metrics: nil, views: views)
+        constraints +=  NSLayoutConstraint.constraints(withVisualFormat: "V:|[scrollView]|", options: [], metrics: nil, views: views)
 		
-		constraints += NSLayoutConstraint.constraintsWithVisualFormat("H:|[wrapperView]|", options: [], metrics: nil, views: views)
-		constraints +=  NSLayoutConstraint.constraintsWithVisualFormat("V:|[wrapperView]|", options: [], metrics: nil, views: views)
+        constraints += NSLayoutConstraint.constraints(withVisualFormat: "H:|[wrapperView]|", options: [], metrics: nil, views: views)
+        constraints +=  NSLayoutConstraint.constraints(withVisualFormat: "V:|[wrapperView]|", options: [], metrics: nil, views: views)
 		
-		NSLayoutConstraint.activateConstraints(constraints)
+        NSLayoutConstraint.activate(constraints)
 	}
 }
