@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.author           = { "Honghao Zhang" => "zhh358@gmail.com" }
   s.source           = { :git => "https://github.com/honghaoz/AutoKeyboardScrollView.git", :tag => s.version.to_s }
 
-  s.swift_version    = '5'
+  s.swift_version    = '5.0'
   s.platform     	 = :ios, '8.0'
   s.requires_arc 	 = true
 
