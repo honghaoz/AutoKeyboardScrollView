@@ -125,11 +125,36 @@ public class AutoKeyboardScrollView: UIScrollView {
 	
     private var contentViewEqualWidthConstraint: NSLayoutConstraint!
     private var contentViewEqualHeightConstraint: NSLayoutConstraint!
-	
+
+    // MARK: - Tracking original contentInset and contentOffset
     // These two values are used to backup original states
     private var originalContentInset: UIEdgeInsets!
     private var originalContentOffset: CGPoint!
-    
+
+    /// A flag used to avoid contentInset change observation triggered internally.
+    private var _isChangingContentInset: Bool = false
+    public override var contentInset: UIEdgeInsets {
+        didSet {
+            // If has a tracked content inset and the change is triggered externally. We should update the
+            // tracked original content inset.
+            if self.originalContentInset != nil, !_isChangingContentInset {
+                self.originalContentInset = contentInset
+            }
+        }
+    }
+    /// A flag used to avoid contentOffset change observation triggered internally.
+    private var _isChangingContentOffset: Bool = false
+    public override var contentOffset: CGPoint {
+        didSet {
+            // If has a tracked content offset and the change is triggered externally. We should update the
+            // tracked original content offset.
+            if self.originalContentOffset != nil, !_isChangingContentOffset {
+                self.originalContentOffset = contentOffset
+            }
+        }
+    }
+    // MARK: -
+
     // Keep values from UIKeyboardNotification
     private var keyboardFrame: CGRect!
     private var keyboardAnimationDuration: TimeInterval!
@@ -294,8 +319,13 @@ extension AutoKeyboardScrollView {
         } else if isKeyboardWillHide(notification) {
             // Animated to restore to original state
             UIView.animate(withDuration: keyboardDismissingDuration(notification), animations: { () -> Void in
+                self._isChangingContentInset = true
                 self.contentInset = self.originalContentInset ?? UIEdgeInsets.zero
+                self._isChangingContentInset = false
+
+                self._isChangingContentOffset = true
                 self.contentOffset = self.originalContentOffset ?? CGPoint.zero
+                self._isChangingContentOffset = false
                 }, completion: { (completed) -> Void in
                     self.keyboardFrame = nil
             })
@@ -334,8 +364,10 @@ extension AutoKeyboardScrollView {
             
             // Animated change self.contentInset
             UIView.animate(withDuration: keyboardAnimationDuration, animations: { () -> Void in
+                self._isChangingContentInset = true
                 self.contentInset = UIEdgeInsets(top: self.contentInset.top, left: self.contentInset.left, bottom: cutHeight, right: self.contentInset.right)
-				}, completion: nil)
+                self._isChangingContentInset = false
+            }, completion: nil)
         }
 		
         // Enlarge the targetFrame, give top and bottom some points margin
